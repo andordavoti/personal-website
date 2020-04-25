@@ -5,7 +5,8 @@ import styled from 'styled-components';
 const { sm, md } = Media;
 
 const CardImgContainer = styled.div`
-    grid-column-start: span 2 
+    grid-column-start: 3;
+    grid-column-end: span 4;
     height: 100%;
     overflow: hidden;
     @media ${sm} {
@@ -13,7 +14,7 @@ const CardImgContainer = styled.div`
     }
 
     @media ${md} {
-        grid-column-start: span 3
+        grid-column-start: span 2
     }
 
 `;
