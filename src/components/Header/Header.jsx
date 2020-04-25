@@ -25,10 +25,10 @@ import { Spacer } from '../utils/Spacer';
 import { Link } from 'react-router-dom';
 
 const socialIcons = {
-    linkedin: 'LINK',
-    instagram: 'LINK',
-    github: 'LINK',
-};
+    linkedin: 'https://www.linkedin.com/in/andordavoti/',
+    instagram: 'https://www.instagram.com/andordavoti/',
+    github: 'https://github.com/andordavoti',
+}
 
 const Header = ({ topSpacing = 100 }) => {
     //Shadow on Scroll
