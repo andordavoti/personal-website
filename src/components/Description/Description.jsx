@@ -8,19 +8,17 @@ import {
     DescTextContainer,
 } from './Description.styles';
 
-const Description = () => {
-    return (
-        <DescriptionWrapper>
+const Description = () => (
+    <DescriptionWrapper>
 
-            <Title>
-                Lorem <span>Ipsum</span>
-            </Title>
+        <Title>
+            Lorem <span>Ipsum</span>
+        </Title>
 
-            <DescTextContainer>
-                Hi, my name is Andor Davoti. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea neque inventore distinctio, fugit quod reiciendis veritatis temporibus fuga ut debitis animi nisi voluptatum earum! Error quasi nam ab quas voluptatum.
+        <DescTextContainer>
+            Hi, my name is Andor Davoti. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea neque inventore distinctio, fugit quod reiciendis veritatis temporibus fuga ut debitis animi nisi voluptatum earum! Error quasi nam ab quas voluptatum.
             </DescTextContainer>
-        </DescriptionWrapper>
-    );
-};
+    </DescriptionWrapper>
+)
 
-export default Description;
+export default Description

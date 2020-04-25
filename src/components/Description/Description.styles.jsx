@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { Container } from '../utils/Container';
+import styled from 'styled-components'
+import { Container } from '../utils/Container'
 
 export const DescriptionWrapper = styled(Container)`
     display: flex;
@@ -7,7 +7,7 @@ export const DescriptionWrapper = styled(Container)`
     justify-content: space-between;
     width: 100%;
     color: #121212;
-`;
+`
 
 export const Title = styled.h3`
     font-family: 'Roboto Condensed', sans-serif;
@@ -19,7 +19,7 @@ export const Title = styled.h3`
     span {
         color: var(--text-variant-3);
     }
-`;
+`
 
 export const DescTextContainer = styled.p`
     font-family: 'Roboto', sans-serif;
@@ -32,4 +32,4 @@ export const DescTextContainer = styled.p`
         text-decoration: underline;
         color: inherit;
     }
-`;
+`

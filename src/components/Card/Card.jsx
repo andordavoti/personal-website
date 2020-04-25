@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-import { Media } from '../utils/Breakpoints';
-const { sm, md } = Media;
+import styled from 'styled-components'
+import { Media } from '../utils/Breakpoints'
+const { sm, md } = Media
 
 const Card = styled.div`
     background-color: var(--card-bg, #fff);
@@ -29,6 +29,6 @@ const Card = styled.div`
         grid-template-columns: repeat(4, 1fr);
         height: 350px;
     }
-`;
+`
 
-export default Card;
+export default Card

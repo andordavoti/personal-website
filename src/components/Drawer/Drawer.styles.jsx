@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const DrawerContainer = styled.aside`
     z-index: 999;
@@ -9,7 +9,8 @@ export const DrawerContainer = styled.aside`
         width: 100%;
         height: 100%;
     }
-`;
+`
+
 export const Backdrop = styled.div`
     position: absolute;
     top: 0;
@@ -26,7 +27,8 @@ export const Backdrop = styled.div`
     ${DrawerContainer + "[aria-hidden='false']"} & {
         opacity: 1;
     }
-`;
+`
+
 export const DrawerContent = styled.div`
     display: flex;
     flex-direction: column;
@@ -49,4 +51,4 @@ export const DrawerContent = styled.div`
         transform: translateX(0);
         height: 100%;
     }
-`;
+`

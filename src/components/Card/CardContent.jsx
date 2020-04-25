@@ -1,13 +1,13 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled from 'styled-components'
 
-import Card from './Card';
-import { CardTitle } from './CardTitle';
+import Card from './Card'
+import { CardTitle } from './CardTitle'
 
-import { Media } from '../utils/Breakpoints';
-import { Text } from '../Text/Text';
+import { Media } from '../utils/Breakpoints'
+import { Text } from '../Text/Text'
 
-const { sm, md } = Media;
+const { sm, md } = Media
 
 const CardContentWrapper = styled.div`
     grid-column-start: span 2 
@@ -30,7 +30,7 @@ const CardContentWrapper = styled.div`
         ${Card}:hover & {color: var(--card-hover)}`
             : null}
     font-weight: 500;
-`;
+`
 
 const CardDetails = styled.div`
     display: flex;
@@ -38,7 +38,7 @@ const CardDetails = styled.div`
     text-align: left;
     font-weight: 300;
     font-size: 1rem;
-`;
+`
 
 const CardContent = ({
     children,
@@ -48,26 +48,19 @@ const CardContent = ({
     details,
     date: { seconds } = {},
 }) => {
-    return (
-        <CardContentWrapper hover={hover}>
-            {title && <CardTitle>{title}</CardTitle>}
-            {children && children}
-            <CardDetails>
-                {subtitle && (
-                    <Text weight="500" size="1rem">
-                        {subtitle}
-                    </Text>
-                )}
-                {details &&
-                    details.map(detail => <Text size="1rem">{detail}</Text>)}
-                {seconds && (
-                    <Text size="0.7rem">
-                        {new Date(seconds * 1000).toDateString()}
-                    </Text>
-                )}
-            </CardDetails>
-        </CardContentWrapper>
-    );
-};
+    return <CardContentWrapper hover={hover}>
+        {title && <CardTitle>{title}</CardTitle>}
+        {children && children}
+        <CardDetails>
+            {subtitle && <Text weight="500" size="1rem">
+                {subtitle}
+            </Text>}
+            {details && details.map(detail => <Text size="1rem">{detail}</Text>)}
+            {seconds && <Text size="0.7rem">
+                {new Date(seconds * 1000).toDateString()}
+            </Text>}
+        </CardDetails>
+    </CardContentWrapper>
+}
 
-export default CardContent;
+export default CardContent

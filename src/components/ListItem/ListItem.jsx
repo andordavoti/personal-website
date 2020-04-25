@@ -1,6 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
-import { IsStringColor } from '../../functions/utils';
+import React from 'react'
+import styled from 'styled-components'
+import { IsStringColor } from '../../functions/utils'
 
 const ListItemWrapper = styled.li`
     display: flex;
@@ -35,17 +35,15 @@ const ListItemWrapper = styled.li`
     &:hover {
         cursor: pointer;
         background-color: ${({ hover }) =>
-            hover
-                ? IsStringColor(hover)
-                    ? hover
-                    : `var(--list-item-hover-${hover}, rgba(0,0,0,0.08))`
-                : null};
+        hover
+            ? IsStringColor(hover)
+                ? hover
+                : `var(--list-item-hover-${hover}, rgba(0,0,0,0.08))`
+            : null};
     }
     &.iconHolder {
         justify-content: space-between;
     }
-`;
+`
 
-export const ListItem = ({ children, ...props }) => {
-    return <ListItemWrapper {...props}>{children} </ListItemWrapper>;
-};
+export const ListItem = ({ children, ...props }) => <ListItemWrapper {...props}>{children} </ListItemWrapper>

@@ -1,7 +1,7 @@
-import styled from 'styled-components';
-import { Media } from './Breakpoints';
+import styled from 'styled-components'
+import { Media } from './Breakpoints'
 
-const { sm, md, lg } = Media;
+const { sm, md, lg } = Media
 
 export const Container = styled.div`
     padding-right: 2rem;
@@ -17,4 +17,4 @@ export const Container = styled.div`
     @media ${lg} {
         width: 1170px;
     }
-`;
+`

@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { IsStringColor } from '../../functions/utils';
+import styled from 'styled-components'
+import { IsStringColor } from '../../functions/utils'
 
 export const TextHover = styled.span`
     font-family: ${props => (props.family ? props.family : 'Roboto')},
@@ -9,13 +9,13 @@ export const TextHover = styled.span`
         props.default ? `var(--text-variant-${props.default})` : 'inherit'};
     &:hover {
         color: ${({ variant }) =>
-            variant
-                ? IsStringColor(variant)
-                    ? variant
-                    : `var(--text-variant-${variant})`
-                : 'var(--text-normal-1, #252525)'};
+        variant
+            ? IsStringColor(variant)
+                ? variant
+                : `var(--text-variant-${variant})`
+            : 'var(--text-normal-1, #252525)'};
         cursor: ${({ cursor }) => (cursor ? 'pointer' : null)};
     }
     transition: ${({ transition }) =>
         transition ? transition : 'color 0.3s ease'};
-`;
+`

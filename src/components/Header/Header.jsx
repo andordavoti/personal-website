@@ -53,9 +53,7 @@ const Header = ({ topSpacing = 50 }) => {
     //Drawer
     const isMobile = useMediaQuery({ query: '(max-width: 768px)' })
     const [drawerOpen, setDrawerOpen] = useState(false)
-    const toggleDrawer = () => {
-        setDrawerOpen(!drawerOpen)
-    }
+    const toggleDrawer = () => setDrawerOpen(!drawerOpen)
 
     return <>
         <Spacer height={topSpacing + 'px'} />

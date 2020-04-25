@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const FooterWrapper = styled.footer`
     width: 100%;
@@ -13,4 +13,4 @@ export const FooterWrapper = styled.footer`
     padding: 15px 15px;
     text-align: center;
     font-weight: 500;
-`;
+`

@@ -1,8 +1,8 @@
-import React from 'react';
-import Card from './Card';
-import { Media } from '../utils/Breakpoints';
-import styled from 'styled-components';
-const { sm, md } = Media;
+import React from 'react'
+import Card from './Card'
+import { Media } from '../utils/Breakpoints'
+import styled from 'styled-components'
+const { sm, md } = Media
 
 const CardImgContainer = styled.div`
     grid-column-start: 3;
@@ -17,8 +17,8 @@ const CardImgContainer = styled.div`
     grid-column-start: 3;
     grid-column-end: span 4;
     }
+`
 
-`;
 const Img = styled.img`
     height: 100%;
     width: 100%;
@@ -29,14 +29,12 @@ const Img = styled.img`
     ${Card}:hover & {
         transform: scale(1.1);
     }
-`;
+`
 
-const CardImg = ({ src }) => {
-    return (
-        <CardImgContainer>
-            <Img src={src} />
-        </CardImgContainer>
-    );
-};
+const CardImg = ({ src }) => (
+    <CardImgContainer>
+        <Img src={src} />
+    </CardImgContainer>
+)
 
-export default CardImg;
+export default CardImg
