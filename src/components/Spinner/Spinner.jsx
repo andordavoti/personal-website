@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from 'react'
+import styled from 'styled-components'
 
 const SpinnerOverlay = styled.div`
     height: 40vh;
@@ -9,9 +9,10 @@ const SpinnerOverlay = styled.div`
     justify-content: center;
     align-items: center;
     color: #999;
-`;
+`
 
 const SpinnerContainer = styled.div`
+    margin-bottom: 20px;
     display: inline-block;
     width: 50px;
     height: 50px;
@@ -30,17 +31,13 @@ const SpinnerContainer = styled.div`
             -webkit-transform: rotate(360deg);
         }
     }
-`;
+`
 
 const Spinner = WrappedComponent => ({ isLoading, message, ...props }) => {
-    return isLoading ? (
-        <SpinnerOverlay>
-            <SpinnerContainer />
-            <span>{message ? message : 'Processing request'} </span>
-        </SpinnerOverlay>
-    ) : (
-        <WrappedComponent {...props} />
-    );
-};
+    return isLoading ? <SpinnerOverlay>
+        <SpinnerContainer />
+        <span>{message ? message : 'Processing request'} </span>
+    </SpinnerOverlay> : <WrappedComponent {...props} />
+}
 
-export default Spinner;
+export default Spinner
