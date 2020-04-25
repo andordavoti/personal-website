@@ -14,7 +14,8 @@ const CardImgContainer = styled.div`
     }
 
     @media ${md} {
-        grid-column-start: span 2
+    grid-column-start: 3;
+    grid-column-end: span 4;
     }
 
 `;

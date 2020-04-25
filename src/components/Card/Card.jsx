@@ -27,7 +27,7 @@ const Card = styled.div`
     }
     @media ${md} {
         grid-template-columns: repeat(4, 1fr);
-        height: 500px;
+        height: 350px;
     }
 `;
 
