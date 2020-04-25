@@ -1,8 +1,8 @@
-import styled from 'styled-components';
-import { Container } from '../utils/Container';
+import styled from 'styled-components'
+import { Container } from '../utils/Container'
 //Breakpoints
-import { Media } from '../utils/Breakpoints';
-const { sm } = Media;
+import { Media } from '../utils/Breakpoints'
+const { sm } = Media
 
 export const HeaderWrapper = styled.div`
     z-index: 999;
@@ -13,7 +13,8 @@ export const HeaderWrapper = styled.div`
         box-shadow: var(--nav-shadow);
         background-color: var(--navbar-bg);
     }
-`;
+`
+
 export const HeaderContainer = styled(Container)`
     width: 100%;
     display: flex;
@@ -23,13 +24,13 @@ export const HeaderContainer = styled(Container)`
     @media ${Media.sm} {
         height: 50px;
     }
-`;
+`
 
 export const Name = styled.h1`
     font-size: 2rem;
     font-weight: 500;
     color: var(--text-on-bg);
-`;
+`
 
 export const HeaderNav = styled.ul`
     display: none;
@@ -41,7 +42,8 @@ export const HeaderNav = styled.ul`
         display: flex;
         align-items: center;
     }
-`;
+`
+
 export const NavItem = styled.li`
     line-height: 1rem;
     color: var(--text-on-primary);
@@ -49,17 +51,14 @@ export const NavItem = styled.li`
     display: inline;
     text-align: center;
     font-weight: 500;
-`;
+`
 
 export const DrawerToggle = styled.div`
     @media ${sm} {
         display: none;
     }
-`;
+`
 
-export const DrawerContent = styled.div`
-    flex: 1 0 auto;
-`;
-export const DrawerFooter = styled.div`
-    flex: 0 1 auto;
-`;
+export const DrawerContent = styled.div`flex: 1 0 auto;`
+
+export const DrawerFooter = styled.div`flex: 0 1 auto;`
