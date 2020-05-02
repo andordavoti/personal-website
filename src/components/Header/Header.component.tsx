@@ -6,4 +6,5 @@ import useMediaQuery from '../../lib/useMediaQuery'
 const Header: React.FC = () => (
     useMediaQuery('only screen and (min-width: 768px)') ? <HeaderDesktop /> : <HeaderMobile />
 )
+
 export default Header
