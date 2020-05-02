@@ -19,7 +19,7 @@ const NavItemIcon: React.FC<Props> = ({ children, icon, isDropdown, dropdownHidd
     return <li className="nav-item-icon" >
         <div className="icon-button" onMouseEnter={() => isDropdown && hideDropdown(false)} onClick={() => isDropdown && hideDropdown(!dropdownHidden)}>
             <span className='label'>{label}</span>
-            <a>{icon}</a>
+            <a href='#test'>{icon}</a>
         </div>
 
         {!dropdownHidden && children}

@@ -22,7 +22,7 @@ const DropdownMenu: React.FC<Props> = ({ hideDropdown }) => {
     const dropdownRef = useRef(null)
 
     const DropdownItem: React.FC<PropsDropdownItem> = ({ children, leftIcon, link }) => {
-        return <a target='_blank' href={socialLinks[link]} className="menu-item">
+        return <a target='_blank' rel="noopener noreferrer" href={socialLinks[link]} className="menu-item">
             <span className="icon-button">{leftIcon}</span>
             {children}
         </a>
