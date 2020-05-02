@@ -1,11 +1,31 @@
 import React from 'react'
 import './NavItemText.styles.scss'
 
-const NavItemText: React.FC = ({ children }) => {
+//redux
+import { connect } from 'react-redux'
+import { hideDropdown } from '../../../../redux/dropdown/dropdown.action'
 
-    return <li className="nav-item-text">
-        <p className='text-button'>{children}</p>
+interface Props {
+    children?: JSX.Element
+    icon?: JSX.Element
+    isDropdown?: boolean
+    dropdownHidden: boolean
+    hideDropdown: (e: boolean) => void
+    label?: string
+}
+
+const NavItemText: React.FC<Props> = ({ children, icon, isDropdown, dropdownHidden, hideDropdown, label }) => {
+
+    return <li className="nav-item-text" >
+        <div className="text-button" onMouseEnter={() => isDropdown && hideDropdown(false)} onClick={() => isDropdown && hideDropdown(!dropdownHidden)}>
+            <span className='label'>{label}</span>
+            <a className='icon'>{icon}</a>
+        </div>
+
+        {!dropdownHidden && children}
     </li>
 }
 
-export default NavItemText
+const mapStateToProps = ({ dropdown: { dropdownHidden } }) => ({ dropdownHidden })
+
+export default connect(mapStateToProps, { hideDropdown })(NavItemText)

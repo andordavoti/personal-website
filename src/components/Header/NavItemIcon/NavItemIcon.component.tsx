@@ -3,7 +3,7 @@ import './NavItemIcon.styles.scss'
 
 //redux
 import { connect } from 'react-redux'
-import { hideDropdown } from '../../../../../redux/dropdown/dropdown.action'
+import { hideDropdown } from '../../../redux/dropdown/dropdown.action'
 
 interface Props {
     children: JSX.Element
@@ -17,7 +17,6 @@ const NavItemIcon: React.FC<Props> = ({ children, icon, isDropdown, dropdownHidd
 
     return <li className="nav-item-icon">
         <a
-            href="#test"
             className="icon-button"
             onMouseEnter={() => isDropdown && hideDropdown(false)}
             onClick={() => isDropdown && hideDropdown(!dropdownHidden)}>

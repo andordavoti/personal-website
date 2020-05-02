@@ -3,7 +3,7 @@ import './NavItemIcon.styles.scss'
 
 //redux
 import { connect } from 'react-redux'
-import { hideDropdown } from '../../../../../redux/dropdown/dropdown.action'
+import { hideDropdown } from '../../../../redux/dropdown/dropdown.action'
 
 interface Props {
     children: JSX.Element

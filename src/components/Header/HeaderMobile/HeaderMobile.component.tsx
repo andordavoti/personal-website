@@ -2,8 +2,8 @@ import React from 'react'
 import './HeaderMobile.styles.scss'
 
 //Components
-import Navbar from './Navbar/Navbar.component'
-import NavItemIcon from './Navbar/NavItemIcon/NavItemIcon.component'
+import Navbar from '../Navbar/Navbar.component'
+import NavItemIcon from '../NavItemIcon/NavItemIcon.component'
 import DropdownMenu from './DropdownMenu/DropdownMenu.component'
 import { GoChevronDown } from 'react-icons/go'
 

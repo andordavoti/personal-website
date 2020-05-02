@@ -37,5 +37,4 @@ const DropdownMenu: React.FC<Props> = ({ hideDropdown }) => {
     </div>
 }
 
-
 export default connect(null, { hideDropdown })(DropdownMenu)
