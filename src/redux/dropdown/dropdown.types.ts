@@ -1,0 +1,1 @@
+export const HIDE_DROPDOWN = 'HIDE_DROPDOWN'
