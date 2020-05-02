@@ -19,7 +19,7 @@ const NavItemText: React.FC<Props> = ({ children, icon, isDropdown, dropdownHidd
     return <li className="nav-item-text" >
         <div className="text-button" onMouseEnter={() => isDropdown && hideDropdown(false)} onClick={() => isDropdown && hideDropdown(!dropdownHidden)}>
             <span className='label'>{label}</span>
-            <a href='#test'>{icon}</a>
+            {icon}
         </div>
 
         {!dropdownHidden && children}
