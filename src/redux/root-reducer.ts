@@ -1,8 +1,12 @@
-import { combineReducers } from 'redux'
-import dropdownReducer from './dropdown/dropdown.reducer'
+import { combineReducers } from 'redux';
+import settingsReducer, { SettingsState } from './dropdown/settings.reducer';
 
 const rootReducer = combineReducers({
-    dropdown: dropdownReducer
-})
+    settings: settingsReducer,
+});
 
-export default rootReducer
+export default rootReducer;
+
+export interface AppState {
+    settings: SettingsState;
+}

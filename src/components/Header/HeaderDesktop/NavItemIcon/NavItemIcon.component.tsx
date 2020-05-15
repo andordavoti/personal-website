@@ -1,31 +1,45 @@
-import React from 'react'
-import './NavItemIcon.styles.scss'
+import React from 'react';
+import './NavItemIcon.styles.scss';
 
 //redux
-import { connect } from 'react-redux'
-import { hideDropdown } from '../../../../redux/dropdown/dropdown.action'
+import { connect } from 'react-redux';
+import { hideDropdown } from '../../../../redux/dropdown/settings.action';
 
 interface Props {
-    children: JSX.Element
-    icon: JSX.Element
-    isDropdown?: boolean
-    dropdownHidden: boolean
-    hideDropdown: (e: boolean) => void
-    label?: string
+    children: JSX.Element;
+    icon: JSX.Element;
+    isDropdown?: boolean;
+    dropdownHidden: boolean;
+    hideDropdown: (e: boolean) => void;
+    label?: string;
 }
 
-const NavItemIcon: React.FC<Props> = ({ children, icon, isDropdown, dropdownHidden, hideDropdown, label }) => {
+const NavItemIcon: React.FC<Props> = ({
+    children,
+    icon,
+    isDropdown,
+    dropdownHidden,
+    hideDropdown,
+    label,
+}) => {
+    return (
+        <li className="nav-item-icon">
+            <div
+                className="icon-button"
+                onMouseEnter={() => isDropdown && hideDropdown(false)}
+                onClick={() => isDropdown && hideDropdown(!dropdownHidden)}
+            >
+                <span className="label">{label}</span>
+                <a href="#test">{icon}</a>
+            </div>
 
-    return <li className="nav-item-icon" >
-        <div className="icon-button" onMouseEnter={() => isDropdown && hideDropdown(false)} onClick={() => isDropdown && hideDropdown(!dropdownHidden)}>
-            <span className='label'>{label}</span>
-            <a href='#test'>{icon}</a>
-        </div>
+            {!dropdownHidden && children}
+        </li>
+    );
+};
 
-        {!dropdownHidden && children}
-    </li>
-}
+const mapStateToProps = ({ dropdown: { dropdownHidden } }) => ({
+    dropdownHidden,
+});
 
-const mapStateToProps = ({ dropdown: { dropdownHidden } }) => ({ dropdownHidden })
-
-export default connect(mapStateToProps, { hideDropdown })(NavItemIcon)
+export default connect(mapStateToProps, { hideDropdown })(NavItemIcon);
