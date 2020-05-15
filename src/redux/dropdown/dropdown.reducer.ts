@@ -1,19 +1,19 @@
-import { HIDE_DROPDOWN } from './dropdown.types'
+import { HIDE_DROPDOWN } from './dropdown.types';
 
 const INITIAL_STATE = {
     dropdownHidden: true,
-}
+};
 
-const dropdownReducer = (state = INITIAL_STATE, action) => {
+const dropdownReducer = (state = INITIAL_STATE, action: any) => {
     switch (action.type) {
         case HIDE_DROPDOWN:
             return {
                 ...state,
-                dropdownHidden: action.payload
-            }
+                dropdownHidden: action.payload,
+            };
         default:
-            return state
+            return state;
     }
-}
+};
 
-export default dropdownReducer
+export default dropdownReducer;
