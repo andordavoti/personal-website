@@ -21,7 +21,9 @@ const NavItemIcon: React.FC<Props> = ({ children, icon, isDropdown }) => {
             <a
                 href="#test"
                 className="icon-button"
-                onMouseEnter={() => isDropdown && dispatch(hideDropdown(false))}
+                onMouseEnter={() =>
+                    dispatch(hideDropdown(isDropdown ? false : true))
+                }
                 onClick={() =>
                     isDropdown && dispatch(hideDropdown(!dropdownHidden))
                 }

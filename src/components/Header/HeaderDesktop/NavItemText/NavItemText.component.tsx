@@ -26,7 +26,9 @@ const NavItemText: React.FC<Props> = ({
         <li className="nav-item-text">
             <div
                 className="text-button"
-                onMouseEnter={() => isDropdown && dispatch(hideDropdown(false))}
+                onMouseEnter={() =>
+                    dispatch(hideDropdown(isDropdown ? false : true))
+                }
                 onClick={() =>
                     isDropdown && dispatch(hideDropdown(!dropdownHidden))
                 }
