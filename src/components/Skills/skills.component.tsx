@@ -61,7 +61,7 @@ const Skills = () => {
                 </SkillsListWrapper>
 
                 <SkillsListWrapper>
-                    <SkillsUnderTitle>Design:</SkillsUnderTitle>
+                    <SkillsUnderTitle>Design tools:</SkillsUnderTitle>
                     <SkillsList>
                         <SkillListItem>
                             <a rel="noopener noreferrer" target="_blank" href="https://www.adobe.com/products/xd.html">
