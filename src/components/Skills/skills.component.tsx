@@ -1,5 +1,13 @@
 import React from 'react';
-import { SkillsWrapper, SkillsTitle, SkillsList, SkillsUnderTitle, SkillsListsWrapper } from './skills.styles';
+import {
+    SkillsWrapper,
+    SkillsTitle,
+    SkillsList,
+    SkillsUnderTitle,
+    SkillsListsWrapper,
+    SkillsListWrapper,
+    SkillListItem,
+} from './skills.styles';
 
 const Skills = () => {
     return (
@@ -7,75 +15,79 @@ const Skills = () => {
             <SkillsTitle>Skills:</SkillsTitle>
 
             <SkillsListsWrapper>
-                <SkillsUnderTitle>Development:</SkillsUnderTitle>
-                <SkillsList>
-                    <li>
-                        <a rel="noopener noreferrer" target="_blank" href="https://reactjs.org/">
-                            React
-                        </a>
-                    </li>
-                    <li>
-                        <a rel="noopener noreferrer" target="_blank" href="https://reactnative.dev/">
-                            React Native
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            rel="noopener noreferrer"
-                            target="_blank"
-                            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-                        >
-                            Javascript
-                        </a>
-                    </li>
-                    <li>
-                        <a rel="noopener noreferrer" target="_blank" href="https://www.typescriptlang.org/">
-                            Typescript
-                        </a>
-                    </li>
-                    <li>
-                        <a rel="noopener noreferrer" target="_blank" href="https://www.w3.org/html/">
-                            HTML
-                        </a>
-                    </li>
-                    <li>
-                        <a rel="noopener noreferrer" target="_blank" href="https://sass-lang.com/">
-                            CSS &amp; SCSS
-                        </a>
-                    </li>
-                    <li>
-                        <a rel="noopener noreferrer" target="_blank" href="https://www.arduino.cc/">
-                            Arduino
-                        </a>
-                    </li>
-                </SkillsList>
+                <SkillsListWrapper>
+                    <SkillsUnderTitle>Development:</SkillsUnderTitle>
+                    <SkillsList>
+                        <SkillListItem>
+                            <a rel="noopener noreferrer" target="_blank" href="https://reactjs.org/">
+                                React
+                            </a>
+                        </SkillListItem>
+                        <SkillListItem>
+                            <a rel="noopener noreferrer" target="_blank" href="https://reactnative.dev/">
+                                React Native
+                            </a>
+                        </SkillListItem>
+                        <SkillListItem>
+                            <a
+                                rel="noopener noreferrer"
+                                target="_blank"
+                                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                            >
+                                Javascript
+                            </a>
+                        </SkillListItem>
+                        <SkillListItem>
+                            <a rel="noopener noreferrer" target="_blank" href="https://www.typescriptlang.org/">
+                                Typescript
+                            </a>
+                        </SkillListItem>
+                        <SkillListItem>
+                            <a rel="noopener noreferrer" target="_blank" href="https://www.w3.org/html/">
+                                HTML
+                            </a>
+                        </SkillListItem>
+                        <SkillListItem>
+                            <a rel="noopener noreferrer" target="_blank" href="https://sass-lang.com/">
+                                CSS &amp; SCSS
+                            </a>
+                        </SkillListItem>
+                        <SkillListItem>
+                            <a rel="noopener noreferrer" target="_blank" href="https://www.arduino.cc/">
+                                Arduino
+                            </a>
+                        </SkillListItem>
+                    </SkillsList>
+                </SkillsListWrapper>
 
-                <SkillsUnderTitle>Design:</SkillsUnderTitle>
-                <SkillsList>
-                    <li>
-                        <a rel="noopener noreferrer" target="_blank" href="https://www.adobe.com/products/xd.html">
-                            Adobe XD
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            rel="noopener noreferrer"
-                            target="_blank"
-                            href="https://www.adobe.com/products/photoshop.html"
-                        >
-                            Adobe Photoshop
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            rel="noopener noreferrer"
-                            target="_blank"
-                            href="https://www.autodesk.com/products/fusion-360/overview"
-                        >
-                            Fusion 360
-                        </a>
-                    </li>
-                </SkillsList>
+                <SkillsListWrapper>
+                    <SkillsUnderTitle>Design:</SkillsUnderTitle>
+                    <SkillsList>
+                        <SkillListItem>
+                            <a rel="noopener noreferrer" target="_blank" href="https://www.adobe.com/products/xd.html">
+                                Adobe XD
+                            </a>
+                        </SkillListItem>
+                        <SkillListItem>
+                            <a
+                                rel="noopener noreferrer"
+                                target="_blank"
+                                href="https://www.adobe.com/products/photoshop.html"
+                            >
+                                Adobe Photoshop
+                            </a>
+                        </SkillListItem>
+                        <SkillListItem>
+                            <a
+                                rel="noopener noreferrer"
+                                target="_blank"
+                                href="https://www.autodesk.com/products/fusion-360/overview"
+                            >
+                                Fusion 360
+                            </a>
+                        </SkillListItem>
+                    </SkillsList>
+                </SkillsListWrapper>
             </SkillsListsWrapper>
         </SkillsWrapper>
     );
