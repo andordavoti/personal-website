@@ -15,10 +15,10 @@ const App: React.FC = () => {
     else dispatch(setTheme('light'));
 
     return (
-        <>
+        <div className="app">
             <Header />
             <TopIntro />
-        </>
+        </div>
     );
 };
 
