@@ -11,7 +11,6 @@ const App: React.FC = () => {
     const dispatch = useDispatch();
 
     const darkModeSet = useMediaQuery('(prefers-color-scheme: dark)');
-
     if (darkModeSet) dispatch(setTheme('dark'));
     else dispatch(setTheme('light'));
 
