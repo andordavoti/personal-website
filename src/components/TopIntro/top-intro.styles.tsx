@@ -29,6 +29,6 @@ export const ProfileImg = styled.img`
     border: 2px solid white;
 
     @media ${breakpoints.s} {
-        margin-top: 2rem;
+        margin: 2rem;
     }
 `;

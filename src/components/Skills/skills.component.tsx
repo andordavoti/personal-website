@@ -2,7 +2,7 @@ import React from 'react';
 import { SkillsWrapper, SkillsList, SkillsListsWrapper, SkillsListWrapper, SkillListItem } from './skills.styles';
 
 import Typography from '@material-ui/core/Typography';
-
+import Box from '@material-ui/core/Box';
 import Link from '@material-ui/core/Link';
 
 const Skills = () => {
@@ -12,6 +12,8 @@ const Skills = () => {
                 Skills:
             </Typography>
 
+            <Box m="1rem" />
+
             <SkillsListsWrapper>
                 <SkillsListWrapper>
                     <Typography color="textPrimary" align="center" variant="h5">
@@ -19,17 +21,28 @@ const Skills = () => {
                     </Typography>
                     <SkillsList>
                         <SkillListItem>
-                            <Link rel="noopener noreferrer" target="_blank" href="https://reactjs.org/">
+                            <Link
+                                color="textSecondary"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                                href="https://reactjs.org/"
+                            >
                                 React
                             </Link>
                         </SkillListItem>
                         <SkillListItem>
-                            <Link rel="noopener noreferrer" target="_blank" href="https://reactnative.dev/">
+                            <Link
+                                color="textSecondary"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                                href="https://reactnative.dev/"
+                            >
                                 React Native
                             </Link>
                         </SkillListItem>
                         <SkillListItem>
                             <Link
+                                color="textSecondary"
                                 rel="noopener noreferrer"
                                 target="_blank"
                                 href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
@@ -38,22 +51,42 @@ const Skills = () => {
                             </Link>
                         </SkillListItem>
                         <SkillListItem>
-                            <Link rel="noopener noreferrer" target="_blank" href="https://www.typescriptlang.org/">
+                            <Link
+                                color="textSecondary"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                                href="https://www.typescriptlang.org/"
+                            >
                                 Typescript
                             </Link>
                         </SkillListItem>
                         <SkillListItem>
-                            <Link rel="noopener noreferrer" target="_blank" href="https://www.w3.org/html/">
+                            <Link
+                                color="textSecondary"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                                href="https://www.w3.org/html/"
+                            >
                                 HTML
                             </Link>
                         </SkillListItem>
                         <SkillListItem>
-                            <Link rel="noopener noreferrer" target="_blank" href="https://sass-lang.com/">
+                            <Link
+                                color="textSecondary"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                                href="https://sass-lang.com/"
+                            >
                                 CSS &amp; SCSS
                             </Link>
                         </SkillListItem>
                         <SkillListItem>
-                            <Link rel="noopener noreferrer" target="_blank" href="https://www.arduino.cc/">
+                            <Link
+                                color="textSecondary"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                                href="https://www.arduino.cc/"
+                            >
                                 Arduino
                             </Link>
                         </SkillListItem>
@@ -67,6 +100,7 @@ const Skills = () => {
                     <SkillsList>
                         <SkillListItem>
                             <Link
+                                color="textSecondary"
                                 rel="noopener noreferrer"
                                 target="_blank"
                                 href="https://www.adobe.com/products/xd.html"
@@ -76,6 +110,7 @@ const Skills = () => {
                         </SkillListItem>
                         <SkillListItem>
                             <Link
+                                color="textSecondary"
                                 rel="noopener noreferrer"
                                 target="_blank"
                                 href="https://www.adobe.com/products/photoshop.html"
@@ -85,6 +120,7 @@ const Skills = () => {
                         </SkillListItem>
                         <SkillListItem>
                             <Link
+                                color="textSecondary"
                                 rel="noopener noreferrer"
                                 target="_blank"
                                 href="https://www.autodesk.com/products/fusion-360/overview"
