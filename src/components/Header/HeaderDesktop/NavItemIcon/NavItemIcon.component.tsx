@@ -1,41 +1,20 @@
 import React from 'react';
 import './NavItemIcon.styles.scss';
-
-//redux
-import { useSelector, useDispatch } from 'react-redux';
-import { hideDropdown } from '../../../../redux/dropdown/settings.action';
-import { selectDropdown } from '../../../../redux/dropdown/settings.selectors';
+import socialLinks from '../../../../lib/socialLinks';
 
 interface Props {
-    children: JSX.Element;
     icon: JSX.Element;
-    isDropdown?: boolean;
-    label?: string;
+    link?: string;
 }
 
-const NavItemIcon: React.FC<Props> = ({
-    children,
-    icon,
-    isDropdown,
-    label,
-}) => {
-    const dropdownHidden = useSelector(selectDropdown);
-    const dispatch = useDispatch();
-
+const NavItemIcon: React.FC<Props> = ({ icon, link }) => {
     return (
         <li className="nav-item-icon">
-            <div
-                className="icon-button"
-                onMouseEnter={() => isDropdown && dispatch(hideDropdown(false))}
-                onClick={() =>
-                    isDropdown && dispatch(hideDropdown(!dropdownHidden))
-                }
-            >
-                <span className="label">{label}</span>
-                <a href="#test">{icon}</a>
+            <div className="icon-button">
+                <a rel="noopener noreferrer" target={link ? '_blank' : ''} href={link ? socialLinks[link] : null}>
+                    {icon}
+                </a>
             </div>
-
-            {!dropdownHidden && children}
         </li>
     );
 };

@@ -1,10 +1,11 @@
 import React from 'react';
 import './HeaderDesktop.styles.scss';
 
-//Components
+// Components
 import Navbar from '../Navbar/Navbar.component';
-import DropdownMenu from './DropdownMenu/DropdownMenu.component';
-import NavItemText from './NavItemText/NavItemText.component';
+import NavItemIcon from './NavItemIcon/NavItemIcon.component';
+import { MdEmail } from 'react-icons/md';
+import { FaLinkedin, FaGithub, FaHome, FaTools } from 'react-icons/fa';
 
 const HeaderDesktop: React.FC = () => (
     <div className="header">
@@ -13,12 +14,11 @@ const HeaderDesktop: React.FC = () => (
                 <h1 className="title">Andor Davoti</h1>
             </div>
 
-            <NavItemText label="Home" />
-            <NavItemText label="Projects" />
-
-            <NavItemText label="Contact" isDropdown>
-                <DropdownMenu />
-            </NavItemText>
+            <NavItemIcon icon={<FaHome />} />
+            <NavItemIcon icon={<FaTools />} />
+            <NavItemIcon link="email" icon={<MdEmail />} />
+            <NavItemIcon link="linkedin" icon={<FaLinkedin />} />
+            <NavItemIcon link="github" icon={<FaGithub />} />
         </Navbar>
     </div>
 );

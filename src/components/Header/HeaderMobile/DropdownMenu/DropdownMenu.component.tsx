@@ -31,23 +31,14 @@ const DropdownMenu: React.FC<Props> = ({ hideDropdown }) => {
     const [menuHeight, setMenuHeight] = useState<number | null>(null);
     const dropdownRef = useRef(null);
 
-    useEffect(
-        () => setMenuHeight(dropdownRef.current?.firstChild.offsetHeight),
-        []
-    );
+    useEffect(() => setMenuHeight(dropdownRef.current?.firstChild.offsetHeight), []);
 
     const calcHeight = (el: HTMLElement) => {
         const height = el.offsetHeight;
         setMenuHeight(height);
     };
 
-    const DropdownItem: React.FC<PropsDropdownItem> = ({
-        children,
-        leftIcon,
-        rightIcon,
-        goToMenu,
-        link,
-    }) => {
+    const DropdownItem: React.FC<PropsDropdownItem> = ({ children, leftIcon, rightIcon, goToMenu, link }) => {
         return (
             <a
                 target={link ? '_blank' : ''}
@@ -80,11 +71,7 @@ const DropdownMenu: React.FC<Props> = ({ hideDropdown }) => {
                     <DropdownItem leftIcon={<IoMdHome />}>Home</DropdownItem>
                     <DropdownItem leftIcon={<FaTools />}>Projects</DropdownItem>
                     <DropdownItem leftIcon={<FaSun />}>Theme</DropdownItem>
-                    <DropdownItem
-                        leftIcon={<IoMdContacts />}
-                        rightIcon={<GoChevronRight />}
-                        goToMenu="contact"
-                    >
+                    <DropdownItem leftIcon={<IoMdContacts />} rightIcon={<GoChevronRight />} goToMenu="contact">
                         Contact
                     </DropdownItem>
                 </div>
