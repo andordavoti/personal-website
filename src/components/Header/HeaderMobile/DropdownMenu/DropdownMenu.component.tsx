@@ -2,10 +2,14 @@ import React, { useState, useEffect, useRef } from 'react';
 import './DropdownMenu.styles.scss';
 
 // icons
-import { IoMdContacts, IoMdHome } from 'react-icons/io';
-import { MdEmail } from 'react-icons/md';
-import { FaLinkedin, FaGithub, FaTools } from 'react-icons/fa';
-import { GoChevronLeft, GoChevronRight } from 'react-icons/go';
+import HomeIcon from '@material-ui/icons/Home';
+import BuildIcon from '@material-ui/icons/Build';
+import EmailIcon from '@material-ui/icons/Email';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import ContactsIcon from '@material-ui/icons/Contacts';
+import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
+import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 
 import { CSSTransition } from 'react-transition-group';
 
@@ -66,9 +70,9 @@ const DropdownMenu: React.FC = () => {
                 onEnter={calcHeight}
             >
                 <div className="menu">
-                    <DropdownItem leftIcon={<IoMdHome />}>Home</DropdownItem>
-                    <DropdownItem leftIcon={<FaTools />}>Projects</DropdownItem>
-                    <DropdownItem leftIcon={<IoMdContacts />} rightIcon={<GoChevronRight />} goToMenu="contact">
+                    <DropdownItem leftIcon={<HomeIcon />}>Home</DropdownItem>
+                    <DropdownItem leftIcon={<BuildIcon />}>Projects</DropdownItem>
+                    <DropdownItem leftIcon={<ContactsIcon />} rightIcon={<ChevronRightIcon />} goToMenu="contact">
                         Contact
                     </DropdownItem>
                 </div>
@@ -82,16 +86,16 @@ const DropdownMenu: React.FC = () => {
                 onEnter={calcHeight}
             >
                 <div className="menu">
-                    <DropdownItem goToMenu="main" leftIcon={<GoChevronLeft />}>
+                    <DropdownItem goToMenu="main" leftIcon={<ChevronLeftIcon />}>
                         <h2>Contact</h2>
                     </DropdownItem>
-                    <DropdownItem link="email" leftIcon={<MdEmail />}>
+                    <DropdownItem link="email" leftIcon={<EmailIcon />}>
                         Email
                     </DropdownItem>
-                    <DropdownItem link="linkedin" leftIcon={<FaLinkedin />}>
+                    <DropdownItem link="linkedin" leftIcon={<LinkedInIcon />}>
                         LinkedIn
                     </DropdownItem>
-                    <DropdownItem link="github" leftIcon={<FaGithub />}>
+                    <DropdownItem link="github" leftIcon={<GitHubIcon />}>
                         Github
                     </DropdownItem>
                 </div>

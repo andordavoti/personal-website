@@ -1,7 +1,7 @@
 import React from 'react';
 import './NavItemIcon.styles.scss';
 
-//redux
+// redux
 import { useSelector, useDispatch } from 'react-redux';
 import { hideDropdown } from '../../../redux/dropdown/settings.action';
 import { selectDropdown } from '../../../redux/dropdown/settings.selectors';
@@ -21,12 +21,8 @@ const NavItemIcon: React.FC<Props> = ({ children, icon, isDropdown }) => {
             <a
                 href="#test"
                 className="icon-button"
-                onMouseEnter={() =>
-                    dispatch(hideDropdown(isDropdown ? false : true))
-                }
-                onClick={() =>
-                    isDropdown && dispatch(hideDropdown(!dropdownHidden))
-                }
+                onMouseEnter={() => dispatch(hideDropdown(isDropdown ? false : true))}
+                onClick={() => isDropdown && dispatch(hideDropdown(!dropdownHidden))}
             >
                 {icon}
             </a>

@@ -1,21 +1,24 @@
-import React from 'react'
-import './HeaderMobile.styles.scss'
+import React from 'react';
+import './HeaderMobile.styles.scss';
 
-//Components
-import Navbar from '../Navbar/Navbar.component'
-import NavItemIcon from '../NavItemIcon/NavItemIcon.component'
-import DropdownMenu from './DropdownMenu/DropdownMenu.component'
-import { GoChevronDown } from 'react-icons/go'
+// components
+import Navbar from '../Navbar/Navbar.component';
+import NavItemIcon from '../NavItemIcon/NavItemIcon.component';
+import DropdownMenu from './DropdownMenu/DropdownMenu.component';
+
+import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 
 const HeaderMobile: React.FC = () => (
-    <div className='header'>
+    <div className="header">
         <Navbar>
-            <div className='title-container'>
-                <h1 className='title'>Andor Davoti</h1>
+            <div className="title-container">
+                <h1 className="title">Andor Davoti</h1>
             </div>
-            <NavItemIcon isDropdown icon={<GoChevronDown />}><DropdownMenu /></NavItemIcon>
+            <NavItemIcon isDropdown icon={<KeyboardArrowDownIcon />}>
+                <DropdownMenu />
+            </NavItemIcon>
         </Navbar>
     </div>
-)
+);
 
-export default HeaderMobile
+export default HeaderMobile;

@@ -4,8 +4,13 @@ import './HeaderDesktop.styles.scss';
 // Components
 import Navbar from '../Navbar/Navbar.component';
 import NavItemIcon from './NavItemIcon/NavItemIcon.component';
-import { MdEmail } from 'react-icons/md';
-import { FaLinkedin, FaGithub, FaHome, FaTools } from 'react-icons/fa';
+
+// Icons
+import HomeIcon from '@material-ui/icons/Home';
+import BuildIcon from '@material-ui/icons/Build';
+import EmailIcon from '@material-ui/icons/Email';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import GitHubIcon from '@material-ui/icons/GitHub';
 
 const HeaderDesktop: React.FC = () => (
     <div className="header">
@@ -14,11 +19,11 @@ const HeaderDesktop: React.FC = () => (
                 <h1 className="title">Andor Davoti</h1>
             </div>
 
-            <NavItemIcon icon={<FaHome />} />
-            <NavItemIcon icon={<FaTools />} />
-            <NavItemIcon link="email" icon={<MdEmail />} />
-            <NavItemIcon link="linkedin" icon={<FaLinkedin />} />
-            <NavItemIcon link="github" icon={<FaGithub />} />
+            <NavItemIcon icon={<HomeIcon />} />
+            <NavItemIcon icon={<BuildIcon />} />
+            <NavItemIcon link="email" icon={<EmailIcon />} />
+            <NavItemIcon link="linkedin" icon={<LinkedInIcon />} />
+            <NavItemIcon link="github" icon={<GitHubIcon />} />
         </Navbar>
     </div>
 );
