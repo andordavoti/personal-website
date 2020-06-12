@@ -1,5 +1,5 @@
 export const breakpoints = {
-    s: `(min-width: 768px)`,
-    m: `(min-width: 992px)`,
-    l: `(min-width: 1140px)`,
+    s: `(max-width: 768px)`,
+    m: `(max-width: 992px)`,
+    l: `(max-width: 1140px)`,
 };

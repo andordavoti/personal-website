@@ -1,10 +1,15 @@
 import React from 'react';
-import { ProjectsWrapper, ProjectsTitle } from './projects.styles';
+import { ProjectsWrapper } from './projects.styles';
+import ProjectItem from './ProjectItem/project-item.component';
+import Typography from '@material-ui/core/Typography';
 
 const Projects: React.FC = () => {
     return (
         <ProjectsWrapper>
-            <ProjectsTitle>Projects:</ProjectsTitle>
+            <Typography color="textPrimary" align="center" variant="h3">
+                Projects:
+            </Typography>
+            <ProjectItem />
         </ProjectsWrapper>
     );
 };

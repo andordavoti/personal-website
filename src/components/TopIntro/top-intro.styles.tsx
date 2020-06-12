@@ -6,28 +6,20 @@ export const IntroWrapper = styled.div`
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 10px;
+    margin: 40px;
 
     @media ${breakpoints.s} {
-        margin: 40px;
+        margin: 10px;
     }
 `;
 
 export const IntroTextWrapper = styled.div`
-    width: 75%;
+    width: 50%;
     margin: 10px;
 
     @media ${breakpoints.s} {
-        width: 50%;
+        width: 75%;
     }
-`;
-
-export const IntroTitle = styled.h2`
-    color: white;
-`;
-
-export const IntroDesc = styled.p`
-    color: white;
 `;
 
 export const ProfileImg = styled.img`
@@ -35,4 +27,8 @@ export const ProfileImg = styled.img`
     height: 200px;
     border-radius: 50%;
     border: 2px solid white;
+
+    @media ${breakpoints.s} {
+        margin-top: 2rem;
+    }
 `;

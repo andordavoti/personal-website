@@ -10,6 +10,8 @@ import useMediaQuery from './lib/useMediaQuery';
 import { useDispatch } from 'react-redux';
 import { setTheme } from './redux/dropdown/settings.action';
 import Projects from './components/Projects/projects.component';
+import { ThemeProvider } from '@material-ui/core/styles';
+import theme from './lib/theme';
 
 const App: React.FC = () => {
     const dispatch = useDispatch();
@@ -19,12 +21,14 @@ const App: React.FC = () => {
     else dispatch(setTheme('light'));
 
     return (
-        <div className="app">
-            <Header />
-            <TopIntro />
-            <Skills />
-            <Projects />
-        </div>
+        <ThemeProvider theme={theme}>
+            <div className="app">
+                <Header />
+                <TopIntro />
+                <Skills />
+                <Projects />
+            </div>
+        </ThemeProvider>
     );
 };
 

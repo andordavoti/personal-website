@@ -33,7 +33,7 @@ const DropdownMenu: React.FC = () => {
     const [menuHeight, setMenuHeight] = useState<number | null>(null);
     const dropdownRef = useRef(null);
 
-    useEffect(() => setMenuHeight(dropdownRef.current?.firstChild.offsetHeight), []);
+    useEffect(() => setMenuHeight(dropdownRef.current.firstChild.offsetHeight), []);
 
     const calcHeight = (el: HTMLElement) => {
         const height = el.offsetHeight;

@@ -1,24 +1,22 @@
 import React from 'react';
-import {
-    SkillsWrapper,
-    SkillsTitle,
-    SkillsList,
-    SkillsUnderTitle,
-    SkillsListsWrapper,
-    SkillsListWrapper,
-    SkillListItem,
-} from './skills.styles';
+import { SkillsWrapper, SkillsList, SkillsListsWrapper, SkillsListWrapper, SkillListItem } from './skills.styles';
+
+import Typography from '@material-ui/core/Typography';
 
 import Link from '@material-ui/core/Link';
 
 const Skills = () => {
     return (
         <SkillsWrapper>
-            <SkillsTitle>Skills:</SkillsTitle>
+            <Typography color="textPrimary" align="center" variant="h3">
+                Skills:
+            </Typography>
 
             <SkillsListsWrapper>
                 <SkillsListWrapper>
-                    <SkillsUnderTitle>Development:</SkillsUnderTitle>
+                    <Typography color="textPrimary" align="center" variant="h5">
+                        Development:
+                    </Typography>
                     <SkillsList>
                         <SkillListItem>
                             <Link rel="noopener noreferrer" target="_blank" href="https://reactjs.org/">
@@ -63,7 +61,9 @@ const Skills = () => {
                 </SkillsListWrapper>
 
                 <SkillsListWrapper>
-                    <SkillsUnderTitle>Design tools:</SkillsUnderTitle>
+                    <Typography color="textPrimary" align="center" variant="h5">
+                        Design tools:
+                    </Typography>
                     <SkillsList>
                         <SkillListItem>
                             <Link
