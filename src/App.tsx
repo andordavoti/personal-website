@@ -4,7 +4,7 @@ import './index.css';
 // Components
 import Header from './components/Header/Header.component';
 import TopIntro from './components/TopIntro/top-intro.component';
-import Skills from './components/Skills/skills.component';
+import Skills from './components/Skills';
 
 import useMediaQuery from './lib/useMediaQuery';
 import { useDispatch } from 'react-redux';
