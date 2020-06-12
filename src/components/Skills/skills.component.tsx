@@ -9,6 +9,8 @@ import {
     SkillListItem,
 } from './skills.styles';
 
+import Link from '@material-ui/core/Link';
+
 const Skills = () => {
     return (
         <SkillsWrapper>
@@ -19,43 +21,43 @@ const Skills = () => {
                     <SkillsUnderTitle>Development:</SkillsUnderTitle>
                     <SkillsList>
                         <SkillListItem>
-                            <a rel="noopener noreferrer" target="_blank" href="https://reactjs.org/">
+                            <Link rel="noopener noreferrer" target="_blank" href="https://reactjs.org/">
                                 React
-                            </a>
+                            </Link>
                         </SkillListItem>
                         <SkillListItem>
-                            <a rel="noopener noreferrer" target="_blank" href="https://reactnative.dev/">
+                            <Link rel="noopener noreferrer" target="_blank" href="https://reactnative.dev/">
                                 React Native
-                            </a>
+                            </Link>
                         </SkillListItem>
                         <SkillListItem>
-                            <a
+                            <Link
                                 rel="noopener noreferrer"
                                 target="_blank"
                                 href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
                             >
                                 Javascript
-                            </a>
+                            </Link>
                         </SkillListItem>
                         <SkillListItem>
-                            <a rel="noopener noreferrer" target="_blank" href="https://www.typescriptlang.org/">
+                            <Link rel="noopener noreferrer" target="_blank" href="https://www.typescriptlang.org/">
                                 Typescript
-                            </a>
+                            </Link>
                         </SkillListItem>
                         <SkillListItem>
-                            <a rel="noopener noreferrer" target="_blank" href="https://www.w3.org/html/">
+                            <Link rel="noopener noreferrer" target="_blank" href="https://www.w3.org/html/">
                                 HTML
-                            </a>
+                            </Link>
                         </SkillListItem>
                         <SkillListItem>
-                            <a rel="noopener noreferrer" target="_blank" href="https://sass-lang.com/">
+                            <Link rel="noopener noreferrer" target="_blank" href="https://sass-lang.com/">
                                 CSS &amp; SCSS
-                            </a>
+                            </Link>
                         </SkillListItem>
                         <SkillListItem>
-                            <a rel="noopener noreferrer" target="_blank" href="https://www.arduino.cc/">
+                            <Link rel="noopener noreferrer" target="_blank" href="https://www.arduino.cc/">
                                 Arduino
-                            </a>
+                            </Link>
                         </SkillListItem>
                     </SkillsList>
                 </SkillsListWrapper>
@@ -64,27 +66,31 @@ const Skills = () => {
                     <SkillsUnderTitle>Design tools:</SkillsUnderTitle>
                     <SkillsList>
                         <SkillListItem>
-                            <a rel="noopener noreferrer" target="_blank" href="https://www.adobe.com/products/xd.html">
+                            <Link
+                                rel="noopener noreferrer"
+                                target="_blank"
+                                href="https://www.adobe.com/products/xd.html"
+                            >
                                 Adobe XD
-                            </a>
+                            </Link>
                         </SkillListItem>
                         <SkillListItem>
-                            <a
+                            <Link
                                 rel="noopener noreferrer"
                                 target="_blank"
                                 href="https://www.adobe.com/products/photoshop.html"
                             >
                                 Adobe Photoshop
-                            </a>
+                            </Link>
                         </SkillListItem>
                         <SkillListItem>
-                            <a
+                            <Link
                                 rel="noopener noreferrer"
                                 target="_blank"
                                 href="https://www.autodesk.com/products/fusion-360/overview"
                             >
                                 Fusion 360
-                            </a>
+                            </Link>
                         </SkillListItem>
                     </SkillsList>
                 </SkillsListWrapper>
