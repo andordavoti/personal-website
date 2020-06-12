@@ -9,7 +9,7 @@ import Skills from './components/Skills/skills.component';
 import useMediaQuery from './lib/useMediaQuery';
 import { useDispatch } from 'react-redux';
 import { setTheme } from './redux/dropdown/settings.action';
-import Projects from './components/Projects/projects.component';
+import Projects from './components/Projects';
 import { ThemeProvider } from '@material-ui/core/styles';
 import theme from './lib/theme';
 
