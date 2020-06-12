@@ -9,6 +9,7 @@ import Skills from './components/Skills/skills.component';
 import useMediaQuery from './lib/useMediaQuery';
 import { useDispatch } from 'react-redux';
 import { setTheme } from './redux/dropdown/settings.action';
+import Projects from './components/Projects/projects.component';
 
 const App: React.FC = () => {
     const dispatch = useDispatch();
@@ -22,6 +23,7 @@ const App: React.FC = () => {
             <Header />
             <TopIntro />
             <Skills />
+            <Projects />
         </div>
     );
 };
