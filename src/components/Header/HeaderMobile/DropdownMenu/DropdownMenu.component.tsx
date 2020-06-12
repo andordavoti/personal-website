@@ -70,7 +70,6 @@ const DropdownMenu: React.FC<Props> = ({ hideDropdown }) => {
                 <div className="menu">
                     <DropdownItem leftIcon={<IoMdHome />}>Home</DropdownItem>
                     <DropdownItem leftIcon={<FaTools />}>Projects</DropdownItem>
-                    <DropdownItem leftIcon={<FaSun />}>Theme</DropdownItem>
                     <DropdownItem leftIcon={<IoMdContacts />} rightIcon={<GoChevronRight />} goToMenu="contact">
                         Contact
                     </DropdownItem>
