@@ -21,7 +21,7 @@ export const skills = {
             link: 'https://www.w3.org/html/',
         },
         {
-            name: 'CSS &amp; SCSS',
+            name: 'CSS & SCSS',
             link: 'https://sass-lang.com/',
         },
         {
