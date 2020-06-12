@@ -1,22 +1,18 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './DropdownMenu.styles.scss';
 
-//icons
+// icons
 import { IoMdContacts, IoMdHome } from 'react-icons/io';
 import { MdEmail } from 'react-icons/md';
-import { FaLinkedin, FaGithub, FaTools, FaSun } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaTools } from 'react-icons/fa';
 import { GoChevronLeft, GoChevronRight } from 'react-icons/go';
 
 import { CSSTransition } from 'react-transition-group';
 
-//redux
-import { connect } from 'react-redux';
+// redux
+import { useDispatch } from 'react-redux';
 import { hideDropdown } from '../../../../redux/dropdown/settings.action';
 import socialLinks from '../../../../lib/socialLinks';
-
-interface Props {
-    hideDropdown: (e: boolean) => void;
-}
 
 interface PropsDropdownItem {
     children: JSX.Element | string;
@@ -26,7 +22,9 @@ interface PropsDropdownItem {
     link?: string;
 }
 
-const DropdownMenu: React.FC<Props> = ({ hideDropdown }) => {
+const DropdownMenu: React.FC = () => {
+    const dispatch = useDispatch();
+
     const [activeMenu, setActiveMenu] = useState('main');
     const [menuHeight, setMenuHeight] = useState<number | null>(null);
     const dropdownRef = useRef(null);
@@ -55,7 +53,7 @@ const DropdownMenu: React.FC<Props> = ({ hideDropdown }) => {
 
     return (
         <div
-            onMouseLeave={() => hideDropdown(true)}
+            onMouseLeave={() => dispatch(hideDropdown(true))}
             className="dropdown"
             style={{ height: menuHeight }}
             ref={dropdownRef}
@@ -102,4 +100,4 @@ const DropdownMenu: React.FC<Props> = ({ hideDropdown }) => {
     );
 };
 
-export default connect(null, { hideDropdown })(DropdownMenu);
+export default DropdownMenu;
