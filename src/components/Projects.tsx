@@ -14,6 +14,7 @@ const useStyles = makeStyles((theme) => ({
     },
     projects: {
         display: 'flex',
+        justifyContent: 'center',
         flexDirection: 'row',
     },
 }));

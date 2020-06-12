@@ -48,7 +48,7 @@ const Skills = () => {
                         Development:
                     </Typography>
                     {skills.development.map((skill) => (
-                        <Box className={styles.listItem}>
+                        <Box key={skill.name} className={styles.listItem}>
                             <SubdirectoryArrowRightIcon color="secondary" />
                             <Link
                                 className={styles.listItemLink}
@@ -68,7 +68,7 @@ const Skills = () => {
                         Design tools:
                     </Typography>
                     {skills.design.map((skill) => (
-                        <Box className={styles.listItem}>
+                        <Box key={skill.name} className={styles.listItem}>
                             <SubdirectoryArrowRightIcon color="secondary" />
                             <Link
                                 className={styles.listItemLink}
