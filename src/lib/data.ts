@@ -46,6 +46,7 @@ export const skills = {
 };
 
 export const projects = [
+    // software
     {
         date: '2020',
         name: 'Tic Tac Toe – Online',
@@ -71,10 +72,36 @@ export const projects = [
             'Open-source iOS and android app which shows the discography and tour dates for the artist G-Eazy.',
         imgUrl: require('../assets/img/g-eazy.jpg'),
     },
+    // hardware
     {
         date: '2017 - 2020',
         name: 'Electric Longboard',
         description: 'High power e-board built from scratch.',
         imgUrl: require('../assets/img/e-board.jpg'),
+    },
+    {
+        date: '2017 - 2019',
+        name: 'Privatek',
+        description: 'Co-founder and CEO of Privatek, a company with a focus on preventing webcam spying .',
+        imgUrl: require('../assets/img/privatek.jpg'),
+    },
+    {
+        date: '2017',
+        name: 'Autonomous Robot',
+        description:
+            'Simple 3D printed robot which can be controlled by a custom android app I made or move around autonomously.',
+        imgUrl: require('../assets/img/robot.jpg'),
+    },
+    {
+        date: '2016',
+        name: 'FPV Racing Drone v2',
+        description: 'Another high power racing drone built from scratch.',
+        imgUrl: require('../assets/img/racing-drone-v2.jpg'),
+    },
+    {
+        date: '2015',
+        name: 'FPV Racing Drone',
+        description: 'High power racing drone built from scratch.',
+        imgUrl: require('../assets/img/racing-drone.jpg'),
     },
 ];

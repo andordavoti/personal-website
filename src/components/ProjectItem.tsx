@@ -22,11 +22,15 @@ const useStyles = makeStyles((theme) => ({
         alignItems: 'center',
         justifyContent: 'center',
         flexDirection: 'column',
-        padding: '1rem',
+        padding: '1.5rem',
     },
     img: {
         width: 200,
         borderRadius: 10,
+    },
+    description: {
+        width: 200,
+        height: 70,
     },
 }));
 
@@ -41,7 +45,7 @@ const ProjectItem: React.FC<Props> = ({ name, description, date, imgUrl }) => {
 
             <Box m="0.5rem" />
 
-            <Typography color="textPrimary" align="center" variant="body2">
+            <Typography className={styles.description} color="textPrimary" variant="body2">
                 {description}
             </Typography>
 
