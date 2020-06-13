@@ -1,6 +1,7 @@
 import React from 'react';
 import ProjectItem from './ProjectItem';
 import Box from '@material-ui/core/Box';
+import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import { projects } from '../lib/data';
@@ -27,12 +28,15 @@ const Projects: React.FC = () => {
             <Typography color="textPrimary" align="center" variant="h3">
                 Projects:
             </Typography>
-            <Box className={styles.projects}>
+
+            <Box m="1rem" />
+
+            <Grid container className={styles.projects}>
                 {projects.map((project) => {
                     const { name, description, date, imgUrl } = project;
                     return <ProjectItem key={name} {...{ name, description, date, imgUrl }} />;
                 })}
-            </Box>
+            </Grid>
         </Box>
     );
 };
