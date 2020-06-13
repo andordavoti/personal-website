@@ -67,7 +67,7 @@ const DropdownMenu: React.FC = () => {
                 timeout={500}
                 classNames="menu-primary"
                 unmountOnExit
-                onEnter={calcHeight}
+                onEnter={calcHeight as any}
             >
                 <div className="menu">
                     <DropdownItem leftIcon={<HomeIcon />}>Home</DropdownItem>
@@ -83,7 +83,7 @@ const DropdownMenu: React.FC = () => {
                 timeout={500}
                 classNames="menu-secondary"
                 unmountOnExit
-                onEnter={calcHeight}
+                onEnter={calcHeight as any}
             >
                 <div className="menu">
                     <DropdownItem goToMenu="main" leftIcon={<ChevronLeftIcon />}>
