@@ -14,7 +14,7 @@ interface Props {
 
 const useStyles = makeStyles((theme) => ({
     container: {
-        width: 225,
+        width: 210,
         height: 'auto',
         backgroundColor: theme.palette.background.paper,
         borderRadius: 25,
