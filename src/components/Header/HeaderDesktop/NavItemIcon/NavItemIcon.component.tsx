@@ -16,7 +16,7 @@ const NavItemIcon: React.FC<Props> = ({ icon, link, toPath }) => {
             {Boolean(toPath) ? (
                 <Link className="nav-item-icon" to={toPath}>
                     <div className="icon-button">
-                        <a>{icon}</a>
+                        <div>{icon}</div>
                     </div>
                 </Link>
             ) : (
