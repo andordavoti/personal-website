@@ -80,6 +80,12 @@ export const projects = [
         imgUrl: require('../assets/img/e-board.jpg'),
     },
     {
+        date: '2017 - 2020',
+        name: 'Home Automation',
+        description: 'Built custom IOT devices and set up a custom smart home solution with Home Assistant.',
+        imgUrl: require('../assets/img/e-board.jpg'),
+    },
+    {
         date: '2017 - 2019',
         name: 'Privatek',
         description: 'Co-founder and CEO of Privatek, a company with a focus on preventing webcam spying .',
@@ -105,7 +111,7 @@ export const projects = [
         imgUrl: require('../assets/img/racing-drone-v2.jpg'),
     },
     {
-        date: '2015',
+        date: '2014 - 2015',
         name: 'FPV Racing Drone',
         description: 'High power racing drone built from scratch.',
         imgUrl: require('../assets/img/racing-drone.jpg'),
