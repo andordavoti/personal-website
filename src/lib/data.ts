@@ -100,15 +100,15 @@ export const projects = [
     },
     {
         date: '2016',
-        name: 'Camera Drone',
-        description: 'Large 500mm drone with a gimbal for stable footage.',
-        imgUrl: require('../assets/img/film-drone.jpg'),
-    },
-    {
-        date: '2016',
         name: 'FPV Racing Drone v2',
         description: 'Another high power racing drone built from scratch.',
         imgUrl: require('../assets/img/racing-drone-v2.jpg'),
+    },
+    {
+        date: '2016',
+        name: 'Camera Drone',
+        description: 'Large 500mm drone with a gimbal for stable footage.',
+        imgUrl: require('../assets/img/film-drone.jpg'),
     },
     {
         date: '2014 - 2015',
