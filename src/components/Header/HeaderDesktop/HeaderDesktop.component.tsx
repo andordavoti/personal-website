@@ -16,12 +16,12 @@ import socialLinks from '../../../lib/socialLinks';
 import { SocialLinkType } from '../../../lib/types';
 import { makeStyles } from '@material-ui/core';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles({
     center: {
         display: 'flex',
         alignItems: 'center',
     },
-}));
+});
 
 const HeaderDesktop: React.FC = () => {
     const styles = useStyles();

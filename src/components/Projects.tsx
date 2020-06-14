@@ -6,7 +6,7 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import { projects } from '../lib/data';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles({
     container: {
         display: 'flex',
         justifyContent: 'space-evenly',
@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: 'center',
         flexDirection: 'row',
     },
-}));
+});
 
 const Projects: React.FC = () => {
     const styles = useStyles();
