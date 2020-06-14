@@ -1,5 +1,5 @@
 import React from 'react';
-import HeaderDesktop from './HeaderDesktop/HeaderDesktop.component';
+import HeaderDesktop from './HeaderDesktop';
 import HeaderMobile from './HeaderMobile/HeaderMobile.component';
 import useMediaQuery from '../../lib/useMediaQuery';
 
