@@ -1,17 +1,16 @@
 import React from 'react';
 import './index.css';
 
-// Components
-import Header from './components/Header/Header.component';
-import TopIntro from './components/TopIntro/top-intro.component';
-import Skills from './components/Skills';
+import { Switch, Route } from 'react-router-dom';
 
 import useMediaQuery from './lib/useMediaQuery';
 import { useDispatch } from 'react-redux';
 import { setTheme } from './redux/dropdown/settings.action';
-import Projects from './components/Projects';
 import { ThemeProvider } from '@material-ui/core/styles';
 import theme from './lib/theme';
+import Header from './components/Header/Header.component';
+import HomePage from './pages/HomePage';
+import ProjectsPage from './pages/ProjectsPage';
 
 const App: React.FC = () => {
     const dispatch = useDispatch();
@@ -22,12 +21,11 @@ const App: React.FC = () => {
 
     return (
         <ThemeProvider theme={theme}>
-            <div className="app">
-                <Header />
-                <TopIntro />
-                <Skills />
-                <Projects />
-            </div>
+            <Header />
+            <Switch>
+                <Route exact path="/" component={HomePage} />
+                <Route exact path="/projects" component={ProjectsPage} />
+            </Switch>
         </ThemeProvider>
     );
 };

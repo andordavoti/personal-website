@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import './DropdownMenu.styles.scss';
 
 // icons
@@ -24,6 +25,7 @@ interface PropsDropdownItem {
     rightIcon?: JSX.Element;
     goToMenu?: string;
     link?: string;
+    toPath?: string;
 }
 
 const DropdownMenu: React.FC = () => {
@@ -40,18 +42,28 @@ const DropdownMenu: React.FC = () => {
         setMenuHeight(height);
     };
 
-    const DropdownItem: React.FC<PropsDropdownItem> = ({ children, leftIcon, rightIcon, goToMenu, link }) => {
+    const DropdownItem: React.FC<PropsDropdownItem> = ({ children, leftIcon, rightIcon, goToMenu, link, toPath }) => {
         return (
-            <a
-                target={link ? '_blank' : ''}
-                href={socialLinks[link]}
-                className="menu-item"
-                onClick={() => goToMenu && setActiveMenu(goToMenu)}
-            >
-                <span className="icon-button">{leftIcon}</span>
-                {children}
-                <span className="icon-right">{rightIcon}</span>
-            </a>
+            <>
+                {Boolean(toPath) ? (
+                    <Link to={toPath} className="menu-item">
+                        <span className="icon-button">{leftIcon}</span>
+                        {children}
+                        <span className="icon-right">{rightIcon}</span>
+                    </Link>
+                ) : (
+                    <a
+                        target={link ? '_blank' : ''}
+                        href={socialLinks[link]}
+                        className="menu-item"
+                        onClick={() => goToMenu && setActiveMenu(goToMenu)}
+                    >
+                        <span className="icon-button">{leftIcon}</span>
+                        {children}
+                        <span className="icon-right">{rightIcon}</span>
+                    </a>
+                )}
+            </>
         );
     };
 
@@ -70,8 +82,12 @@ const DropdownMenu: React.FC = () => {
                 onEnter={calcHeight as any}
             >
                 <div className="menu">
-                    <DropdownItem leftIcon={<HomeIcon />}>Home</DropdownItem>
-                    <DropdownItem leftIcon={<BuildIcon />}>Projects</DropdownItem>
+                    <DropdownItem toPath="/" leftIcon={<HomeIcon />}>
+                        Home
+                    </DropdownItem>
+                    <DropdownItem toPath="/projects" leftIcon={<BuildIcon />}>
+                        Projects
+                    </DropdownItem>
                     <DropdownItem leftIcon={<ContactsIcon />} rightIcon={<ChevronRightIcon />} goToMenu="contact">
                         Contact
                     </DropdownItem>

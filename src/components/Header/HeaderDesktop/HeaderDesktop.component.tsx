@@ -19,8 +19,10 @@ const HeaderDesktop: React.FC = () => (
                 <h1 className="title">Andor Davoti</h1>
             </div>
 
-            <NavItemIcon icon={<HomeIcon />} />
-            <NavItemIcon icon={<BuildIcon />} />
+            <NavItemIcon icon={<HomeIcon />} toPath="/" />
+
+            <NavItemIcon icon={<BuildIcon />} toPath="/projects" />
+
             <NavItemIcon link="email" icon={<EmailIcon />} />
             <NavItemIcon link="linkedin" icon={<LinkedInIcon />} />
             <NavItemIcon link="github" icon={<GitHubIcon />} />
