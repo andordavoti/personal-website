@@ -15,21 +15,18 @@ const NavItemIcon: React.FC<Props> = ({ icon, link, toPath }) => {
         <>
             {Boolean(toPath) ? (
                 <Link className="nav-item-icon" to={toPath}>
-                    <div className="icon-button">
-                        <div>{icon}</div>
-                    </div>
+                    <div className="icon-button">{icon}</div>
                 </Link>
             ) : (
                 <div className="nav-item-icon">
-                    <div className="icon-button">
-                        <a
-                            rel="noopener noreferrer"
-                            target={link ? '_blank' : ''}
-                            href={link ? socialLinks[link] : undefined}
-                        >
-                            {icon}
-                        </a>
-                    </div>
+                    <a
+                        className="icon-button"
+                        rel="noopener noreferrer"
+                        target={link ? '_blank' : ''}
+                        href={link ? socialLinks[link] : undefined}
+                    >
+                        {icon}
+                    </a>
                 </div>
             )}
         </>
