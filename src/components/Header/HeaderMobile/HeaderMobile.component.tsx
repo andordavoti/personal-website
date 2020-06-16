@@ -2,8 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { makeStyles, Typography, Container } from '@material-ui/core';
 
-import './HeaderMobile.styles.scss';
-
 import Navbar from '../Navbar/Navbar.component';
 import NavItemIcon from '../NavItemIcon/NavItemIcon.component';
 import DropdownMenu from './DropdownMenu/DropdownMenu.component';

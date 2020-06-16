@@ -14,7 +14,13 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import IconButton from '@material-ui/core/IconButton';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
+    header: {
+        display: 'block',
+        marginLeft: 'auto',
+        marginRight: 'auto',
+        maxWidth: theme.breakpoints.values.lg,
+    },
     titleContainer: {
         display: 'flex',
         flex: 1,
@@ -31,12 +37,12 @@ const useStyles = makeStyles({
         display: 'flex',
         alignItems: 'center',
     },
-});
+}));
 
 const HeaderDesktop: React.FC = () => {
     const styles = useStyles();
     return (
-        <div className="header">
+        <Container className={styles.header}>
             <Navbar>
                 <Container className={styles.titleContainer}>
                     <Link to="/">
@@ -84,7 +90,7 @@ const HeaderDesktop: React.FC = () => {
                     </IconButton>
                 </div>
             </Navbar>
-        </div>
+        </Container>
     );
 };
 
