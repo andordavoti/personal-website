@@ -1,24 +1,26 @@
 import React from 'react';
 import ProjectItem from './ProjectItem';
-import Box from '@material-ui/core/Box';
-import Grid from '@material-ui/core/Grid';
+import { Container, Grid, Box } from '@material-ui/core';
+
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import { projects } from '../lib/data';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
     container: {
         display: 'flex',
-        justifyContent: 'space-evenly',
+        justifyContent: 'center',
+        alignItems: 'center',
         margin: 40,
         flexDirection: 'column',
     },
     projects: {
         display: 'flex',
         justifyContent: 'center',
+        alignItems: 'center',
         flexDirection: 'row',
     },
-});
+}));
 
 const Projects: React.FC = () => {
     const styles = useStyles();
@@ -31,12 +33,14 @@ const Projects: React.FC = () => {
 
             <Box m="1rem" />
 
-            <Grid container className={styles.projects}>
-                {projects.map((project) => {
-                    const { name, description, date, imgUrl } = project;
-                    return <ProjectItem key={name} {...{ name, description, date, imgUrl }} />;
-                })}
-            </Grid>
+            <Container maxWidth="lg">
+                <Grid container className={styles.projects}>
+                    {projects.map((project) => {
+                        const { name, description, date, imgUrl } = project;
+                        return <ProjectItem key={name} {...{ name, description, date, imgUrl }} />;
+                    })}
+                </Grid>
+            </Container>
         </Box>
     );
 };
