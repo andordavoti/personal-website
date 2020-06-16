@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import Navbar from './Navbar/Navbar.component';
+import Navbar from './Navbar';
 import { SocialLinkType } from '../../lib/types';
 import { makeStyles, Typography, Container } from '@material-ui/core';
 import socialLinks from '../../lib/socialLinks';

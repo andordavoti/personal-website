@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { makeStyles, Typography, Container } from '@material-ui/core';
 
-import Navbar from '../Navbar/Navbar.component';
+import Navbar from '../Navbar';
 import NavItemIcon from '../NavItemIcon/NavItemIcon.component';
 import DropdownMenu from './DropdownMenu/DropdownMenu.component';
 
