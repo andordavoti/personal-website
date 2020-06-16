@@ -30,21 +30,19 @@ const useStyles = makeStyles({
 const HeaderMobile: React.FC = () => {
     const styles = useStyles();
     return (
-        <div className="header">
-            <Navbar>
-                <Container className={styles.titleContainer}>
-                    <Link to="/">
-                        <Typography className={styles.title} variant="h1">
-                            Andor Davoti
-                        </Typography>
-                    </Link>
-                </Container>
+        <Navbar>
+            <Container className={styles.titleContainer}>
+                <Link to="/">
+                    <Typography className={styles.title} variant="h1">
+                        Andor Davoti
+                    </Typography>
+                </Link>
+            </Container>
 
-                <NavItemIcon isDropdown icon={<KeyboardArrowDownIcon />}>
-                    <DropdownMenu />
-                </NavItemIcon>
-            </Navbar>
-        </div>
+            <NavItemIcon isDropdown icon={<KeyboardArrowDownIcon />}>
+                <DropdownMenu />
+            </NavItemIcon>
+        </Navbar>
     );
 };
 
