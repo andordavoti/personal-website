@@ -4,11 +4,7 @@ import React from 'react';
 import Projects from '../components/Projects';
 
 const ProjectsOverviewPage: React.FC = () => {
-    return (
-        <>
-            <Projects />
-        </>
-    );
+    return <Projects />;
 };
 
 export default ProjectsOverviewPage;
