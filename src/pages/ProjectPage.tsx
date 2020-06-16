@@ -54,12 +54,6 @@ const ProjectPage: React.FC = () => {
             <Box m="2rem" />
 
             <Container maxWidth="md">
-                <Typography className={styles.bold} color="textPrimary" align="left" variant="h5">
-                    Description:
-                </Typography>
-
-                <Box m="1rem" />
-
                 <Typography color="textPrimary" variant="body1">
                     Open-source cross-platform mobile (iOS and android) online multiplayer game, built using React
                     Native, Redux, Expo, Firestore and Firebase Cloud functions. Play Tic Tac Toe cross-platform. Both
@@ -70,7 +64,7 @@ const ProjectPage: React.FC = () => {
 
                 <Box m="1rem" />
 
-                <Typography color="textPrimary" variant="body1">
+                <Typography className={styles.bold} color="textPrimary" variant="body1">
                     Github repo:{' '}
                     <Link color="textSecondary" href="https://github.com/andordavoti/tic-tac-toe-app">
                         https://github.com/andordavoti/tic-tac-toe-app{' '}
@@ -79,7 +73,7 @@ const ProjectPage: React.FC = () => {
 
                 <Box m="1rem" />
 
-                <Typography color="textPrimary" variant="body1">
+                <Typography className={styles.bold} color="textPrimary" variant="body1">
                     Simple landing page and privacy policy made with preact:{' '}
                     <Link color="textSecondary" href="https://ticktacktoe-7aa6d.web.app/">
                         https://ticktacktoe-7aa6d.web.app/
@@ -184,6 +178,8 @@ const ProjectPage: React.FC = () => {
                         </Link>
                     </Typography>
                 </Box>
+
+                <Box m="2rem" />
 
                 <Box className={styles.storeButtonContainer}>
                     <Link
