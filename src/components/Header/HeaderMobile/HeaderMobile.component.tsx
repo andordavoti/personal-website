@@ -8,7 +8,10 @@ import DropdownMenu from './DropdownMenu/DropdownMenu.component';
 
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
+    header: {
+        backgroundColor: theme.palette.background.paper,
+    },
     titleContainer: {
         display: 'flex',
         flex: 1,
@@ -25,24 +28,26 @@ const useStyles = makeStyles({
         display: 'flex',
         alignItems: 'center',
     },
-});
+}));
 
 const HeaderMobile: React.FC = () => {
     const styles = useStyles();
     return (
-        <Navbar>
-            <Container className={styles.titleContainer}>
-                <Link to="/">
-                    <Typography className={styles.title} variant="h1">
-                        Andor Davoti
-                    </Typography>
-                </Link>
-            </Container>
+        <Container className={styles.header}>
+            <Navbar>
+                <Container className={styles.titleContainer}>
+                    <Link to="/">
+                        <Typography className={styles.title} variant="h1">
+                            Andor Davoti
+                        </Typography>
+                    </Link>
+                </Container>
 
-            <NavItemIcon isDropdown icon={<KeyboardArrowDownIcon />}>
-                <DropdownMenu />
-            </NavItemIcon>
-        </Navbar>
+                <NavItemIcon isDropdown icon={<KeyboardArrowDownIcon />}>
+                    <DropdownMenu />
+                </NavItemIcon>
+            </Navbar>
+        </Container>
     );
 };
 

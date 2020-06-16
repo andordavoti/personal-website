@@ -19,7 +19,8 @@ const useStyles = makeStyles((theme) => ({
         display: 'block',
         marginLeft: 'auto',
         marginRight: 'auto',
-        maxWidth: theme.breakpoints.values.lg,
+        backgroundColor: theme.palette.background.paper,
+        minWidth: '100%',
     },
     titleContainer: {
         display: 'flex',

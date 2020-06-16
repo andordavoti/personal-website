@@ -4,10 +4,10 @@ import { makeStyles, Container } from '@material-ui/core';
 const useStyles = makeStyles((theme) => ({
     NavBar: {
         height: 80,
-        backgroundColor: theme.palette.background.paper,
         padding: 0,
         paddingLeft: 30,
         paddingRight: 30,
+        maxWidth: theme.breakpoints.values.lg,
     },
     Nav: {
         maxWidth: '100%',
