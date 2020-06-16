@@ -56,17 +56,31 @@ const HeaderDesktop: React.FC = () => {
                     </IconButton>
                 </Link>
 
-                <IconButton rel="noopener noreferrer" target="_blank" href={socialLinks['email' as SocialLinkType]}>
-                    <EmailIcon />
-                </IconButton>
+                <div className={styles.center}>
+                    <IconButton rel="noopener noreferrer" target="_blank" href={socialLinks['email' as SocialLinkType]}>
+                        <EmailIcon />
+                    </IconButton>
+                </div>
 
-                <IconButton rel="noopener noreferrer" target="_blank" href={socialLinks['linkedin' as SocialLinkType]}>
-                    <LinkedInIcon />
-                </IconButton>
+                <div className={styles.center}>
+                    <IconButton
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        href={socialLinks['linkedin' as SocialLinkType]}
+                    >
+                        <LinkedInIcon />
+                    </IconButton>
+                </div>
 
-                <IconButton rel="noopener noreferrer" target="_blank" href={socialLinks['github' as SocialLinkType]}>
-                    <GitHubIcon />
-                </IconButton>
+                <div className={styles.center}>
+                    <IconButton
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        href={socialLinks['github' as SocialLinkType]}
+                    >
+                        <GitHubIcon />
+                    </IconButton>
+                </div>
             </Navbar>
         </div>
     );
