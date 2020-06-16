@@ -18,6 +18,7 @@ import { CSSTransition } from 'react-transition-group';
 import { useDispatch } from 'react-redux';
 import { hideDropdown } from '../../../../redux/dropdown/settings.action';
 import socialLinks from '../../../../lib/socialLinks';
+import { Typography } from '@material-ui/core';
 
 interface PropsDropdownItem {
     children: JSX.Element | string;
@@ -46,22 +47,26 @@ const DropdownMenu: React.FC = () => {
         return (
             <>
                 {Boolean(toPath) ? (
-                    <Link to={toPath} className="menu-item">
-                        <span className="icon-button">{leftIcon}</span>
-                        {children}
-                        <span className="icon-right">{rightIcon}</span>
-                    </Link>
+                    <Typography>
+                        <Link to={toPath} className="menu-item">
+                            <span className="icon-button">{leftIcon}</span>
+                            {children}
+                            <span className="icon-right">{rightIcon}</span>
+                        </Link>
+                    </Typography>
                 ) : (
-                    <a
-                        target={link ? '_blank' : ''}
-                        href={socialLinks[link]}
-                        className="menu-item"
-                        onClick={() => goToMenu && setActiveMenu(goToMenu)}
-                    >
-                        <span className="icon-button">{leftIcon}</span>
-                        {children}
-                        <span className="icon-right">{rightIcon}</span>
-                    </a>
+                    <Typography>
+                        <a
+                            target={link ? '_blank' : ''}
+                            href={socialLinks[link]}
+                            className="menu-item"
+                            onClick={() => goToMenu && setActiveMenu(goToMenu)}
+                        >
+                            <span className="icon-button">{leftIcon}</span>
+                            {children}
+                            <span className="icon-right">{rightIcon}</span>
+                        </a>
+                    </Typography>
                 )}
             </>
         );
