@@ -14,3 +14,7 @@ body {
     --border-radius: 8px;
     --speed: 400ms;
 }
+
+a {
+    text-decoration: none;
+}

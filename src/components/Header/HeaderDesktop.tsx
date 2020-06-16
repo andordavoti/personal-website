@@ -39,9 +39,11 @@ const HeaderDesktop: React.FC = () => {
         <div className="header">
             <Navbar>
                 <Container className={styles.titleContainer}>
-                    <Typography className={styles.title} variant="h1">
-                        Andor Davoti
-                    </Typography>
+                    <Link to="/">
+                        <Typography className={styles.title} variant="h1">
+                            Andor Davoti
+                        </Typography>
+                    </Link>
                 </Container>
 
                 <Link to="/" className={styles.center}>
