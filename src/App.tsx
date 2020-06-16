@@ -10,7 +10,7 @@ import { ThemeProvider } from '@material-ui/core/styles';
 import theme from './lib/theme';
 import Header from './components/Header/Header';
 import HomePage from './pages/HomePage';
-import ProjectsPage from './pages/ProjectsPage';
+import ProjectsOverviewPage from './pages/ProjectsOverviewPage';
 
 const App: React.FC = () => {
     const dispatch = useDispatch();
@@ -24,7 +24,7 @@ const App: React.FC = () => {
             <Header />
             <Switch>
                 <Route exact path="/" component={HomePage} />
-                <Route exact path="/projects" component={ProjectsPage} />
+                <Route exact path="/projects" component={ProjectsOverviewPage} />
             </Switch>
         </ThemeProvider>
     );

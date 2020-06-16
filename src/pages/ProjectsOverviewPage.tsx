@@ -3,7 +3,7 @@ import React from 'react';
 // components
 import Projects from '../components/Projects';
 
-const ProjectsPage: React.FC = () => {
+const ProjectsOverviewPage: React.FC = () => {
     return (
         <>
             <Projects />
@@ -11,4 +11,4 @@ const ProjectsPage: React.FC = () => {
     );
 };
 
-export default ProjectsPage;
+export default ProjectsOverviewPage;
