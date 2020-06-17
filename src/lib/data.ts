@@ -68,8 +68,8 @@ export const projects = [
                 link: 'https://github.com/andordavoti/tic-tac-toe-app',
             },
             {
-                name: 'Github repo',
-                link: 'https://github.com/andordavoti/tic-tac-toe-app',
+                name: 'Simple landing page and privacy policy made with preact',
+                link: 'https://ticktacktoe-7aa6d.web.app/',
             },
         ],
         technologies: [

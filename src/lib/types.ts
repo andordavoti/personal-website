@@ -13,8 +13,8 @@ export interface ProjectType {
     subtitle: string;
     imgUrl: string[];
     description: string;
-    links?: Link[];
-    technologies?: Link[];
-    appStoreUrl?: string;
-    playStoreUrl?: string;
+    links: Link[];
+    technologies: Link[];
+    appStoreUrl: string;
+    playStoreUrl: string;
 }
