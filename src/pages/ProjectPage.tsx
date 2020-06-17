@@ -1,7 +1,6 @@
 import React from 'react';
 import { Container, Box, Typography, Link } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-import SubdirectoryArrowRightIcon from '@material-ui/icons/SubdirectoryArrowRight';
 
 const useStyles = makeStyles((theme) => ({
     container: {
@@ -17,14 +16,9 @@ const useStyles = makeStyles((theme) => ({
         marginLeft: 'auto',
         marginRight: 'auto',
     },
-    list: {
-        color: theme.palette.primary.main,
-    },
-    listItem: {
-        marginTop: 10,
-    },
-    listItemLink: {
-        marginLeft: 5,
+    technologiesContainer: {
+        display: 'flex',
+        alignItems: 'baseline',
     },
     storeButtonContainer: {
         display: 'flex',
@@ -82,99 +76,32 @@ const ProjectPage: React.FC = () => {
 
                 <Box m="2rem" />
 
-                <Box className={styles.list}>
-                    <Typography className={styles.bold} color="textPrimary" align="left" variant="h5">
+                <Box className={styles.technologiesContainer}>
+                    <Typography className={styles.bold} color="textPrimary" variant="h5">
                         Technologies used:
                     </Typography>
 
-                    <Box m="1rem" />
-
-                    <Typography className={styles.listItem}>
-                        <SubdirectoryArrowRightIcon color="secondary" />
+                    <Typography>
                         <Link
-                            className={styles.listItemLink}
+                            style={{ marginLeft: 5 }}
                             color="textSecondary"
                             rel="noopener noreferrer"
                             target="_blank"
                             href="" // add link here
                         >
-                            Typescript
+                            Typescript{', '}
                         </Link>
                     </Typography>
 
-                    <Typography className={styles.listItem}>
-                        <SubdirectoryArrowRightIcon color="secondary" />
+                    <Typography>
                         <Link
-                            className={styles.listItemLink}
+                            style={{ marginLeft: 5 }}
                             color="textSecondary"
                             rel="noopener noreferrer"
                             target="_blank"
                             href="" // add link here
                         >
-                            React
-                        </Link>
-                    </Typography>
-
-                    <Typography className={styles.listItem}>
-                        <SubdirectoryArrowRightIcon color="secondary" />
-                        <Link
-                            className={styles.listItemLink}
-                            color="textSecondary"
-                            rel="noopener noreferrer"
-                            target="_blank"
-                            href="" // add link here
-                        >
-                            Preact
-                        </Link>
-                    </Typography>
-
-                    <Typography className={styles.listItem}>
-                        <SubdirectoryArrowRightIcon color="secondary" />
-                        <Link
-                            className={styles.listItemLink}
-                            color="textSecondary"
-                            rel="noopener noreferrer"
-                            target="_blank"
-                            href="" // add link here
-                        >
-                            Redux
-                        </Link>
-                    </Typography>
-
-                    <Typography className={styles.listItem}>
-                        <SubdirectoryArrowRightIcon color="secondary" />
-                        <Link
-                            className={styles.listItemLink}
-                            color="textSecondary"
-                            rel="noopener noreferrer"
-                            target="_blank"
-                            href="" // add link here
-                        >
-                            React Native
-                        </Link>
-                    </Typography>
-                    <Typography className={styles.listItem}>
-                        <SubdirectoryArrowRightIcon color="secondary" />
-                        <Link
-                            className={styles.listItemLink}
-                            color="textSecondary"
-                            rel="noopener noreferrer"
-                            target="_blank"
-                            href="" // add link here
-                        >
-                            Expo
-                        </Link>
-                    </Typography>
-                    <Typography className={styles.listItem}>
-                        <SubdirectoryArrowRightIcon color="secondary" />
-                        <Link
-                            className={styles.listItemLink}
-                            color="textSecondary"
-                            rel="noopener noreferrer"
-                            target="_blank"
-                            href="" // add link here
-                        >
-                            Firebase
+                            Expo{', '}
                         </Link>
                     </Typography>
                 </Box>

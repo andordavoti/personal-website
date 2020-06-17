@@ -36,8 +36,8 @@ const Projects: React.FC = () => {
             <Container maxWidth="lg">
                 <Grid container className={styles.projects}>
                     {projects.map((project) => {
-                        const { name, description, date, imgUrl } = project;
-                        return <ProjectItem key={name} {...{ name, description, date, imgUrl }} />;
+                        const { name, subtitle, date, imgUrl } = project;
+                        return <ProjectItem key={name} {...{ name, subtitle, date, imgUrl }} />;
                     })}
                 </Grid>
             </Container>

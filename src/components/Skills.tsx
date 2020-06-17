@@ -25,6 +25,8 @@ const useStyles = makeStyles((theme) => ({
     },
     listItem: {
         marginTop: 10,
+        display: 'flex',
+        alignItems: 'center',
     },
     listItemLink: {
         marginLeft: 5,

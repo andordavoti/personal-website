@@ -17,7 +17,7 @@ import { CSSTransition } from 'react-transition-group';
 // redux
 import { useDispatch } from 'react-redux';
 import { hideDropdown } from '../../../../redux/dropdown/settings.action';
-import socialLinks from '../../../../lib/socialLinks';
+import { socialLinks } from '../../../../lib/data';
 import { Typography } from '@material-ui/core';
 
 interface PropsDropdownItem {

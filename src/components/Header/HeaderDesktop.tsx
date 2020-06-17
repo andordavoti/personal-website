@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
 import { SocialLinkType } from '../../lib/types';
 import { makeStyles, Typography, Container } from '@material-ui/core';
-import socialLinks from '../../lib/socialLinks';
+import { socialLinks } from '../../lib/data';
 
 // Icons
 import HomeIcon from '@material-ui/icons/Home';
@@ -21,6 +21,9 @@ const useStyles = makeStyles((theme) => ({
         marginRight: 'auto',
         backgroundColor: theme.palette.background.paper,
         minWidth: '100%',
+        position: 'sticky',
+        top: 0,
+        zIndex: 9999,
     },
     titleContainer: {
         display: 'flex',

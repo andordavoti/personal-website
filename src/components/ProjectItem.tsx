@@ -4,13 +4,9 @@ import Box from '@material-ui/core/Box';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
+import { ProjectType } from '../lib/types';
 
-interface Props {
-    name: string;
-    description: string;
-    date: string;
-    imgUrl: string;
-}
+type Props = Pick<ProjectType, 'date' | 'name' | 'imgUrl' | 'subtitle'>;
 
 const useStyles = makeStyles((theme) => ({
     container: {
@@ -28,13 +24,13 @@ const useStyles = makeStyles((theme) => ({
         width: 200,
         borderRadius: 10,
     },
-    description: {
+    subtitle: {
         width: 200,
         height: 70,
     },
 }));
 
-const ProjectItem: React.FC<Props> = ({ name, description, date, imgUrl }) => {
+const ProjectItem: React.FC<Props> = ({ name, subtitle, date, imgUrl }) => {
     const styles = useStyles();
 
     return (
@@ -45,8 +41,8 @@ const ProjectItem: React.FC<Props> = ({ name, description, date, imgUrl }) => {
 
             <Box m="0.5rem" />
 
-            <Typography className={styles.description} color="textPrimary" variant="body2">
-                {description}
+            <Typography className={styles.subtitle} color="textPrimary" variant="body2">
+                {subtitle}
             </Typography>
 
             <Box m="0.5rem" />
@@ -57,7 +53,7 @@ const ProjectItem: React.FC<Props> = ({ name, description, date, imgUrl }) => {
 
             <Box m="0.5rem" />
 
-            <img className={styles.img} src={imgUrl} alt={name} />
+            <img className={styles.img} src={imgUrl[0]} alt={name} />
 
             <Box m="0.5rem" />
 
