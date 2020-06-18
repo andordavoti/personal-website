@@ -62,6 +62,7 @@ export const projects = [
         imgUrl: [require('../assets/img/tic-tac-toe.jpg')],
         appStoreUrl: 'https://apps.apple.com/us/app/tic-tac-toe-online/id1513609441?ls=1',
         playStoreUrl: 'https://play.google.com/store/apps/details?id=com.andordavoti.tictactoe.game',
+        webAppUrl: '/',
         links: [
             {
                 name: 'Github repo',

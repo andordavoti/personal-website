@@ -50,7 +50,7 @@ const ProjectPage: React.FC = () => {
                     </Typography>
 
                     {project.links.map((link) => (
-                        <>
+                        <div key={link.name}>
                             <Box m="1rem" />
                             <Typography className={styles.bold} color="textPrimary" variant="body1">
                                 {link.name}:{' '}
@@ -58,7 +58,7 @@ const ProjectPage: React.FC = () => {
                                     {link.link}
                                 </Link>
                             </Typography>
-                        </>
+                        </div>
                     ))}
                 </>
             );
@@ -77,7 +77,7 @@ const ProjectPage: React.FC = () => {
                         </Typography>
 
                         {project.technologies.map((technology) => (
-                            <Typography>
+                            <Typography key={technology.name}>
                                 <Link
                                     style={{ marginLeft: 5 }}
                                     color="textSecondary"
@@ -96,19 +96,15 @@ const ProjectPage: React.FC = () => {
         }
     };
 
-    const renderStoreLinks = () => {
-        if (project.appStoreUrl || project.playStoreUrl)
+    const renderAppBadges = () => {
+        if (project.appStoreUrl || project.playStoreUrl || project.webAppUrl)
             return (
                 <>
                     <Box m="2rem" />
 
                     <Box className={styles.storeButtonContainer}>
                         {project.appStoreUrl ? (
-                            <Link
-                                rel="noopener noreferrer"
-                                target="_blank"
-                                href="https://apps.apple.com/us/app/tic-tac-toe-online/id1513609441?ls=1"
-                            >
+                            <Link rel="noopener noreferrer" target="_blank" href={project.appStoreUrl}>
                                 <img
                                     className={styles.storeIcon}
                                     src={require('../assets/icons/app-store-badge.svg')}
@@ -118,15 +114,21 @@ const ProjectPage: React.FC = () => {
                         ) : null}
 
                         {project.playStoreUrl ? (
-                            <Link
-                                rel="noopener noreferrer"
-                                target="_blank"
-                                href="https://play.google.com/store/apps/details?id=com.andordavoti.tictactoe.game"
-                            >
+                            <Link rel="noopener noreferrer" target="_blank" href={project.playStoreUrl}>
                                 <img
                                     className={styles.storeIcon}
                                     src={require('../assets/icons/google-play-badge.png')}
                                     alt="Play Store Link"
+                                />
+                            </Link>
+                        ) : null}
+
+                        {project.webAppUrl ? (
+                            <Link rel="noopener noreferrer" target="_blank" href={project.webAppUrl}>
+                                <img
+                                    className={styles.storeIcon}
+                                    src={require('../assets/icons/web-app-badge.png')}
+                                    alt="Web App Link"
                                 />
                             </Link>
                         ) : null}
@@ -154,7 +156,7 @@ const ProjectPage: React.FC = () => {
 
                 {renderLinks()}
                 {renderTechnologiesUsed()}
-                {renderStoreLinks()}
+                {renderAppBadges()}
             </Container>
         </Box>
     );
