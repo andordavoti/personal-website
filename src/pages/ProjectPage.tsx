@@ -3,7 +3,7 @@ import { Container, Box, Typography, Link } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import { projects } from '../lib/data';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles({
     container: {
         margin: '2rem',
     },
@@ -12,6 +12,7 @@ const useStyles = makeStyles((theme) => ({
     },
     img: {
         width: '50%',
+        maxWidth: 500,
         borderRadius: 10,
         display: 'block',
         marginLeft: 'auto',
@@ -32,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
         height: 80,
         margin: 10,
     },
-}));
+});
 
 const ProjectPage: React.FC = () => {
     const styles = useStyles();
