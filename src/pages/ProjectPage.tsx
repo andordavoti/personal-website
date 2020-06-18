@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
         fontWeight: 'bold',
     },
     img: {
-        width: 400,
+        width: '50%',
         borderRadius: 10,
         display: 'block',
         marginLeft: 'auto',
@@ -20,6 +20,7 @@ const useStyles = makeStyles((theme) => ({
     technologiesContainer: {
         display: 'flex',
         alignItems: 'center',
+        flexWrap: 'wrap',
     },
     storeButtonContainer: {
         display: 'flex',
