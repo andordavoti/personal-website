@@ -12,6 +12,7 @@ import Header from './components/Header/Header';
 import HomePage from './pages/HomePage';
 import ProjectsOverviewPage from './pages/ProjectsOverviewPage';
 import ProjectPage from './pages/ProjectPage';
+import Footer from './components/Footer';
 
 const App: React.FC = () => {
     const dispatch = useDispatch();
@@ -28,6 +29,7 @@ const App: React.FC = () => {
                 <Route exact path="/projects" component={ProjectsOverviewPage} />
                 <Route exact path="/projects/tic-tac-toe" component={ProjectPage} />
             </Switch>
+            <Footer />
         </ThemeProvider>
     );
 };
