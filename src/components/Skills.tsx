@@ -4,7 +4,6 @@ import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import Link from '@material-ui/core/Link';
 import { makeStyles } from '@material-ui/core/styles';
-import SubdirectoryArrowRightIcon from '@material-ui/icons/SubdirectoryArrowRight';
 import { skills } from '../lib/data';
 
 const useStyles = makeStyles((theme) => ({
@@ -51,7 +50,7 @@ const Skills = () => {
                     </Typography>
                     {skills.development.map((skill) => (
                         <Typography key={skill.name} className={styles.listItem}>
-                            <SubdirectoryArrowRightIcon color="secondary" />
+                            <img style={{ width: 20 }} src={skill.imgUrl} />
                             <Link
                                 className={styles.listItemLink}
                                 color="textSecondary"
@@ -71,7 +70,7 @@ const Skills = () => {
                     </Typography>
                     {skills.design.map((skill) => (
                         <Typography key={skill.name} className={styles.listItem}>
-                            <SubdirectoryArrowRightIcon color="secondary" />
+                            <img style={{ width: 20 }} src={skill.imgUrl} />{' '}
                             <Link
                                 className={styles.listItemLink}
                                 color="textSecondary"
