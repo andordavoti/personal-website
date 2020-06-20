@@ -50,7 +50,7 @@ const Skills = () => {
                     </Typography>
                     {skills.development.map((skill) => (
                         <Typography key={skill.name} className={styles.listItem}>
-                            <img style={{ width: 20 }} src={skill.imgUrl} />
+                            <img style={{ width: 20 }} src={skill.imgUrl} alt={skill.name} />
                             <Link
                                 className={styles.listItemLink}
                                 color="textSecondary"
@@ -70,7 +70,7 @@ const Skills = () => {
                     </Typography>
                     {skills.design.map((skill) => (
                         <Typography key={skill.name} className={styles.listItem}>
-                            <img style={{ width: 20 }} src={skill.imgUrl} />{' '}
+                            <img style={{ width: 20 }} src={skill.imgUrl} alt={skill.name} />
                             <Link
                                 className={styles.listItemLink}
                                 color="textSecondary"
