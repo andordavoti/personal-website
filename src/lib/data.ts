@@ -61,9 +61,9 @@ export const skills = {
     ],
 };
 
-export const projects = [
-    {
-        id: 'tic-tac-toe',
+export const projects = {
+    tic_tac_toe: {
+        id: 'tic_tac_toe',
         name: 'Tic Tac Toe – Online',
         date: '2020',
         subtitle: 'Open-source online iOS and android Tic Tac Toe game.',
@@ -113,8 +113,8 @@ export const projects = [
             },
         ],
     },
-    {
-        id: 'fast-rhymes',
+    fast_rhymes: {
+        id: 'fast_rhymes',
         date: '2019 - 2020',
         name: 'Fast Rhymes',
         subtitle: ' Open-source minimalist iOS and android rhyme dictionary app.',
@@ -160,8 +160,8 @@ export const projects = [
             },
         ],
     },
-    {
-        id: 'ev-calculator',
+    ev_calculator: {
+        id: 'ev_calculator',
         date: '2019',
         name: 'EV Calculator',
         subtitle: 'Open-source iOS and android app to calculate the speed and range of simple EVs.',
@@ -195,8 +195,8 @@ export const projects = [
             },
         ],
     },
-    {
-        id: 'g-eazy-discography',
+    g_eazy_discography: {
+        id: 'g_eazy_discography',
         date: '2019',
         name: 'G-Eazy Discography',
         subtitle: 'Open-source iOS and android app which shows the discography and tour dates for the artist G-Eazy.',
@@ -226,8 +226,8 @@ export const projects = [
             },
         ],
     },
-    {
-        id: 'electric-longboard',
+    electric_longboard: {
+        id: 'electric_longboard',
         date: '2017 - 2020',
         name: 'Electric Longboard',
         subtitle: 'High power e-board built from scratch.',
@@ -244,8 +244,8 @@ export const projects = [
         ],
         technologies: null,
     },
-    {
-        id: 'home-automation',
+    home_automation: {
+        id: 'home_automation',
         date: '2017 - 2020',
         name: 'Home Automation',
         subtitle: 'Built custom IOT devices and set up a custom smart home solution with Home Assistant.',
@@ -266,7 +266,7 @@ export const projects = [
         ],
         technologies: null,
     },
-    {
+    privatek: {
         id: 'privatek',
         date: '2017 - 2019',
         name: 'Privatek',
@@ -284,8 +284,8 @@ export const projects = [
         ],
         technologies: null,
     },
-    {
-        id: 'esk8-calculator',
+    esk8_calculator: {
+        id: 'esk8_calculator',
         date: '2017',
         name: 'ESK8 Calculator',
         subtitle: 'Native android app to calculate the speed and range of custom built e-boards.',
@@ -306,12 +306,12 @@ export const projects = [
             },
         ],
     },
-    {
-        id: 'autonomous-robot',
+    autonomous_robot: {
+        id: 'autonomous_robot',
         date: '2017',
         name: 'Autonomous Robot',
         subtitle:
-            'Simple 3D printed robot which can be controlled by a custom android app I made or move around autonomously.',
+            '3D printed robot which can be controlled by a custom android app I made or move around autonomously.',
         description: null,
         imgUrl: [require('../assets/img/robot.jpg')],
         appStoreUrl: null,
@@ -330,8 +330,8 @@ export const projects = [
             },
         ],
     },
-    {
-        id: 'fpv-racing-drone-v2',
+    fpv_racing_drone_v2: {
+        id: 'fpv_racing_drone_v2',
         date: '2016',
         name: 'FPV Racing Drone v2',
         subtitle: 'Another high power racing drone built from scratch.',
@@ -343,8 +343,8 @@ export const projects = [
         links: null,
         technologies: null,
     },
-    {
-        id: 'camera-drone',
+    camera_drone: {
+        id: 'camera_drone',
         date: '2016',
         name: 'Camera Drone',
         subtitle: 'Large 500mm drone with a gimbal for stable footage.',
@@ -361,8 +361,8 @@ export const projects = [
         ],
         technologies: null,
     },
-    {
-        id: 'fpv-racing-drone',
+    fpv_racing_drone: {
+        id: 'fpv_racing_drone',
         date: '2014 - 2015',
         name: 'FPV Racing Drone',
         subtitle: 'High power racing drone built from scratch.',
@@ -374,4 +374,4 @@ export const projects = [
         links: null,
         technologies: null,
     },
-];
+};

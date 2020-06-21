@@ -26,7 +26,7 @@ const sendData = async () => {
 
     const collectionRef = firestore.collection('projects');
     const batch = firestore.batch();
-    projects.forEach((project) => {
+    Object.values(projects).forEach((project) => {
         const newDocRef = collectionRef.doc();
         batch.set(newDocRef, project);
     });

@@ -2,11 +2,13 @@ import React from 'react';
 import { Container, Box, Typography, Link } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import { projects } from '../lib/data';
+import { TechnologyType, LinkType } from '../lib/types';
+
+interface Props {
+    match: any;
+}
 
 const useStyles = makeStyles({
-    container: {
-        margin: '2rem',
-    },
     bold: {
         fontWeight: 'bold',
     },
@@ -20,8 +22,8 @@ const useStyles = makeStyles({
     },
     technologiesContainer: {
         display: 'flex',
-        alignItems: 'center',
         flexWrap: 'wrap',
+        flexDirection: 'column',
     },
     storeButtonContainer: {
         display: 'flex',
@@ -35,10 +37,10 @@ const useStyles = makeStyles({
     },
 });
 
-const ProjectPage: React.FC = () => {
+const ProjectDetails: React.FC<Props> = ({ match }) => {
     const styles = useStyles();
 
-    const project = projects[0];
+    const project = projects[match.params.id];
 
     const renderLinks = () => {
         if (project.links) {
@@ -50,7 +52,7 @@ const ProjectPage: React.FC = () => {
                         Links:
                     </Typography>
 
-                    {project.links.map((link) => (
+                    {project.links.map((link: LinkType) => (
                         <div key={link.name}>
                             <Box m="1rem" />
                             <Typography className={styles.bold} color="textPrimary" variant="body1">
@@ -77,20 +79,22 @@ const ProjectPage: React.FC = () => {
                             Technologies used:
                         </Typography>
 
-                        {project.technologies.map((technology) => (
-                            <Typography key={technology.name}>
-                                <Link
-                                    style={{ marginLeft: 5 }}
-                                    color="textSecondary"
-                                    rel="noopener noreferrer"
-                                    target="_blank"
-                                    href={technology.link}
-                                >
-                                    {technology.name}
-                                    {', '}
-                                </Link>
-                            </Typography>
-                        ))}
+                        <div style={{ display: 'flex', flexDirection: 'row' }}>
+                            {project.technologies.map((technology: TechnologyType, index: number) => (
+                                <Typography key={technology.name}>
+                                    <Link
+                                        style={{ marginRight: 5 }}
+                                        color="textSecondary"
+                                        rel="noopener noreferrer"
+                                        target="_blank"
+                                        href={technology.link}
+                                    >
+                                        {technology.name}
+                                        {index !== project.technologies.length - 1 ? ', ' : ''}
+                                    </Link>
+                                </Typography>
+                            ))}
+                        </div>
                     </Box>
                 </>
             );
@@ -139,7 +143,7 @@ const ProjectPage: React.FC = () => {
     };
 
     return (
-        <Box className={styles.container}>
+        <Box style={{ margin: '2rem' }}>
             <Typography color="textPrimary" align="center" variant="h3">
                 {project.name}
             </Typography>
@@ -163,4 +167,4 @@ const ProjectPage: React.FC = () => {
     );
 };
 
-export default ProjectPage;
+export default ProjectDetails;

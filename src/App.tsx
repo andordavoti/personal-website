@@ -10,9 +10,8 @@ import { ThemeProvider } from '@material-ui/core/styles';
 import theme from './lib/theme';
 import Header from './components/Header/Header';
 import HomePage from './pages/HomePage';
-import ProjectsOverviewPage from './pages/ProjectsOverviewPage';
-import ProjectPage from './pages/ProjectPage';
 import Footer from './components/Footer';
+import ProjectsPage from './pages/ProjectsPage';
 
 const App: React.FC = () => {
     const dispatch = useDispatch();
@@ -26,8 +25,7 @@ const App: React.FC = () => {
             <Header />
             <Switch>
                 <Route exact path="/" component={HomePage} />
-                <Route exact path="/projects" component={ProjectsOverviewPage} />
-                <Route exact path="/projects/tic-tac-toe" component={ProjectPage} />
+                <Route path="/projects" component={ProjectsPage} />
             </Switch>
             <Footer />
         </ThemeProvider>

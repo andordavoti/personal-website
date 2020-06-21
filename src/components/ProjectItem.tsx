@@ -2,9 +2,9 @@ import React from 'react';
 import { useHistory } from 'react-router-dom';
 
 import { Box, Button, Typography, makeStyles } from '@material-ui/core';
-import { ProjectType } from '../lib/types';
+import { ProjectObjType } from '../lib/types';
 
-type Props = Pick<ProjectType, 'id' | 'date' | 'name' | 'imgUrl' | 'subtitle'>;
+type Props = Pick<ProjectObjType, 'id' | 'date' | 'name' | 'imgUrl' | 'subtitle'>;
 
 const useStyles = makeStyles((theme) => ({
     container: {
