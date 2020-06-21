@@ -38,6 +38,12 @@ const ProjectDetails: React.FC<Props> = ({ match }) => {
 
     const project = projects[match.params.id];
 
+    const { pathname } = useLocation();
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [pathname]);
+
     const renderLinks = () => {
         if (project.links) {
             return (
