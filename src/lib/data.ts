@@ -62,7 +62,6 @@ export const skills = {
 };
 
 export const projects = [
-    // software
     {
         id: 'tic-tac-toe',
         name: 'Tic Tac Toe – Online',
@@ -181,7 +180,6 @@ export const projects = [
         subtitle: 'Open-source iOS and android app which shows the discography and tour dates for the artist G-Eazy.',
         imgUrl: [require('../assets/img/g-eazy.jpg')],
     },
-    // hardware
     {
         id: 'electric-longboard',
         date: '2017 - 2020',
@@ -200,8 +198,15 @@ export const projects = [
         id: 'privatek',
         date: '2017 - 2019',
         name: 'Privatek',
-        subtitle: 'Co-founder and CEO of Privatek, a company with a focus on preventing webcam spying .',
+        subtitle: 'Co-founder and CEO of Privatek, a company with a focus on preventing webcam spying.',
         imgUrl: [require('../assets/img/privatek.jpg')],
+    },
+    {
+        id: 'esk8-calculator',
+        date: '2017',
+        name: 'ESK8 Calculator',
+        subtitle: 'Native android app to calculate the speed and range of custom built e-boards.',
+        imgUrl: [require('../assets/img/esk8-calculator.jpg')],
     },
     {
         id: 'autonomous-robot',
