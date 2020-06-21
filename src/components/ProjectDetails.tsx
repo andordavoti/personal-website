@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Container, Box, Typography, Link } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import { projects } from '../lib/data';
 import { TechnologyType, LinkType } from '../lib/types';
+import { useLocation } from 'react-router-dom';
 
 interface Props {
     match: any;
@@ -13,8 +14,8 @@ const useStyles = makeStyles({
         fontWeight: 'bold',
     },
     img: {
-        width: '50%',
-        maxWidth: 500,
+        width: '75%',
+        maxWidth: 400,
         borderRadius: 10,
         display: 'block',
         marginLeft: 'auto',
