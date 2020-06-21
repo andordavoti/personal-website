@@ -20,11 +20,6 @@ const useStyles = makeStyles({
         marginLeft: 'auto',
         marginRight: 'auto',
     },
-    technologiesContainer: {
-        display: 'flex',
-        flexWrap: 'wrap',
-        flexDirection: 'column',
-    },
     storeButtonContainer: {
         display: 'flex',
         flexDirection: 'row',
@@ -74,12 +69,12 @@ const ProjectDetails: React.FC<Props> = ({ match }) => {
                 <>
                     <Box m="2rem" />
 
-                    <Box className={styles.technologiesContainer}>
+                    <Box style={{ display: 'flex', flexDirection: 'column' }}>
                         <Typography className={styles.bold} color="textPrimary" variant="h5">
                             Technologies used:
                         </Typography>
 
-                        <div style={{ display: 'flex', flexDirection: 'row' }}>
+                        <div style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap' }}>
                             {project.technologies.map((technology: TechnologyType, index: number) => (
                                 <Typography key={technology.name}>
                                     <Link
