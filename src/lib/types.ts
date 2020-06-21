@@ -8,6 +8,7 @@ type Link = {
 };
 
 export interface ProjectType {
+    id: string;
     date: string;
     name: string;
     subtitle: string;

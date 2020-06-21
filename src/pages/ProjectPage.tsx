@@ -55,7 +55,7 @@ const ProjectPage: React.FC = () => {
                             <Box m="1rem" />
                             <Typography className={styles.bold} color="textPrimary" variant="body1">
                                 {link.name}:{' '}
-                                <Link color="textSecondary" href={link.link}>
+                                <Link rel="noopener noreferrer" target="_blank" color="textSecondary" href={link.link}>
                                     {link.link}
                                 </Link>
                             </Typography>

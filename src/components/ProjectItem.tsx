@@ -1,12 +1,10 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 
-import Box from '@material-ui/core/Box';
-import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
-import { makeStyles } from '@material-ui/core/styles';
+import { Box, Button, Typography, makeStyles } from '@material-ui/core';
 import { ProjectType } from '../lib/types';
 
-type Props = Pick<ProjectType, 'date' | 'name' | 'imgUrl' | 'subtitle'>;
+type Props = Pick<ProjectType, 'id' | 'date' | 'name' | 'imgUrl' | 'subtitle'>;
 
 const useStyles = makeStyles((theme) => ({
     container: {
@@ -30,8 +28,10 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-const ProjectItem: React.FC<Props> = ({ name, subtitle, date, imgUrl }) => {
+const ProjectItem: React.FC<Props> = ({ id, name, subtitle, date, imgUrl }) => {
     const styles = useStyles();
+
+    const history = useHistory();
 
     return (
         <Box className={styles.container} m={3}>
@@ -57,7 +57,7 @@ const ProjectItem: React.FC<Props> = ({ name, subtitle, date, imgUrl }) => {
 
             <Box m="0.5rem" />
 
-            <Button color="primary" variant="outlined">
+            <Button color="primary" variant="outlined" onClick={() => history.push(`projects/${id}`)}>
                 Learn more
             </Button>
         </Box>
