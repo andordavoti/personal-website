@@ -22,7 +22,7 @@ export interface ProjectObjType {
     name: string;
     subtitle: string;
     imgUrl: string;
-    description: string;
+    description: string[];
     links: LinkType[];
     technologies: TechnologyType[];
     appStoreUrl: string;

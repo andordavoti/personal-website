@@ -48,7 +48,7 @@ const ProjectDetails: React.FC<Props> = ({ match }) => {
         if (project.links) {
             return (
                 <>
-                    <Box m="2rem" />
+                    <Box m="1rem" />
 
                     <Typography className={styles.bold} color="textPrimary" variant="h5">
                         Links:
@@ -157,10 +157,14 @@ const ProjectDetails: React.FC<Props> = ({ match }) => {
             <Box m="2rem" />
 
             <Container maxWidth="md">
-                <Typography color="textPrimary" variant="body1">
-                    {project.description}
-                </Typography>
-
+                {project.description.map((paragraph: string) => (
+                    <div key={paragraph}>
+                        <Typography color="textPrimary" variant="body1">
+                            {paragraph}
+                        </Typography>
+                        <Box m="1rem" />
+                    </div>
+                ))}
                 {renderLinks()}
                 {renderTechnologiesUsed()}
                 {renderAppBadges()}
