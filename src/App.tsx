@@ -3,7 +3,6 @@ import './index.css';
 
 import { Switch, Route } from 'react-router-dom';
 
-import useMediaQuery from './lib/useMediaQuery';
 import { useDispatch } from 'react-redux';
 import { setTheme } from './redux/dropdown/settings.action';
 import { ThemeProvider } from '@material-ui/core/styles';
@@ -12,6 +11,7 @@ import Header from './components/Header/Header';
 import HomePage from './pages/HomePage';
 import Footer from './components/Footer';
 import ProjectsPage from './pages/ProjectsPage';
+import { useMediaQuery } from '@material-ui/core';
 
 const App: React.FC = () => {
     const dispatch = useDispatch();
