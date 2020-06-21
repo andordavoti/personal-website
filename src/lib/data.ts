@@ -316,7 +316,12 @@ export const projects = {
         appStoreUrl: null,
         playStoreUrl: 'https://play.google.com/store/apps/details?id=com.andordavoti.esk8speedandrangecalculator',
         webAppUrl: null,
-        links: null,
+        links: [
+            {
+                name: 'EV Calculator',
+                link: 'https://andordavoti.com/projects/ev_calculator',
+            },
+        ],
         technologies: [
             {
                 name: 'Java',
