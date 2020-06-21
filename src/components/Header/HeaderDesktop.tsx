@@ -3,16 +3,12 @@ import { Link } from 'react-router-dom';
 
 import Navbar from './Navbar';
 import { SocialLinkType } from '../../lib/types';
-import { makeStyles, Typography, Container } from '@material-ui/core';
+import { makeStyles, Typography, Container, IconButton } from '@material-ui/core';
 import { socialLinks } from '../../lib/data';
 
-// Icons
-import HomeIcon from '@material-ui/icons/Home';
-import BuildIcon from '@material-ui/icons/Build';
 import EmailIcon from '@material-ui/icons/Email';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
-import IconButton from '@material-ui/core/IconButton';
 
 const useStyles = makeStyles((theme) => ({
     header: {
@@ -55,18 +51,6 @@ const HeaderDesktop: React.FC = () => {
                         </Typography>
                     </Link>
                 </Container>
-
-                <Link to="/" className={styles.center}>
-                    <IconButton>
-                        <HomeIcon />
-                    </IconButton>
-                </Link>
-
-                <Link to="/projects" className={styles.center}>
-                    <IconButton>
-                        <BuildIcon />
-                    </IconButton>
-                </Link>
 
                 <div className={styles.center}>
                     <IconButton rel="noopener noreferrer" target="_blank" href={socialLinks['email' as SocialLinkType]}>

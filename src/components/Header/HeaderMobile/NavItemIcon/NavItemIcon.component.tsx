@@ -3,8 +3,8 @@ import './NavItemIcon.styles.scss';
 
 // redux
 import { useSelector, useDispatch } from 'react-redux';
-import { hideDropdown } from '../../../redux/dropdown/settings.action';
-import { selectDropdown } from '../../../redux/dropdown/settings.selectors';
+import { hideDropdown } from '../../../../redux/dropdown/settings.action';
+import { selectDropdown } from '../../../../redux/dropdown/settings.selectors';
 
 interface Props {
     children: JSX.Element;

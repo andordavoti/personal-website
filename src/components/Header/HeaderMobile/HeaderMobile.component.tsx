@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { makeStyles, Typography, Container } from '@material-ui/core';
 
 import Navbar from '../Navbar';
-import NavItemIcon from '../NavItemIcon/NavItemIcon.component';
+import NavItemIcon from './NavItemIcon/NavItemIcon.component';
 import DropdownMenu from './DropdownMenu/DropdownMenu.component';
 
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
