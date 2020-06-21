@@ -120,8 +120,8 @@ export const projects = {
         subtitle: ' Open-source minimalist iOS and android rhyme dictionary app.',
         description: null,
         imgUrl: [require('../assets/img/fast-rhymes.jpg')],
-        appStoreUrl: 'https://apps.apple.com/us/app/tic-tac-toe-online/id1513609441?ls=1',
-        playStoreUrl: 'https://play.google.com/store/apps/details?id=com.andordavoti.tictactoe.game',
+        appStoreUrl: 'https://apps.apple.com/us/app/fast-rhymes/id1492575811?ls=1',
+        playStoreUrl: 'https://play.google.com/store/apps/details?id=rhyme.dictionary.mobileapp',
         webAppUrl: null,
         links: [
             {
