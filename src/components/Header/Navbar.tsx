@@ -26,7 +26,7 @@ const Navbar: React.FC = ({ children }) => {
         <Container
             component="nav"
             className={styles.NavBar}
-            style={{ height: useMediaQuery('only screen and (min-width: 768px)') ? 80 : 100 }}
+            style={{ height: useMediaQuery('only screen and (min-width: 427px)') ? 80 : 100 }}
         >
             <Container component="ul" className={styles.Nav}>
                 {children}

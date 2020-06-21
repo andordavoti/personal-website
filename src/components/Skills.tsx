@@ -5,6 +5,7 @@ import Box from '@material-ui/core/Box';
 import Link from '@material-ui/core/Link';
 import { makeStyles } from '@material-ui/core/styles';
 import { skills } from '../lib/data';
+import { useMediaQuery } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
     container: {
@@ -64,7 +65,10 @@ const Skills = () => {
                     ))}
                 </Box>
 
-                <Box className={styles.list}>
+                <Box
+                    className={styles.list}
+                    style={{ marginTop: useMediaQuery('only screen and (max-width: 420px)') ? '2rem' : 10 }}
+                >
                     <Typography color="textPrimary" variant="h5">
                         Design tools:
                     </Typography>
