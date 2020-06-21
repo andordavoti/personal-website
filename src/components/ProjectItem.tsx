@@ -53,7 +53,7 @@ const ProjectItem: React.FC<Props> = ({ id, name, subtitle, date, imgUrl }) => {
 
             <Box m="0.5rem" />
 
-            <img className={styles.img} src={imgUrl[0]} alt={name} />
+            <img className={styles.img} src={imgUrl} alt={name} />
 
             <Box m="0.5rem" />
 

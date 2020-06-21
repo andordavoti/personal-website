@@ -21,7 +21,7 @@ export interface ProjectObjType {
     date: string;
     name: string;
     subtitle: string;
-    imgUrl: string[];
+    imgUrl: string;
     description: string;
     links: LinkType[];
     technologies: TechnologyType[];

@@ -152,7 +152,7 @@ const ProjectDetails: React.FC<Props> = ({ match }) => {
 
             <Box m="2rem" />
 
-            <img className={styles.img} src={project.imgUrl[0]} alt="tic-tac-toe" />
+            <img className={styles.img} src={project.imgUrl} alt="tic-tac-toe" />
 
             <Box m="2rem" />
 
