@@ -68,12 +68,12 @@ export const projects = {
         date: '2020',
         subtitle: 'Open-source online iOS and android Tic Tac Toe game.',
         description: [
-            "Open-source, cross-platform mobile (iOS and Android) online multiplayer game, built using React Native, Redux, Expo, Firestore, and Firebase Cloud functions. Play Tic Tac Toe cross-platform, either online or in-person with your friends. Registration is not needed, instead, anonymous lobby id's are utilized. Therefore only you and the one you're playing with online know who is playing with who.",
+            "Open-source, tri-platform (iOS, Android and web) online multiplayer game, built using React Native, Redux, Expo, Firestore, and Firebase Cloud functions. Play Tic Tac Toe cross-platform, either online or in-person with your friends. Registration is not needed, instead, anonymous lobby id's are utilized. Therefore only you and the one you're playing with online know who is playing with who.",
         ],
         imgUrl: require('../assets/img/tic-tac-toe.jpg'),
         appStoreUrl: 'https://apps.apple.com/us/app/tic-tac-toe-online/id1513609441?ls=1',
         playStoreUrl: 'https://play.google.com/store/apps/details?id=com.andordavoti.tictactoe.game',
-        webAppUrl: null,
+        webAppUrl: 'https://tictactoe.no/',
         links: [
             {
                 name: 'Github repo',
