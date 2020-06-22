@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'MustangW01-Regular';
+    src: local('MustangW01-Regular'), url(./fonts/mustang.ttf) format('truetype');
+}
+
 body {
     margin: 0;
     background: #151616;
