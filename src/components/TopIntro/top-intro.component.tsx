@@ -20,7 +20,7 @@ const TopIntro: React.FC = () => {
                     can check out bellow.
                 </Typography>
             </IntroTextWrapper>
-            <ProfileImg className="profile-img" src={require('../../assets/img/profile_img.png')} alt="profile" />
+            <ProfileImg className="profile-img" src={require('../../assets/img/profile_img.jpg')} alt="profile" />
         </IntroWrapper>
     );
 };
