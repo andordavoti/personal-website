@@ -14,11 +14,13 @@ export const IntroWrapper = styled.div`
 `;
 
 export const IntroTextWrapper = styled.div`
-    width: 50%;
+    width: 40%;
     margin: 10px;
+    margin-right: 50px;
 
     @media ${breakpoints.s} {
         width: 75%;
+        margin-right: 10px;
     }
 `;
 
