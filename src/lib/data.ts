@@ -319,7 +319,7 @@ export const projects = {
         links: [
             {
                 name: 'EV Calculator',
-                link: 'https://andordavoti.com/projects/ev_calculator',
+                link: 'https://andordavoti.com/ev_calculator',
             },
         ],
         technologies: [

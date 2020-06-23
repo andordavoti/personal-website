@@ -10,8 +10,8 @@ import theme from './lib/theme';
 import Header from './components/Header/Header';
 import HomePage from './pages/HomePage';
 import Footer from './components/Footer';
-import ProjectsPage from './pages/ProjectsPage';
 import { useMediaQuery } from '@material-ui/core';
+import ProjectDetailsPage from './pages/ProjectDetailsPage';
 
 const App: React.FC = () => {
     const dispatch = useDispatch();
@@ -25,7 +25,7 @@ const App: React.FC = () => {
             <Header />
             <Switch>
                 <Route exact path="/" component={HomePage} />
-                <Route path="/projects" component={ProjectsPage} />
+                <Route path="/:projectId" component={ProjectDetailsPage} />
             </Switch>
             <Footer />
         </ThemeProvider>

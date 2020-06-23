@@ -57,7 +57,7 @@ const ProjectItem: React.FC<Props> = ({ id, name, subtitle, date, imgUrl }) => {
 
             <Box m="0.5rem" />
 
-            <Button color="primary" variant="outlined" onClick={() => history.push(`projects/${id}`)}>
+            <Button color="primary" variant="outlined" onClick={() => history.push(`/${id}`)}>
                 Learn more
             </Button>
         </Box>

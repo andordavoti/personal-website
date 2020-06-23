@@ -33,10 +33,10 @@ const useStyles = makeStyles({
     },
 });
 
-const ProjectDetails: React.FC<Props> = ({ match }) => {
+const ProjectDetailsPage: React.FC<Props> = ({ match }) => {
     const styles = useStyles();
 
-    const project = projects[match.params.id];
+    const project = projects[match.params.projectId];
 
     const { pathname } = useLocation();
 
@@ -173,4 +173,4 @@ const ProjectDetails: React.FC<Props> = ({ match }) => {
     );
 };
 
-export default ProjectDetails;
+export default ProjectDetailsPage;
