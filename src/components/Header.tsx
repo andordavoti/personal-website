@@ -2,9 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import Navbar from './Navbar';
-import { SocialLinkType } from '../../lib/types';
+import { SocialLinkType } from '../lib/types';
 import { makeStyles, Typography, Container, IconButton } from '@material-ui/core';
-import { socialLinks } from '../../lib/data';
+import { socialLinks } from '../lib/data';
 
 import EmailIcon from '@material-ui/icons/Email';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
