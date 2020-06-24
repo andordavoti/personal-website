@@ -12,6 +12,7 @@ import HomePage from './pages/HomePage';
 import Footer from './components/Footer';
 import { useMediaQuery } from '@material-ui/core';
 import ProjectDetailsPage from './pages/ProjectDetailsPage';
+import ErrorBoundary from './components/ErrorBoundary';
 
 const App: React.FC = () => {
     const dispatch = useDispatch();
@@ -23,10 +24,12 @@ const App: React.FC = () => {
     return (
         <ThemeProvider theme={theme}>
             <Header />
-            <Switch>
-                <Route exact path="/" component={HomePage} />
-                <Route path="/:projectId" component={ProjectDetailsPage} />
-            </Switch>
+            <ErrorBoundary>
+                <Switch>
+                    <Route exact path="/" component={HomePage} />
+                    <Route path="/:projectId" component={ProjectDetailsPage} />
+                </Switch>
+            </ErrorBoundary>
             <Footer />
         </ThemeProvider>
     );
