@@ -1,17 +1,24 @@
 import React from 'react';
 import { Component } from 'react';
-import { Container, Box, Typography, Link, Button } from '@material-ui/core';
+import { Container, Box, Typography, Button } from '@material-ui/core';
 
 class ErrorBoundary extends Component {
     state = { hasError: false };
 
     componentDidCatch(error, info) {
-        console.log(error);
-        console.log(info);
+        if (process.env.NODE_ENV === 'development') {
+            // tslint:disable-next-line: no-console
+            console.log(error);
+            // tslint:disable-next-line: no-console
+            console.log(info);
+        }
     }
 
     static getDerivedStateFromError(error) {
-        console.log(error);
+        if (process.env.NODE_ENV === 'development') {
+            // tslint:disable-next-line: no-console
+            console.log(error);
+        }
 
         return {
             hasError: true,
@@ -38,7 +45,7 @@ class ErrorBoundary extends Component {
                             marginRight: 'auto',
                         }}
                         src="https://i.imgur.com/A040Lxr.png"
-                        alt="error-image"
+                        alt=""
                     />
 
                     <Box m="2rem" />
