@@ -1,7 +1,7 @@
 import React from 'react';
 
 // components
-import TopIntro from '../components/TopIntro/top-intro.component';
+import TopIntro from '../components/TopIntro';
 import Skills from '../components/Skills';
 import Projects from '../components/ProjectsGrid';
 
