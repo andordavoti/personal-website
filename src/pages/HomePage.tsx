@@ -7,11 +7,11 @@ import Projects from '../components/ProjectsGrid';
 
 const HomePage: React.FC = () => {
     return (
-        <>
+        <div style={{ display: 'block', marginLeft: 'auto', marginRight: 'auto', maxWidth: 1200 }}>
             <TopIntro />
             <Skills />
             <Projects />
-        </>
+        </div>
     );
 };
 
