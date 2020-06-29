@@ -130,7 +130,7 @@ export const projects = {
         name: 'Den store bokmålsordboka',
         subtitle: 'Took part in developing an iOS and Android app for the largest Norwegian dictionary.',
         description: [
-            'Den store bokmålsordboka is the largest Norwegian dictionary, with over 180 000 words. At Ovitas AS I was part of developing the app, managing the external testing and making the landing page.',
+            'Den store bokmålsordboka is the largest Norwegian dictionary, with over 180 000 words. At Ovitas AS I took part in developing the mobile app, managing the external testing and making the landing page.',
             'The app will become available in august.',
         ],
         imgUrl: require('../assets/img/bokmalsordboka.jpg'),
@@ -225,7 +225,7 @@ export const projects = {
         name: 'HunNor Dictionary',
         subtitle: 'Took part in developing an iOS and Android app for an open-source Norwegian-Hungarian dictionary.',
         description: [
-            'The HunNor Dictionary is an open-source Norwegian-Hungarian dictionary. At Ovitas AS I was part of developing the mobile app.',
+            'The HunNor Dictionary is an open-source Norwegian-Hungarian dictionary. At Ovitas AS I took part in developing the mobile app.',
         ],
         imgUrl: require('../assets/img/hunnor.jpg'),
         appStoreUrl: 'https://itunes.apple.com/us/app/hunnor/id1305770091',
