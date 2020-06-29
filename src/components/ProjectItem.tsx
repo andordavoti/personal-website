@@ -8,7 +8,7 @@ type Props = Pick<ProjectObjType, 'id' | 'date' | 'name' | 'imgUrl' | 'subtitle'
 
 const useStyles = makeStyles((theme) => ({
     container: {
-        width: 210,
+        width: 250,
         height: 'auto',
         backgroundColor: theme.palette.background.paper,
         borderRadius: 25,
@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
         padding: '1.5rem',
     },
     img: {
-        width: 200,
+        width: 225,
         borderRadius: 10,
     },
     subtitle: {
