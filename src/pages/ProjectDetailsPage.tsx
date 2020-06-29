@@ -59,7 +59,13 @@ const ProjectDetailsPage: React.FC<Props> = ({ match }) => {
                             <Box m="1rem" />
                             <Typography className={styles.bold} color="textPrimary" variant="body1">
                                 {link.name}:{' '}
-                                <Link rel="noopener noreferrer" target="_blank" color="textSecondary" href={link.link}>
+                                <Link
+                                    style={{ wordWrap: 'break-word' }}
+                                    rel="noopener noreferrer"
+                                    target="_blank"
+                                    color="textSecondary"
+                                    href={link.link}
+                                >
                                     {link.link}
                                 </Link>
                             </Typography>
