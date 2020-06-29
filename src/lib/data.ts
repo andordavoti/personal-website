@@ -66,7 +66,7 @@ export const projects = {
         id: 'tic_tac_toe',
         name: 'Tic Tac Toe – Online',
         date: '2020',
-        subtitle: 'Open-source online iOS and android Tic Tac Toe game.',
+        subtitle: 'Open-source online iOS and Android Tic Tac Toe game.',
         description: [
             "Open-source, tri-platform (iOS, Android and web) online multiplayer game, built using React Native, Redux, Expo, Firestore, and Firebase Cloud functions. Play Tic Tac Toe cross-platform, either online or in-person with your friends. Registration is not needed, instead, anonymous lobby id's are utilized. Therefore only you and the one you're playing with online know who is playing with who.",
         ],
@@ -124,13 +124,59 @@ export const projects = {
             },
         ],
     },
+    den_store_bokmalsordboka: {
+        id: 'den_store_bokmalsordboka',
+        date: '2019 - 2020',
+        name: 'Den store bokmålsordboka',
+        subtitle: 'Took part in developing an iOS and Android app for the largest norwegian dictionary.',
+        description: [
+            'Den store bokmålsordboka is the largest Norwegian dictionary, with over 180 000 words. At Ovitas AS I was part of developing the app, managing the external testing and making the landing page.',
+            'The app will become available in august.',
+        ],
+        imgUrl: require('../assets/img/bokmalsordboka.jpg'),
+        appStoreUrl: null,
+        playStoreUrl: null,
+        webAppUrl: null,
+        links: [
+            {
+                name: 'Landing page',
+                link: 'https://www.denstorebokmålsordboka.no/appen',
+            },
+        ],
+        technologies: [
+            {
+                name: 'React',
+                link: 'https://reactjs.org/',
+            },
+            {
+                name: 'Redux',
+                link: 'https://redux.js.org/',
+            },
+            {
+                name: 'Expo',
+                link: 'https://expo.io/',
+            },
+            {
+                name: 'React Native',
+                link: 'https://reactnative.dev/',
+            },
+            {
+                name: 'Typescript',
+                link: 'https://www.typescriptlang.org/',
+            },
+            {
+                name: 'SQLite',
+                link: 'https://www.sqlite.org/index.html',
+            },
+        ],
+    },
     fast_rhymes: {
         id: 'fast_rhymes',
         date: '2019 - 2020',
         name: 'Fast Rhymes',
-        subtitle: ' Open-source minimalist iOS and android rhyme dictionary app.',
+        subtitle: 'Open-source minimalist iOS and Android rhyme dictionary app.',
         description: [
-            "Open-source, cross-platform mobile (iOS and android) rhyme dictionary app, built using React Native, Redux, Expo, and the Datamuse API. Find words that rhyme, associations, words with similar meaning, words with similar spelling, etc. You can sort search results by syllables or sort by the most relevant words. It was built to be fast and convenient, with a minimalist design to not be in the way of the artists' creative process.",
+            "Open-source, cross-platform mobile (iOS and Android) rhyme dictionary app, built using React Native, Redux, Expo, and the Datamuse API. Find words that rhyme, associations, words with similar meaning, words with similar spelling, etc. You can sort search results by syllables or sort by the most relevant words. It was built to be fast and convenient, with a minimalist design to not be in the way of the artists' creative process.",
         ],
         imgUrl: require('../assets/img/fast-rhymes.jpg'),
         appStoreUrl: 'https://apps.apple.com/us/app/fast-rhymes/id1492575811?ls=1',
@@ -177,9 +223,9 @@ export const projects = {
         id: 'ev_calculator',
         date: '2019',
         name: 'EV Calculator',
-        subtitle: 'Open-source iOS and android app to calculate the speed and range of simple EVs.',
+        subtitle: 'Open-source iOS and Android app to calculate the speed and range of simple EVs.',
         description: [
-            'This is the continuation of one of my old Android app projects, "ESK8 Calculator". Since I switched to iOS, I wanted the app for both platforms. I also got feedback from my users asking for a "simple mode" with dropdowns with standard approximate values. Therefore I decided to recreate the app with React Native since I was learning it at the time. EV Calculator is an open-source, cross-platform mobile (iOS and android) calculator app, built using React Native, Redux, and Expo. When building an electric longboard, go-kart, or bike, you often need to recalculate the speed and range of your vehicle throughout the build process. Instead of needing to remember a formula, enter the standard variables necessary for the calculation and examine how these variables affect the speed and range.',
+            'This is the continuation of one of my old Android app projects, "ESK8 Calculator". Since I switched to iOS, I wanted the app for both platforms. I also got feedback from my users asking for a "simple mode" with dropdowns with standard approximate values. Therefore I decided to recreate the app with React Native since I was learning it at the time. EV Calculator is an open-source, cross-platform mobile (iOS and Android) calculator app, built using React Native, Redux, and Expo. When building an electric longboard, go-kart, or bike, you often need to recalculate the speed and range of your vehicle throughout the build process. Instead of needing to remember a formula, enter the standard variables necessary for the calculation and examine how these variables affect the speed and range.',
         ],
         imgUrl: require('../assets/img/ev-calculator.jpg'),
         appStoreUrl: 'https://apps.apple.com/no/app/ev-calculator-speed-range/id1489181082',
@@ -214,9 +260,9 @@ export const projects = {
         id: 'g_eazy_discography',
         date: '2019',
         name: 'G-Eazy Discography',
-        subtitle: 'Open-source iOS and android app which shows the discography and tour dates for the artist G-Eazy.',
+        subtitle: 'Open-source iOS and Android app which shows the discography and tour dates for the artist G-Eazy.',
         description: [
-            "Open-source, cross-platform mobile (iOS and android) app to display the discography and tour dates for the artist G-Eazy, built using React Native, Redux, Expo, and the Bandsintown API. Later I lost access to the Bandsintown API since apparently, only people working directly with the artist should have access to it. So they were quite surprised about why they gave me three months' access. Anyways, it was a great learning experience as it was my first React Native project.",
+            "Open-source, cross-platform mobile (iOS and Android) app to display the discography and tour dates for the artist G-Eazy, built using React Native, Redux, Expo, and the Bandsintown API. Later I lost access to the Bandsintown API since apparently, only people working directly with the artist should have access to it. So they were quite surprised about why they gave me three months' access. Anyways, it was a great learning experience as it was my first React Native project.",
         ],
         imgUrl: require('../assets/img/g-eazy.jpg'),
         appStoreUrl: null,
@@ -316,7 +362,7 @@ export const projects = {
         id: 'esk8_calculator',
         date: '2017',
         name: 'ESK8 Calculator',
-        subtitle: 'Native android app to calculate the speed and range of custom built e-boards.',
+        subtitle: 'Native Android app to calculate the speed and range of custom built e-boards.',
         description: [
             "At this time, I considered building my own electric longboard. The issue I ran into when I was planning which parts to use was that I had to recalculate the speed and range of my board with every new part I considered. It isn't a mathematically complex formula, but it was tedious since I always had to check if the part would fit my needs and play nice with the rest of the board. Thus I decided to make a convenient mobile app for it, so I could just enter the specifications of the motor, ESC, battery, wheel size, etc. and the app would calculate it instantly. This way, I could easily see how a different motor would affect performance, making the shopping process much more manageable.",
             'Check out the continuation of this project, "EV Calculator" in the links below.',
@@ -347,12 +393,12 @@ export const projects = {
         date: '2017',
         name: 'Autonomous Robot',
         subtitle:
-            '3D printed robot which can be controlled by a custom android app I made or move around autonomously.',
+            '3D printed robot which can be controlled by a custom Android app I made or move around autonomously.',
         description: [
             'This was actually a really overkill project for one of my classes in the 10th grade. I didn\'t get the top grade in my "technology class" the year before, which I wasn\'t happy with. So I asked the teacher for the freedom to make something I came up with myself (we previously got some pretty easy and tedious tasks like making a phone stand, etc.).',
             'Since I experimented with Arduinos at the time, I decided that making a simple robot would be a cool project to "wow" the teacher for the top grade. I designed the parts in Fusion 360, and 3D printed them. The design of the robot was fairly simple. It had two wheels attached to two separate motors with a caster wheel in the back. This made full movement and turning possible for the robot.',
             'The brains of the robot was an Arduino Uno with a motor controller shield connected to the two motors. I added a servo motor with a sonar sensor on the top of the robot to give it spacial awareness. It wasn\'t a practical robot, more of a learning and "show off" project. So the primary function it was programmed to do is to roll around the room autonomously with somewhat smart decisions. It "looked" left and right with its sonar sensor, then measured the distances and continued to the path with most space, over and over again, indefinitely.',
-            'Later I also added a BlueTooth module to the robot. I wrote an android app for my phone, which allowed me to control it like an RC car and also activate an autonomous mode.',
+            'Later I also added a BlueTooth module to the robot. I wrote an Android app for my phone, which allowed me to control it like an RC car and also activate an autonomous mode.',
         ],
         imgUrl: require('../assets/img/robot.jpg'),
         appStoreUrl: null,
