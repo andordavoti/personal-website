@@ -83,6 +83,15 @@ export const projects = {
                 name: 'Landing page and privacy policy made with preact',
                 link: 'https://ticktacktoe-7aa6d.web.app/',
             },
+            {
+                name: 'Reddit post 1',
+                link: 'https://www.reddit.com/r/reactnative/comments/h8rwi5/online_game_with_firebase/',
+            },
+            {
+                name: 'Reddit post 2',
+                link:
+                    'https://www.reddit.com/r/reactnative/comments/hgf317/tri_platform_reactnative_game_with_expo_firestore/',
+            },
         ],
         technologies: [
             {
