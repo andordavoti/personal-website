@@ -225,7 +225,7 @@ export const projects = {
         name: 'HunNor Dictionary',
         subtitle: 'Took part in developing an iOS and Android app for an open-source Norwegian-Hungarian dictionary.',
         description: [
-            'The HunNor Dictionary is an open-source Norwegian-Hungarian dictionary. At Ovitas AS I took part in developing the mobile app.',
+            'The HunNor Dictionary is an open-source Norwegian-Hungarian dictionary. At Ovitas AS, I took part in developing the mobile app.',
         ],
         imgUrl: require('../assets/img/hunnor.jpg'),
         appStoreUrl: 'https://itunes.apple.com/us/app/hunnor/id1305770091',
