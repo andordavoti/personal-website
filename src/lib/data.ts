@@ -66,7 +66,7 @@ export const projects = {
         id: 'tic_tac_toe',
         name: 'Tic Tac Toe – Online',
         date: '2020',
-        subtitle: 'Open-source online iOS and Android Tic Tac Toe game.',
+        subtitle: 'Open-source online tri-platform (iOS, Android and web) Tic Tac Toe game.',
         description: [
             "Open-source, tri-platform (iOS, Android and web) online multiplayer game, built using React Native, Redux, Expo, Firestore, and Firebase Cloud functions. Play Tic Tac Toe cross-platform, either online or in-person with your friends. Registration is not needed, instead, anonymous lobby id's are utilized. Therefore only you and the one you're playing with online know who is playing with who.",
         ],
@@ -128,7 +128,7 @@ export const projects = {
         id: 'den_store_bokmalsordboka',
         date: '2019 - 2020',
         name: 'Den store bokmålsordboka',
-        subtitle: 'Took part in developing an iOS and Android app for the largest norwegian dictionary.',
+        subtitle: 'Took part in developing an iOS and Android app for the largest Norwegian dictionary.',
         description: [
             'Den store bokmålsordboka is the largest Norwegian dictionary, with over 180 000 words. At Ovitas AS I was part of developing the app, managing the external testing and making the landing page.',
             'The app will become available in august.',
@@ -216,6 +216,47 @@ export const projects = {
             {
                 name: 'Typescript',
                 link: 'https://www.typescriptlang.org/',
+            },
+        ],
+    },
+    hunnor: {
+        id: 'hunnor',
+        date: '2019 - 2020',
+        name: 'HunNor Dictionary',
+        subtitle: 'Took part in developing an iOS and Android app for an open-source Norwegian-Hungarian dictionary.',
+        description: [
+            'The HunNor Dictionary is an open-source Norwegian-Hungarian dictionary. At Ovitas AS I was part of developing the mobile app.',
+        ],
+        imgUrl: require('../assets/img/hunnor.jpg'),
+        appStoreUrl: 'https://itunes.apple.com/us/app/hunnor/id1305770091',
+        playStoreUrl: 'https://play.google.com/store/apps/details?id=net.hunnor.dict.mobileapp',
+        webAppUrl: null,
+        links: [
+            {
+                name: 'Landing page/web version',
+                link: 'https://dict.hunnor.net/',
+            },
+        ],
+        technologies: [
+            {
+                name: 'React',
+                link: 'https://reactjs.org/',
+            },
+            {
+                name: 'Redux',
+                link: 'https://redux.js.org/',
+            },
+            {
+                name: 'Expo',
+                link: 'https://expo.io/',
+            },
+            {
+                name: 'React Native',
+                link: 'https://reactnative.dev/',
+            },
+            {
+                name: 'SQLite',
+                link: 'https://www.sqlite.org/index.html',
             },
         ],
     },
