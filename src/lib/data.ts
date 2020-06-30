@@ -63,7 +63,6 @@ export const skills = {
 
 export const projects = {
     tic_tac_toe: {
-        id: 'tic_tac_toe',
         name: 'Tic Tac Toe – Online',
         date: '2020',
         subtitle: 'Open-source online tri-platform (iOS, Android and web) Tic Tac Toe game.',
@@ -125,7 +124,6 @@ export const projects = {
         ],
     },
     den_store_bokmalsordboka: {
-        id: 'den_store_bokmalsordboka',
         date: '2019 - 2020',
         name: 'Den store bokmålsordboka',
         subtitle: 'Took part in developing an iOS and Android app for the largest Norwegian dictionary.',
@@ -171,7 +169,6 @@ export const projects = {
         ],
     },
     fast_rhymes: {
-        id: 'fast_rhymes',
         date: '2019 - 2020',
         name: 'Fast Rhymes',
         subtitle: 'Open-source minimalist iOS and Android rhyme dictionary app.',
@@ -220,7 +217,6 @@ export const projects = {
         ],
     },
     hunnor: {
-        id: 'hunnor',
         date: '2019 - 2020',
         name: 'HunNor Dictionary',
         subtitle: 'Took part in developing an iOS and Android app for an open-source Norwegian-Hungarian dictionary.',
@@ -261,7 +257,6 @@ export const projects = {
         ],
     },
     ev_calculator: {
-        id: 'ev_calculator',
         date: '2019',
         name: 'EV Calculator',
         subtitle: 'Open-source iOS and Android app to calculate the speed and range of simple EVs.',
@@ -298,7 +293,6 @@ export const projects = {
         ],
     },
     g_eazy_discography: {
-        id: 'g_eazy_discography',
         date: '2019',
         name: 'G-Eazy Discography',
         subtitle: 'Open-source iOS and Android app which shows the discography and tour dates for the artist G-Eazy.',
@@ -331,7 +325,6 @@ export const projects = {
         ],
     },
     electric_longboard: {
-        id: 'electric_longboard',
         date: '2017 - 2020',
         name: 'Electric Longboard',
         subtitle: 'High power e-board built from scratch.',
@@ -351,7 +344,6 @@ export const projects = {
         technologies: null,
     },
     home_automation: {
-        id: 'home_automation',
         date: '2017 - 2020',
         name: 'Home Automation',
         subtitle: 'Built custom IOT devices and set up a custom smart home solution with Home Assistant.',
@@ -379,7 +371,6 @@ export const projects = {
         technologies: null,
     },
     privatek: {
-        id: 'privatek',
         date: '2017 - 2019',
         name: 'Privatek',
         subtitle: 'Co-founder and CEO of Privatek, a company with a focus on preventing webcam spying.',
@@ -400,7 +391,6 @@ export const projects = {
         technologies: null,
     },
     esk8_calculator: {
-        id: 'esk8_calculator',
         date: '2017',
         name: 'ESK8 Calculator',
         subtitle: 'Native Android app to calculate the speed and range of custom built e-boards.',
@@ -430,7 +420,6 @@ export const projects = {
         ],
     },
     autonomous_robot: {
-        id: 'autonomous_robot',
         date: '2017',
         name: 'Autonomous Robot',
         subtitle:
@@ -459,7 +448,6 @@ export const projects = {
         ],
     },
     fpv_racing_drone_v2: {
-        id: 'fpv_racing_drone_v2',
         date: '2016',
         name: 'FPV Racing Drone v2',
         subtitle: 'Another high power racing drone built from scratch.',
@@ -474,7 +462,6 @@ export const projects = {
         technologies: null,
     },
     camera_drone: {
-        id: 'camera_drone',
         date: '2016',
         name: 'Camera Drone',
         subtitle: 'Large 500mm drone with a gimbal for stable footage.',
@@ -495,7 +482,6 @@ export const projects = {
         technologies: null,
     },
     fpv_racing_drone: {
-        id: 'fpv_racing_drone',
         date: '2014 - 2015',
         name: 'FPV Racing Drone',
         subtitle: 'High power racing drone built from scratch.',

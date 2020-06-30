@@ -35,9 +35,10 @@ const Projects: React.FC = () => {
 
             <Container maxWidth="lg">
                 <Grid container className={styles.projects}>
-                    {Object.values(projects).map((project) => {
-                        const { id, name, subtitle, date, imgUrl } = project;
-                        return <ProjectItem key={name} {...{ id, name, subtitle, date, imgUrl }} />;
+                    {Object.values(projects).map((project, index) => {
+                        const ids = Object.keys(projects);
+                        const { name, subtitle, date, imgUrl } = project;
+                        return <ProjectItem key={name} id={ids[index]} {...{ name, subtitle, date, imgUrl }} />;
                     })}
                 </Grid>
             </Container>
