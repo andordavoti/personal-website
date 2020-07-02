@@ -25,10 +25,11 @@ const useStyles = makeStyles({
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'center',
+        alignItems: 'center',
         flexWrap: 'wrap',
     },
     storeIcon: {
-        height: 80,
+        width: 250,
         margin: 10,
     },
 });
@@ -116,22 +117,22 @@ const ProjectDetailsPage: React.FC<Props> = ({ match }) => {
                     <Box m="2rem" />
 
                     <Box className={styles.storeButtonContainer}>
-                        {project.appStoreUrl ? (
-                            <Link rel="noopener noreferrer" target="_blank" href={project.appStoreUrl}>
-                                <img
-                                    className={styles.storeIcon}
-                                    src={require('../assets/icons/app-store-badge.svg')}
-                                    alt="App Store Link"
-                                />
-                            </Link>
-                        ) : null}
-
                         {project.playStoreUrl ? (
                             <Link rel="noopener noreferrer" target="_blank" href={project.playStoreUrl}>
                                 <img
                                     className={styles.storeIcon}
                                     src={require('../assets/icons/google-play-badge.png')}
                                     alt="Play Store Link"
+                                />
+                            </Link>
+                        ) : null}
+
+                        {project.appStoreUrl ? (
+                            <Link rel="noopener noreferrer" target="_blank" href={project.appStoreUrl}>
+                                <img
+                                    className={styles.storeIcon}
+                                    src={require('../assets/icons/app-store-badge.svg')}
+                                    alt="App Store Link"
                                 />
                             </Link>
                         ) : null}
