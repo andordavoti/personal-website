@@ -3,8 +3,6 @@ import './index.css';
 
 import { Switch, Route } from 'react-router-dom';
 
-import { useDispatch } from 'react-redux';
-import { setTheme } from './redux/dropdown/settings.action';
 import { ThemeProvider } from '@material-ui/core/styles';
 import Header from './components/Header';
 import HomePage from './pages/HomePage';
@@ -15,11 +13,7 @@ import ErrorBoundary from './components/ErrorBoundary';
 import { paletteDark, paletteLight } from './lib/theme';
 
 const App: React.FC = () => {
-    const dispatch = useDispatch();
-
     const darkModeSet = useMediaQuery('(prefers-color-scheme: dark)');
-    if (darkModeSet) dispatch(setTheme('dark'));
-    else dispatch(setTheme('light'));
 
     const theme = useMemo(() => createMuiTheme({ palette: darkModeSet ? paletteDark : paletteLight }), [darkModeSet]);
     return (
