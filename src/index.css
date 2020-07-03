@@ -23,3 +23,21 @@ body {
 a {
     text-decoration: none;
 }
+
+#root {
+    display: flex;
+    flex-direction: column;
+}
+
+body,
+#root {
+    height: 100%;
+}
+
+html {
+    height: 100%;
+}
+
+.content-wrapper {
+    flex: 1 0 auto;
+}

@@ -12,6 +12,7 @@ const useStyles = makeStyles((theme) => ({
         alignItems: 'center',
         justifyContent: 'center',
         backgroundColor: theme.palette.background.paper,
+        flexShrink: 0,
     },
     footerText: {
         textAlign: 'center',
