@@ -41,6 +41,11 @@ export const skills = {
             link: 'https://www.arduino.cc/',
             imgUrl: require('../assets/icons/skill-icons/arduino.png'),
         },
+        {
+            name: 'Firebase',
+            link: 'https://firebase.google.com/',
+            imgUrl: require('../assets/icons/skill-icons/firebase.png'),
+        },
     ],
     design: [
         {
