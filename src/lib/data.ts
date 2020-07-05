@@ -423,6 +423,10 @@ export const projects = {
         ],
         technologies: [
             {
+                name: 'Android Studio',
+                link: 'https://developer.android.com/studio/intro',
+            },
+            {
                 name: 'Java',
                 link: 'https://www.oracle.com/java/',
             },
