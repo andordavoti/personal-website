@@ -1,4 +1,4 @@
-<img src="public/favicon.ico" width="50" >
+<img src="public/favicon.ico" width="25" >
 
 # personal-website
 
