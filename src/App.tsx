@@ -10,7 +10,7 @@ import Footer from './components/Footer';
 import { useMediaQuery, createMuiTheme } from '@material-ui/core';
 import ProjectDetailsPage from './pages/ProjectDetailsPage';
 import ErrorBoundary from './components/ErrorBoundary';
-import { paletteDark, paletteLight } from './lib/theme';
+import { paletteDark, paletteLight } from './lib/colors';
 
 const App: React.FC = () => {
     const darkModeSet = useMediaQuery('(prefers-color-scheme: dark)');
