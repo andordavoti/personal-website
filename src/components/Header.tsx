@@ -54,7 +54,7 @@ const Header: React.FC = () => {
 
                 <div className={styles.center}>
                     <IconButton rel="noopener noreferrer" target="_blank" href={socialLinks['email' as SocialLinkType]}>
-                        <EmailIcon color="primary" />
+                        <EmailIcon color="secondary" />
                     </IconButton>
                 </div>
 
@@ -64,7 +64,7 @@ const Header: React.FC = () => {
                         target="_blank"
                         href={socialLinks['linkedin' as SocialLinkType]}
                     >
-                        <LinkedInIcon color="primary" />
+                        <LinkedInIcon color="secondary" />
                     </IconButton>
                 </div>
 
@@ -74,7 +74,7 @@ const Header: React.FC = () => {
                         target="_blank"
                         href={socialLinks['github' as SocialLinkType]}
                     >
-                        <GitHubIcon color="primary" />
+                        <GitHubIcon color="secondary" />
                     </IconButton>
                 </div>
             </Navbar>

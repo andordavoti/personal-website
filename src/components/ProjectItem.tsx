@@ -17,6 +17,7 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: 'center',
         flexDirection: 'column',
         padding: '1.5rem',
+        boxShadow: theme.palette.type === 'light' ? '15px 15px 5px #DDDDDD' : '0',
     },
     img: {
         width: 225,
@@ -35,19 +36,19 @@ const ProjectItem: React.FC<Props> = ({ id, name, subtitle, date, imgUrl }) => {
 
     return (
         <Box className={styles.container} m={3}>
-            <Typography color="textPrimary" align="center" variant="h6">
+            <Typography color="secondary" align="center" variant="h6">
                 {name}
             </Typography>
 
             <Box m="0.5rem" />
 
-            <Typography className={styles.subtitle} color="textPrimary" variant="body2">
+            <Typography className={styles.subtitle} color="secondary" variant="body2">
                 {subtitle}
             </Typography>
 
             <Box m="0.5rem" />
 
-            <Typography color="textSecondary" align="center" variant="body2">
+            <Typography color="secondary" align="center" variant="body2">
                 {date}
             </Typography>
 

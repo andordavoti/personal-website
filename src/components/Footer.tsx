@@ -24,7 +24,7 @@ const Footer: React.FC = () => {
     const styles = useStyles();
     return (
         <Container component="footer" className={styles.footer}>
-            <Typography className={styles.footerText} color="textPrimary" variant="body1">
+            <Typography className={styles.footerText} color="primary" variant="body1">
                 © 2020 Andor Davoti
             </Typography>
         </Container>

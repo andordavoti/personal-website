@@ -6,7 +6,7 @@ export const paletteDark: PaletteOptions = {
         main: '#ffffff',
     },
     secondary: {
-        main: '#b5b5b5',
+        main: '#ffffff',
     },
     text: {
         primary: '#ffffff',
@@ -25,14 +25,14 @@ export const paletteLight: PaletteOptions = {
         main: '#ffffff',
     },
     secondary: {
-        main: '#b5b5b5',
+        main: '#ffffff',
     },
     text: {
-        primary: '#b5b5b5',
-        secondary: '#ffffff',
+        primary: '#151616',
+        secondary: '#151616',
     },
     background: {
         default: '#ffffff',
-        paper: '#d9d9d9',
+        paper: '#242526',
     },
 };

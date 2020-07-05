@@ -3,13 +3,14 @@ import { Box, Typography, makeStyles } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
     container: {
+        backgroundColor: theme.palette.background.default,
         display: 'flex',
         flexDirection: 'row',
         flexWrap: 'wrap',
         justifyContent: 'center',
-        margin: 40,
+        padding: 40,
         [theme.breakpoints.down('sm')]: {
-            margin: 10,
+            padding: 10,
         },
     },
     textContainer: {
@@ -26,6 +27,7 @@ const useStyles = makeStyles((theme) => ({
         height: 200,
         borderRadius: '50%',
         border: '2px solid white',
+        borderColor: theme.palette.text.primary,
         [theme.breakpoints.down('sm')]: {
             margin: '2rem',
         },

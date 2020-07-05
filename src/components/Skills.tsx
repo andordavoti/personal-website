@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
     container: {
         display: 'flex',
         justifyContent: 'space-evenly',
-        margin: 40,
+        padding: 40,
         flexDirection: 'column',
     },
     listsContainer: {

@@ -152,7 +152,7 @@ const ProjectDetailsPage: React.FC<Props> = ({ match }) => {
     };
 
     return (
-        <Box style={{ margin: '2rem' }}>
+        <Box style={{ padding: '2rem' }}>
             <Typography color="textPrimary" align="center" variant="h3">
                 {project.name}
             </Typography>

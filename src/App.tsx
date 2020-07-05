@@ -16,9 +16,15 @@ const App: React.FC = () => {
     const darkModeSet = useMediaQuery('(prefers-color-scheme: dark)');
 
     const theme = useMemo(() => createMuiTheme({ palette: darkModeSet ? paletteDark : paletteLight }), [darkModeSet]);
+
     return (
         <ThemeProvider theme={theme}>
-            <div className="content-wrapper">
+            <div
+                className="content-wrapper"
+                style={{
+                    backgroundColor: darkModeSet ? paletteDark.background.default : paletteLight.background.default,
+                }}
+            >
                 <Header />
                 <ErrorBoundary>
                     <Switch>

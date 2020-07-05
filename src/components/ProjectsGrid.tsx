@@ -11,7 +11,7 @@ const useStyles = makeStyles({
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        margin: 40,
+        padding: 40,
         flexDirection: 'column',
     },
     projects: {

@@ -4,10 +4,21 @@ import React from 'react';
 import TopIntro from '../components/TopIntro';
 import Skills from '../components/Skills';
 import Projects from '../components/ProjectsGrid';
+import { makeStyles } from '@material-ui/core';
+
+const useStyles = makeStyles({
+    container: {
+        display: 'block',
+        marginLeft: 'auto',
+        marginRight: 'auto',
+        maxWidth: 1200,
+    },
+});
 
 const HomePage: React.FC = () => {
+    const styles = useStyles();
     return (
-        <div style={{ display: 'block', marginLeft: 'auto', marginRight: 'auto', maxWidth: 1200 }}>
+        <div className={styles.container}>
             <TopIntro />
             <Skills />
             <Projects />
