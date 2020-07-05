@@ -28,11 +28,11 @@ export const paletteLight: PaletteOptions = {
         main: '#b5b5b5',
     },
     text: {
-        primary: '#ffffff',
-        secondary: '#b5b5b5',
+        primary: '#b5b5b5',
+        secondary: '#ffffff',
     },
     background: {
-        default: '#151616',
-        paper: '#242526',
+        default: '#ffffff',
+        paper: '#d9d9d9',
     },
 };

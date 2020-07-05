@@ -121,7 +121,7 @@ const ProjectDetailsPage: React.FC<Props> = ({ match }) => {
                             <Link rel="noopener noreferrer" target="_blank" href={project.playStoreUrl}>
                                 <img
                                     className={styles.storeIcon}
-                                    src={require('../assets/icons/google-play-badge.png')}
+                                    src={require('../assets/icons/badges/google-play-badge.png')}
                                     alt="Play Store Link"
                                 />
                             </Link>
@@ -131,7 +131,7 @@ const ProjectDetailsPage: React.FC<Props> = ({ match }) => {
                             <Link rel="noopener noreferrer" target="_blank" href={project.appStoreUrl}>
                                 <img
                                     className={styles.storeIcon}
-                                    src={require('../assets/icons/app-store-badge.svg')}
+                                    src={require('../assets/icons/badges/app-store-badge.svg')}
                                     alt="App Store Link"
                                 />
                             </Link>
@@ -141,7 +141,7 @@ const ProjectDetailsPage: React.FC<Props> = ({ match }) => {
                             <Link rel="noopener noreferrer" target="_blank" href={project.webAppUrl}>
                                 <img
                                     className={styles.storeIcon}
-                                    src={require('../assets/icons/web-app-badge.png')}
+                                    src={require('../assets/icons/badges/web-app-badge.png')}
                                     alt="Web App Link"
                                 />
                             </Link>
