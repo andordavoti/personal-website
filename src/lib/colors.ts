@@ -25,7 +25,7 @@ export const paletteLight: PaletteOptions = {
         main: '#ffffff',
     },
     secondary: {
-        main: '#ffffff',
+        main: '#151616',
     },
     text: {
         primary: '#151616',

@@ -9,7 +9,7 @@ interface Props {
     match: any;
 }
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
     bold: {
         fontWeight: 'bold',
     },
@@ -20,6 +20,7 @@ const useStyles = makeStyles({
         display: 'block',
         marginLeft: 'auto',
         marginRight: 'auto',
+        border: theme.palette.type === 'light' ? `1px solid ${theme.palette.text.primary}` : 'transparent',
     },
     storeButtonContainer: {
         display: 'flex',
@@ -32,7 +33,7 @@ const useStyles = makeStyles({
         width: 250,
         margin: 10,
     },
-});
+}));
 
 const ProjectDetailsPage: React.FC<Props> = ({ match }) => {
     const styles = useStyles();

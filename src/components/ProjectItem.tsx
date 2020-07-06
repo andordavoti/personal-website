@@ -1,7 +1,7 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 
-import { Box, Button, Typography, makeStyles } from '@material-ui/core';
+import { Box, Button, Typography, makeStyles, Card } from '@material-ui/core';
 import { ProjectObjType } from '../lib/types';
 
 type Props = Pick<ProjectObjType, 'id' | 'date' | 'name' | 'imgUrl' | 'subtitle'>;
@@ -10,18 +10,22 @@ const useStyles = makeStyles((theme) => ({
     container: {
         width: 250,
         height: 'auto',
-        backgroundColor: theme.palette.background.paper,
+        backgroundColor:
+            theme.palette.type === 'dark' ? theme.palette.background.paper : theme.palette.background.default,
         borderRadius: 25,
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
         flexDirection: 'column',
         padding: '1.5rem',
-        boxShadow: theme.palette.type === 'light' ? '15px 15px 5px #DDDDDD' : '0',
+        boxShadow: theme.palette.type === 'light' ? '10px 10px 8px #DDDDDD' : '0',
+        elevation: 100,
+        margin: '1rem',
     },
     img: {
         width: 225,
         borderRadius: 10,
+        border: theme.palette.type === 'light' ? `1px solid ${theme.palette.text.primary}` : 'transparent',
     },
     subtitle: {
         width: 200,
@@ -35,20 +39,20 @@ const ProjectItem: React.FC<Props> = ({ id, name, subtitle, date, imgUrl }) => {
     const history = useHistory();
 
     return (
-        <Box className={styles.container} m={3}>
-            <Typography color="secondary" align="center" variant="h6">
+        <Card variant="outlined" className={styles.container}>
+            <Typography color="textPrimary" align="center" variant="h6">
                 {name}
             </Typography>
 
             <Box m="0.5rem" />
 
-            <Typography className={styles.subtitle} color="secondary" variant="body2">
+            <Typography className={styles.subtitle} color="textPrimary" variant="body2">
                 {subtitle}
             </Typography>
 
             <Box m="0.5rem" />
 
-            <Typography color="secondary" align="center" variant="body2">
+            <Typography color="textPrimary" align="center" variant="body2">
                 {date}
             </Typography>
 
@@ -58,10 +62,10 @@ const ProjectItem: React.FC<Props> = ({ id, name, subtitle, date, imgUrl }) => {
 
             <Box m="0.5rem" />
 
-            <Button color="primary" variant="outlined" onClick={() => history.push(`/${id}`)}>
+            <Button color="secondary" variant="outlined" onClick={() => history.push(`/${id}`)}>
                 Learn more
             </Button>
-        </Box>
+        </Card>
     );
 };
 
