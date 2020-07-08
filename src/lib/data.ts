@@ -180,19 +180,15 @@ export const projects = {
     fast_rhymes: {
         date: '2019 - 2020',
         name: 'Fast Rhymes',
-        subtitle: 'Open-source minimalist iOS and Android rhyme dictionary app.',
+        subtitle: 'Minimalist iOS and Android rhyme dictionary app.',
         description: [
-            "Open-source, tri-platform mobile (iOS, Android and web) rhyme dictionary app, built using React Native, React Native for Web, Redux, Expo, and the Datamuse API. Find words that rhyme, associations, words with similar meaning, words with similar spelling, etc. You can sort search results by syllables or sort by the most relevant words. It was built to be fast and convenient, with a minimalist design to not be in the way of the artists' creative process.",
+            "Tri-platform mobile (iOS, Android and web) rhyme dictionary app, built using React Native, React Native for Web, Redux, Expo, and the Datamuse API. Find words that rhyme, associations, words with similar meaning, words with similar spelling, etc. You can sort search results by syllables or sort by the most relevant words. It was built to be fast and convenient, with a minimalist design to not be in the way of the artists' creative process.",
         ],
         imgUrl: require('../assets/img/fast-rhymes.jpg'),
         appStoreUrl: 'https://apps.apple.com/us/app/fast-rhymes/id1492575811?ls=1',
         playStoreUrl: 'https://play.google.com/store/apps/details?id=rhyme.dictionary.mobileapp',
         webAppUrl: 'https://fastrhymes.com/',
         links: [
-            {
-                name: 'Github repo',
-                link: 'https://github.com/andordavoti/fast-rhymes-app',
-            },
             {
                 name: 'Landing page',
                 link: 'https://ovitas.no/fast-rhymes/',
