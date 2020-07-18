@@ -141,8 +141,8 @@ export const projects = {
             'The app will become available in august.',
         ],
         imgUrl: require('../assets/img/bokmalsordboka.jpg'),
-        appStoreUrl: null,
-        playStoreUrl: null,
+        appStoreUrl: 'https://apps.apple.com/us/app/id1497725111',
+        playStoreUrl: 'https://play.google.com/store/apps/details?id=no.ovitas.kirkeby.bokmalsordboka',
         webAppUrl: null,
         links: [
             {
