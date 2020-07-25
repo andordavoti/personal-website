@@ -158,7 +158,13 @@ const ProjectDetailsPage: React.FC<Props> = ({ match }) => {
                 {project.name}
             </Typography>
 
-            <Box m="2rem" />
+            <Box m="0.5rem" />
+
+            <Typography color="textSecondary" align="center" variant="h5">
+                {project.date}
+            </Typography>
+
+            <Box m="1rem" />
 
             <img className={styles.img} src={project.imgUrl} alt="tic-tac-toe" />
 
