@@ -67,6 +67,42 @@ export const skills = {
 };
 
 export const projects = {
+    snitt: {
+        name: 'Snitt',
+        date: '2020',
+        subtitle: 'Cross-platform mobile app for Norwegian high school students.',
+        description: [
+            'Cross-platform mobile app for Norwegian high school students. The student can add which subjects he/she has completed and which subject he/she will have in the future. This way the student gets an overview of their subjects and their grade performance. Then the app auto calculates their average grade with both the grade estimation for their future subjects and without. This way the student knows how much a single grade will impact their average score. The app also shows them their strongest and weakest subjects, this way they know what to focus on if they want to improve their score.',
+        ],
+        imgUrl: require('../assets/img/snitt.jpg'),
+        appStoreUrl: 'https://apps.apple.com/us/app/id1525721970',
+        playStoreUrl: 'https://play.google.com/store/apps/details?id=com.andordavoti.snitt',
+        webAppUrl: null,
+        links: null,
+        technologies: [
+            {
+                name: 'React',
+                link: 'https://reactjs.org/',
+            },
+            {
+                name: 'Redux',
+                link: 'https://redux.js.org/',
+            },
+            {
+                name: 'Expo',
+                link: 'https://expo.io/',
+            },
+            {
+                name: 'React Native',
+                link: 'https://reactnative.dev/',
+            },
+            {
+                name: 'Typescript',
+                link: 'https://www.typescriptlang.org/',
+            },
+        ],
+    },
+
     tic_tac_toe: {
         name: 'Tic Tac Toe – Online',
         date: '2020',
