@@ -58,7 +58,7 @@ class ErrorBoundary extends Component {
                         <Box m="1rem" />
 
                         <div style={{ display: 'flex', justifyContent: 'center' }}>
-                            <Button color="primary" variant="outlined" href="/">
+                            <Button color="secondary" variant="outlined" href="/">
                                 Back home
                             </Button>
                         </div>
