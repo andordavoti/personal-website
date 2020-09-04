@@ -13,16 +13,16 @@ import ErrorBoundary from './components/ErrorBoundary';
 import { paletteDark, paletteLight } from './lib/colors';
 
 const App: React.FC = () => {
-    const darkModeSet = useMediaQuery('(prefers-color-scheme: dark)');
+    const darkMode = useMediaQuery('(prefers-color-scheme: dark)');
 
-    const theme = useMemo(() => createMuiTheme({ palette: darkModeSet ? paletteDark : paletteLight }), [darkModeSet]);
+    const theme = useMemo(() => createMuiTheme({ palette: darkMode ? paletteDark : paletteLight }), [darkMode]);
 
     return (
         <ThemeProvider theme={theme}>
             <div
                 className="content-wrapper"
                 style={{
-                    backgroundColor: darkModeSet ? paletteDark.background.default : paletteLight.background.default,
+                    backgroundColor: darkMode ? paletteDark.background.default : paletteLight.background.default,
                 }}
             >
                 <Header />
