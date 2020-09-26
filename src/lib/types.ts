@@ -24,8 +24,25 @@ interface LinkType {
     link: string;
 }
 
+type URLPath =
+    | 'snitt'
+    | 'tic_tac_toe'
+    | 'den_store_bokmalsordboka'
+    | 'fast_rhymes'
+    | 'hunnor'
+    | 'ev_calculator'
+    | 'g_eazy_discography'
+    | 'electric_longboard'
+    | 'home_automation'
+    | 'privatek'
+    | 'esk8_calculator'
+    | 'autonomous_robot'
+    | 'fpv_racing_drone_v2'
+    | 'camera_drone'
+    | 'fpv_racing_drone';
+
 export interface ProjectType {
-    path: string; // TODO: explicit path
+    path: URLPath;
     name: string;
     date: string;
     subtitle: string;
