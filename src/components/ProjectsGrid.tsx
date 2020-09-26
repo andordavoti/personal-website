@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import ProjectItem from './ProjectItem';
 import { Container, Grid, Box } from '@material-ui/core';
 
@@ -8,8 +8,9 @@ import Button from '@material-ui/core/Button/Button';
 
 import { makeStyles } from '@material-ui/core/styles';
 import { projects } from '../lib/data';
+import { ProjectCategory } from '../lib/types';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
     container: {
         display: 'flex',
         justifyContent: 'center',
@@ -23,10 +24,34 @@ const useStyles = makeStyles({
         alignItems: 'center',
         flexDirection: 'row',
     },
-});
+    activeCategory: {
+        color: theme.palette.text.primary,
+    },
+    inActiveCategory: {
+        color: theme.palette.text.secondary,
+    },
+}));
 
 const Projects: React.FC = () => {
+    const [activeCategory, setActiveCategory] = useState<'all' | ProjectCategory>('all');
+    const [activeProjects, setActiveProjects] = useState(projects);
+
+    useEffect(() => {
+        filterProjects(activeCategory);
+    }, [activeCategory]);
+
+    const filterProjects = (category: 'all' | ProjectCategory) => {
+        if (category === 'all') {
+            setActiveProjects(projects);
+        } else {
+            const filteredProjects = projects.filter((project) => project.categories.includes(category));
+            setActiveProjects(filteredProjects);
+        }
+    };
+
     const styles = useStyles();
+
+    const categories: ('all' | ProjectCategory)[] = ['all', 'mobile', 'web', 'hardware', 'personal', 'work'];
 
     return (
         <Box className={styles.container}>
@@ -38,11 +63,14 @@ const Projects: React.FC = () => {
 
             <div>
                 <ButtonGroup variant="text" color="primary" aria-label="text primary button group">
-                    <Button>All</Button>
-                    <Button>Mobile</Button>
-                    <Button>Web</Button>
-                    <Button>Personal</Button>
-                    <Button>Work</Button>
+                    {categories.map((category) => (
+                        <Button
+                            className={category === activeCategory ? styles.activeCategory : styles.inActiveCategory}
+                            onClick={() => setActiveCategory(category)}
+                        >
+                            {category}
+                        </Button>
+                    ))}
                 </ButtonGroup>
             </div>
 
@@ -50,10 +78,8 @@ const Projects: React.FC = () => {
 
             <Container maxWidth="lg">
                 <Grid container className={styles.projects}>
-                    {Object.values(projects).map((project, index) => {
-                        const ids = Object.keys(projects);
-                        const { name, subtitle, date, imgUrl } = project;
-                        return <ProjectItem key={name} id={ids[index]} {...{ name, subtitle, date, imgUrl }} />;
+                    {activeProjects.map(({ path, name, subtitle, date, imgUrl }) => {
+                        return <ProjectItem key={name} {...{ path, name, subtitle, date, imgUrl }} />;
                     })}
                 </Grid>
             </Container>
