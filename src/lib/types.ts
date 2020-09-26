@@ -1,30 +1,40 @@
 export type ThemeType = 'light' | 'dark';
 
-export type SocialLinkType = 'email' | 'linkedin' | 'github';
-
-export type LinkType = {
-    name: string;
-    link: string;
-};
-
-export type TechnologyType = {
-    name: string;
-    link: string;
-};
-
-export interface ProjectType {
-    [id: string]: ProjectObjType;
+export interface SocialLinkType {
+    email: string;
+    linkedin: string;
+    github: string;
 }
 
-export interface ProjectObjType {
-    id: string;
-    date: string;
+interface SkillType {
     name: string;
-    subtitle: string;
+    link: string;
     imgUrl: string;
+}
+
+export interface SkillsType {
+    development: SkillType[];
+    design: SkillType[];
+}
+
+export type ProjectCategory = 'mobile' | 'web' | 'hardware' | 'personal' | 'work';
+
+interface LinkType {
+    name: string;
+    link: string;
+}
+
+export interface ProjectType {
+    path: string; // TODO: explicit path
+    name: string;
+    date: string;
+    subtitle: string;
     description: string[];
-    links: LinkType[];
-    technologies: TechnologyType[];
-    appStoreUrl: string;
-    playStoreUrl: string;
+    categories: ProjectCategory[];
+    imgUrl: string;
+    appStoreUrl: null | string;
+    playStoreUrl: null | string;
+    webAppUrl: null | string;
+    links: null | LinkType[];
+    technologies: null | LinkType[];
 }
