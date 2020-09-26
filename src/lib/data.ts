@@ -70,6 +70,43 @@ export const skills: SkillsType = {
 
 export const projects: ProjectType[] = [
     {
+        path: 'personal_website',
+        name: 'Personal Website',
+        date: '2020',
+        subtitle: "The website you're currently on.",
+        description: [
+            'Personal portfolio website built with Typescript, React and Material UI. One central place for all of my past and present projects.',
+        ],
+        categories: ['web', 'personal'],
+        imgUrl: require('../assets/img/personal-website.jpg'),
+        appStoreUrl: null,
+        playStoreUrl: null,
+        webAppUrl: null,
+        links: [
+            {
+                name: 'Website URL',
+                link: 'https://andordavoti.com/',
+            },
+        ],
+        technologies: [
+            {
+                name: 'React',
+                link: 'https://reactjs.org/',
+            },
+
+            {
+                name: 'Typescript',
+                link: 'https://www.typescriptlang.org/',
+            },
+
+            {
+                name: 'Material UI',
+                link: 'https://material-ui.com/',
+            },
+        ],
+    },
+
+    {
         path: 'snitt',
         name: 'Snitt',
         date: '2020',

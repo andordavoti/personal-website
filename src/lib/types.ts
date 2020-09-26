@@ -25,6 +25,7 @@ interface LinkType {
 }
 
 type URLPath =
+    | 'personal_website'
     | 'snitt'
     | 'tic_tac_toe'
     | 'den_store_bokmalsordboka'
