@@ -7,6 +7,7 @@ import ButtonGroup from '@material-ui/core/ButtonGroup/ButtonGroup';
 import Button from '@material-ui/core/Button/Button';
 
 import { makeStyles } from '@material-ui/core/styles';
+import { paletteDark } from '../lib/colors';
 import { projects } from '../lib/data';
 import { ProjectCategory } from '../lib/types';
 
@@ -28,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
         color: theme.palette.text.primary,
     },
     inActiveCategory: {
-        color: theme.palette.text.secondary,
+        color: paletteDark.text.secondary,
     },
 }));
 
