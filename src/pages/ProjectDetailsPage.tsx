@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import { Container, Box, Typography, Link } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import { projects } from '../lib/data';
-import { TechnologyType, LinkType } from '../lib/types';
 import { useLocation } from 'react-router-dom';
 
 interface Props {
@@ -38,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
 const ProjectDetailsPage: React.FC<Props> = ({ match }) => {
     const styles = useStyles();
 
-    const project = projects[match.params.projectId];
+    const project = projects.find(match.params.projectId);
 
     const { pathname } = useLocation();
 
@@ -56,7 +55,7 @@ const ProjectDetailsPage: React.FC<Props> = ({ match }) => {
                         Links:
                     </Typography>
 
-                    {project.links.map((link: LinkType) => (
+                    {project.links.map((link) => (
                         <div key={link.name}>
                             <Box m="1rem" />
                             <Typography className={styles.bold} color="textPrimary" variant="body1">
@@ -90,7 +89,7 @@ const ProjectDetailsPage: React.FC<Props> = ({ match }) => {
                         </Typography>
 
                         <div style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap' }}>
-                            {project.technologies.map((technology: TechnologyType, index: number) => (
+                            {project.technologies.map((technology, index: number) => (
                                 <Typography key={technology.name}>
                                     <Link
                                         style={{ marginRight: 5 }}
