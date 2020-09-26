@@ -87,6 +87,10 @@ export const projects: ProjectType[] = [
                 name: 'Website URL',
                 link: 'https://andordavoti.com/',
             },
+            {
+                name: 'Github repo',
+                link: 'https://github.com/andordavoti/personal-website',
+            },
         ],
         technologies: [
             {
