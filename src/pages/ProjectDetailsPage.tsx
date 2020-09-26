@@ -37,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
 const ProjectDetailsPage: React.FC<Props> = ({ match }) => {
     const styles = useStyles();
 
-    const project = projects.find((project) => project.path === match.params.projectId);
+    const activeProject = projects.find((project) => project.path === match.params.projectId);
 
     const { pathname } = useLocation();
 
@@ -46,7 +46,7 @@ const ProjectDetailsPage: React.FC<Props> = ({ match }) => {
     }, [pathname]);
 
     const renderLinks = () => {
-        if (project.links) {
+        if (activeProject.links) {
             return (
                 <>
                     <Box m="1rem" />
@@ -55,7 +55,7 @@ const ProjectDetailsPage: React.FC<Props> = ({ match }) => {
                         Links:
                     </Typography>
 
-                    {project.links.map((link) => (
+                    {activeProject.links.map((link) => (
                         <div key={link.name}>
                             <Box m="1rem" />
                             <Typography className={styles.bold} color="textPrimary" variant="body1">
@@ -78,7 +78,7 @@ const ProjectDetailsPage: React.FC<Props> = ({ match }) => {
     };
 
     const renderTechnologiesUsed = () => {
-        if (project.technologies) {
+        if (activeProject.technologies) {
             return (
                 <>
                     <Box m="2rem" />
@@ -89,7 +89,7 @@ const ProjectDetailsPage: React.FC<Props> = ({ match }) => {
                         </Typography>
 
                         <div style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap' }}>
-                            {project.technologies.map((technology, index: number) => (
+                            {activeProject.technologies.map((technology, index: number) => (
                                 <Typography key={technology.name}>
                                     <Link
                                         style={{ marginRight: 5 }}
@@ -99,7 +99,7 @@ const ProjectDetailsPage: React.FC<Props> = ({ match }) => {
                                         href={technology.link}
                                     >
                                         {technology.name}
-                                        {index !== project.technologies.length - 1 ? ', ' : ''}
+                                        {index !== activeProject.technologies.length - 1 ? ', ' : ''}
                                     </Link>
                                 </Typography>
                             ))}
@@ -111,14 +111,14 @@ const ProjectDetailsPage: React.FC<Props> = ({ match }) => {
     };
 
     const renderAppBadges = () => {
-        if (project.appStoreUrl || project.playStoreUrl || project.webAppUrl)
+        if (activeProject.appStoreUrl || activeProject.playStoreUrl || activeProject.webAppUrl)
             return (
                 <>
                     <Box m="2rem" />
 
                     <Box className={styles.storeButtonContainer}>
-                        {project.playStoreUrl ? (
-                            <Link rel="noopener noreferrer" target="_blank" href={project.playStoreUrl}>
+                        {activeProject.playStoreUrl ? (
+                            <Link rel="noopener noreferrer" target="_blank" href={activeProject.playStoreUrl}>
                                 <img
                                     className={styles.storeIcon}
                                     src={require('../assets/icons/badges/google-play-badge.png')}
@@ -127,8 +127,8 @@ const ProjectDetailsPage: React.FC<Props> = ({ match }) => {
                             </Link>
                         ) : null}
 
-                        {project.appStoreUrl ? (
-                            <Link rel="noopener noreferrer" target="_blank" href={project.appStoreUrl}>
+                        {activeProject.appStoreUrl ? (
+                            <Link rel="noopener noreferrer" target="_blank" href={activeProject.appStoreUrl}>
                                 <img
                                     className={styles.storeIcon}
                                     src={require('../assets/icons/badges/app-store-badge.svg')}
@@ -137,8 +137,8 @@ const ProjectDetailsPage: React.FC<Props> = ({ match }) => {
                             </Link>
                         ) : null}
 
-                        {project.webAppUrl ? (
-                            <Link rel="noopener noreferrer" target="_blank" href={project.webAppUrl}>
+                        {activeProject.webAppUrl ? (
+                            <Link rel="noopener noreferrer" target="_blank" href={activeProject.webAppUrl}>
                                 <img
                                     className={styles.storeIcon}
                                     src={require('../assets/icons/badges/web-app-badge.png')}
@@ -154,23 +154,23 @@ const ProjectDetailsPage: React.FC<Props> = ({ match }) => {
     return (
         <Box style={{ padding: '2rem' }}>
             <Typography color="textPrimary" align="center" variant="h3">
-                {project.name}
+                {activeProject.name}
             </Typography>
 
             <Box m="0.5rem" />
 
             <Typography color="textSecondary" align="center" variant="h5">
-                {project.date}
+                {activeProject.date}
             </Typography>
 
             <Box m="1rem" />
 
-            <img className={styles.img} src={project.imgUrl} alt="tic-tac-toe" />
+            <img className={styles.img} src={activeProject.imgUrl} alt="tic-tac-toe" />
 
             <Box m="2rem" />
 
             <Container maxWidth="md">
-                {project.description.map((paragraph: string) => (
+                {activeProject.description.map((paragraph: string) => (
                     <div key={paragraph}>
                         <Typography color="textPrimary" variant="body1">
                             {paragraph}
