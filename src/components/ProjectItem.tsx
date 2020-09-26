@@ -2,9 +2,9 @@ import React from 'react';
 import { useHistory } from 'react-router-dom';
 
 import { Box, Button, Typography, makeStyles, Card } from '@material-ui/core';
-import { ProjectObjType } from '../lib/types';
+import { ProjectType } from '../lib/types';
 
-type Props = Pick<ProjectObjType, 'id' | 'date' | 'name' | 'imgUrl' | 'subtitle'>;
+type Props = Pick<ProjectType, 'path' | 'date' | 'name' | 'imgUrl' | 'subtitle'>;
 
 const useStyles = makeStyles((theme) => ({
     container: {
@@ -33,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-const ProjectItem: React.FC<Props> = ({ id, name, subtitle, date, imgUrl }) => {
+const ProjectItem: React.FC<Props> = ({ path, name, subtitle, date, imgUrl }) => {
     const styles = useStyles();
 
     const history = useHistory();
@@ -62,7 +62,7 @@ const ProjectItem: React.FC<Props> = ({ id, name, subtitle, date, imgUrl }) => {
 
             <Box m="0.5rem" />
 
-            <Button color="secondary" variant="outlined" onClick={() => history.push(`/${id}`)}>
+            <Button color="secondary" variant="outlined" onClick={() => history.push(`/${path}`)}>
                 Learn more
             </Button>
         </Card>
