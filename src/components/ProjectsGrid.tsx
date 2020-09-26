@@ -63,7 +63,7 @@ const Projects: React.FC = () => {
             <Box m="1rem" />
 
             <div>
-                <ButtonGroup variant="text" color="primary" aria-label="text primary button group">
+                <ButtonGroup variant="text" color="secondary" aria-label="text primary button group">
                     {categories.map((category) => (
                         <Button
                             className={category === activeCategory ? styles.activeCategory : styles.inActiveCategory}
