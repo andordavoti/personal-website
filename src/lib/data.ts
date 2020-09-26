@@ -1,10 +1,50 @@
-export const socialLinks = {
+interface SocialLinkType {
+    email: string;
+    linkedin: string;
+    github: string;
+}
+
+interface SkillType {
+    name: string;
+    link: string;
+    imgUrl: string;
+}
+
+interface SkillsType {
+    development: SkillType[];
+    design: SkillType[];
+}
+
+type Category = 'mobile' | 'web' | 'hardware' | 'personal' | 'work';
+
+interface LinkType {
+    name: string;
+    link: string;
+}
+
+interface ProjectsType {
+    [id: string]: {
+        name: string;
+        date: string;
+        subtitle: string;
+        description: string[];
+        categories: Category[];
+        imgUrl: string;
+        appStoreUrl: null | string;
+        playStoreUrl: null | string;
+        webAppUrl: null | string;
+        links: null | LinkType[];
+        technologies: null | LinkType[];
+    };
+}
+
+export const socialLinks: SocialLinkType = {
     email: 'mailto:andor.davoti@gmail.com',
     linkedin: 'https://linkedin.com/in/andordavoti',
     github: 'https://github.com/andordavoti',
 };
 
-export const skills = {
+export const skills: SkillsType = {
     development: [
         {
             name: 'React',
@@ -66,7 +106,7 @@ export const skills = {
     ],
 };
 
-export const projects = {
+export const projects: ProjectsType = {
     snitt: {
         name: 'Snitt',
         date: '2020',
