@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import Navbar from './Navbar';
-import { SocialLinkType } from '../lib/types';
 import { makeStyles, Typography, Container, IconButton } from '@material-ui/core';
 import { socialLinks } from '../lib/data';
 
@@ -53,27 +52,19 @@ const Header: React.FC = () => {
                 </Container>
 
                 <div className={styles.center}>
-                    <IconButton rel="noopener noreferrer" target="_blank" href={socialLinks['email' as SocialLinkType]}>
+                    <IconButton rel="noopener noreferrer" target="_blank" href={socialLinks.email}>
                         <EmailIcon color="primary" />
                     </IconButton>
                 </div>
 
                 <div className={styles.center}>
-                    <IconButton
-                        rel="noopener noreferrer"
-                        target="_blank"
-                        href={socialLinks['linkedin' as SocialLinkType]}
-                    >
+                    <IconButton rel="noopener noreferrer" target="_blank" href={socialLinks.linkedin}>
                         <LinkedInIcon color="primary" />
                     </IconButton>
                 </div>
 
                 <div className={styles.center}>
-                    <IconButton
-                        rel="noopener noreferrer"
-                        target="_blank"
-                        href={socialLinks['github' as SocialLinkType]}
-                    >
+                    <IconButton rel="noopener noreferrer" target="_blank" href={socialLinks.github}>
                         <GitHubIcon color="primary" />
                     </IconButton>
                 </div>
