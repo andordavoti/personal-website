@@ -62,18 +62,21 @@ const Projects: React.FC = () => {
 
             <Box m="1rem" />
 
-            <div>
-                <ButtonGroup variant="text" color="secondary" aria-label="text primary button group">
-                    {categories.map((category) => (
-                        <Button
-                            className={category === activeCategory ? styles.activeCategory : styles.inActiveCategory}
-                            onClick={() => setActiveCategory(category)}
-                        >
-                            {category}
-                        </Button>
-                    ))}
-                </ButtonGroup>
-            </div>
+            <ButtonGroup
+                style={{ flexWrap: 'wrap', justifyContent: 'center' }}
+                variant="text"
+                color="secondary"
+                aria-label="text primary button group"
+            >
+                {categories.map((category) => (
+                    <Button
+                        className={category === activeCategory ? styles.activeCategory : styles.inActiveCategory}
+                        onClick={() => setActiveCategory(category)}
+                    >
+                        {category}
+                    </Button>
+                ))}
+            </ButtonGroup>
 
             <Box m="0.5rem" />
 
