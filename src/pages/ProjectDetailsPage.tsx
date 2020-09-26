@@ -37,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
 const ProjectDetailsPage: React.FC<Props> = ({ match }) => {
     const styles = useStyles();
 
-    const project = projects.find(match.params.projectId);
+    const project = projects.find((project) => project.path === match.params.projectId);
 
     const { pathname } = useLocation();
 
