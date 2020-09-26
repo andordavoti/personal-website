@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
     img: {
         width: 225,
         borderRadius: 10,
-        border: theme.palette.type === 'light' ? `1px solid ${theme.palette.text.primary}` : 'transparent',
+        border: `0.1px solid ${theme.palette.text.secondary}`,
     },
     subtitle: {
         width: 200,
