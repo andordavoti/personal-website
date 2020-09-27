@@ -73,7 +73,7 @@ export const projects: ProjectType[] = [
         path: 'personal_website',
         name: 'Personal Website',
         date: '2020',
-        subtitle: "The website you're currently on.",
+        subtitle: 'This website.',
         description: [
             'Personal portfolio website built with Typescript, React and Material UI. One central place for all of my past and present projects.',
         ],
