@@ -25,6 +25,7 @@ interface LinkType {
 }
 
 type URLPath =
+    | 'knowt_mobile'
     | 'personal_website'
     | 'snitt'
     | 'tic_tac_toe'

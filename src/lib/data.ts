@@ -70,6 +70,37 @@ export const skills: SkillsType = {
 
 export const projects: ProjectType[] = [
     {
+        path: 'knowt_mobile',
+        name: 'Knowt Mobile App',
+        date: '2020',
+        subtitle: 'Took part in developing an iOS and Android app with a focus on a better way to learn.',
+        description: [
+            'The Knowt mobile app uses artificial intelligence and machine learning to automatically create quizzes and flashcards from your notes. While working at Knowt I took part in developing the app.',
+        ],
+        categories: ['mobile', 'work'],
+        imgUrl: require('../assets/img/knowt.jpg'),
+        appStoreUrl: 'https://itunes.apple.com/us/app/knowt-quizzes-from-your-notes/id1462368057?mt=8',
+        playStoreUrl: 'https://play.google.com/store/apps/details?id=com.getknowt.knowt.android',
+        webAppUrl: null,
+        links: null,
+        technologies: [
+            {
+                name: 'React',
+                link: 'https://reactjs.org/',
+            },
+
+            {
+                name: 'React Native',
+                link: 'https://reactnative.dev/',
+            },
+
+            {
+                name: 'Expo',
+                link: 'https://expo.io/',
+            },
+        ],
+    },
+    {
         path: 'personal_website',
         name: 'Personal Website',
         date: '2020',
