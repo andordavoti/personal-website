@@ -75,7 +75,7 @@ export const projects: ProjectType[] = [
         date: '2020',
         subtitle: 'Took part in developing an iOS and Android app with a focus on a better way to learn.',
         description: [
-            'The Knowt mobile app uses artificial intelligence and machine learning to automatically create quizzes and flashcards from your notes. While working at Knowt I took part in developing the app.',
+            'The Knowt mobile app uses artificial intelligence and machine learning to automatically create quizzes and flashcards from your notes. While working at Knowt I took part in developing the mobile app.',
         ],
         categories: ['mobile', 'work'],
         imgUrl: require('../assets/img/knowt.jpg'),
