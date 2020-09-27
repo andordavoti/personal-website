@@ -27,9 +27,12 @@ const useStyles = makeStyles((theme) => ({
         borderRadius: 10,
         border: `0.1px solid ${theme.palette.text.secondary}`,
     },
-    subtitle: {
+    subtitleContainer: {
+        display: 'flex',
         width: 200,
         height: 70,
+        alignItems: 'center',
+        justifyContent: 'center',
     },
 }));
 
@@ -46,9 +49,11 @@ const ProjectItem: React.FC<Props> = ({ path, name, subtitle, date, imgUrl }) =>
 
             <Box m="0.5rem" />
 
-            <Typography className={styles.subtitle} color="textPrimary" variant="body2">
-                {subtitle}
-            </Typography>
+            <div className={styles.subtitleContainer}>
+                <Typography color="textPrimary" variant="body2">
+                    {subtitle}
+                </Typography>
+            </div>
 
             <Box m="0.5rem" />
 
