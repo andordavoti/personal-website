@@ -72,10 +72,10 @@ export const projects: ProjectType[] = [
     {
         path: 'knowt_mobile',
         name: 'Knowt Mobile App',
-        date: '2020',
-        subtitle: 'Took part in developing an iOS and Android app with a focus on a better way to learn.',
+        date: '2020 - Present',
+        subtitle: 'Taking part in developing an iOS and Android app with a focus on a better way to learn.',
         description: [
-            'The Knowt mobile app uses artificial intelligence and machine learning to automatically create quizzes and flashcards from your notes. While working at Knowt I took part in developing the mobile app.',
+            'The Knowt mobile app uses artificial intelligence and machine learning to automatically create quizzes and flashcards from your notes. While working at Knowt I am taking part in developing the mobile app.',
         ],
         categories: ['mobile', 'work'],
         imgUrl: require('../assets/img/knowt.jpg'),
@@ -103,7 +103,7 @@ export const projects: ProjectType[] = [
     {
         path: 'personal_website',
         name: 'Personal Website',
-        date: '2020',
+        date: '2020 - Present',
         subtitle: 'This website.',
         description: [
             'Personal portfolio website built with Typescript, React and Material UI. One central place for all of my past and present projects.',
@@ -144,7 +144,7 @@ export const projects: ProjectType[] = [
     {
         path: 'snitt',
         name: 'Snitt',
-        date: '2020',
+        date: '2020 - Present',
         subtitle: 'A free cross-platform mobile app for Norwegian high school students.',
         description: [
             'A free cross-platform mobile app for Norwegian high school students. The student can add which subjects he/she has completed and which subject he/she will have in the future. This way the student gets an overview of their subjects and their grade performance. Then the app auto calculates their average grade with both the grade estimation for their future subjects and without. This way the student knows how much a single grade will impact their average score. The app also shows them their strongest and weakest subjects, this way they know what to focus on if they want to improve their score.',
@@ -248,7 +248,7 @@ export const projects: ProjectType[] = [
     },
     {
         path: 'den_store_bokmalsordboka',
-        date: '2019 - 2020',
+        date: '2019 - Present',
         name: 'Den store bokmålsordboka',
         subtitle: 'Took part in developing an iOS and Android app for the largest Norwegian dictionary.',
         description: [
@@ -295,7 +295,7 @@ export const projects: ProjectType[] = [
     },
     {
         path: 'fast_rhymes',
-        date: '2019 - 2020',
+        date: '2019 - Present',
         name: 'Fast Rhymes',
         subtitle: 'Tri-platform iOS, Android and web rhyme dictionary app.',
         description: [
@@ -345,7 +345,7 @@ export const projects: ProjectType[] = [
     },
     {
         path: 'hunnor',
-        date: '2019 - 2020',
+        date: '2019 - Present',
         name: 'HunNor Dictionary',
         subtitle: 'Took part in developing an iOS and Android app for an open-source Norwegian-Hungarian dictionary.',
         description: [
@@ -459,7 +459,7 @@ export const projects: ProjectType[] = [
     },
     {
         path: 'electric_longboard',
-        date: '2017 - 2020',
+        date: '2017 - Present',
         name: 'Electric Longboard',
         subtitle: 'High power e-board built from scratch.',
         description: [
@@ -480,7 +480,7 @@ export const projects: ProjectType[] = [
     },
     {
         path: 'home_automation',
-        date: '2017 - 2020',
+        date: '2017 - Present',
         name: 'Home Automation',
         subtitle: 'Built custom IOT devices and set up a custom smart home solution with Home Assistant.',
         description: [
