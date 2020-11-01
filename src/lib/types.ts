@@ -43,6 +43,11 @@ type URLPath =
     | 'camera_drone'
     | 'fpv_racing_drone';
 
+type TermsType = {
+    title: string;
+    content: string;
+};
+
 export interface ProjectType {
     path: URLPath;
     name: string;
@@ -56,4 +61,6 @@ export interface ProjectType {
     webAppUrl: null | string;
     links: null | LinkType[];
     technologies: null | LinkType[];
+    privacy?: string[];
+    terms?: TermsType[];
 }
