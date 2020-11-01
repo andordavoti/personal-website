@@ -106,7 +106,7 @@ export const projects: ProjectType[] = [
         date: '2020 - Present',
         subtitle: 'This website.',
         description: [
-            'Personal portfolio website built with Typescript, React and Material UI. One central place for all of my past and present projects.',
+            'One central place for all of my past and present projects. The website is built with Typescript, React and Material UI. The project is using Preact in production to keep the bundle size small.',
         ],
         categories: ['web', 'personal'],
         imgUrl: require('../assets/img/personal-website.jpg'),
@@ -127,6 +127,11 @@ export const projects: ProjectType[] = [
             {
                 name: 'React',
                 link: 'https://reactjs.org/',
+            },
+
+            {
+                name: 'Preact',
+                link: 'https://preactjs.com/',
             },
 
             {
