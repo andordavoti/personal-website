@@ -299,23 +299,15 @@ export const projects: ProjectType[] = [
         name: 'Fast Rhymes',
         subtitle: 'Tri-platform iOS, Android and web rhyme dictionary app.',
         description: [
-            "Tri-platform mobile (iOS, Android and web) rhyme dictionary app, built using React Native, React Native for Web, Redux, Expo, and the Datamuse API. Find words that rhyme, associations, words with similar meaning, words with similar spelling, etc. You can sort search results by syllables or sort by the most relevant words. It was built to be fast and convenient, with a minimalist design to not be in the way of the artists' creative process.",
+            'Tri-platform mobile (iOS, Android and web) lyrics writing app,built using React Native, React Native for Web, Redux, Expo, and Firebase. Find words that rhyme, associations, words with similar meaning, words with similar spelling, definitions, etc. You can sort search results by syllables or sort by the most relevant words.',
+            "With an integrated lyrics editor, you can swipe between search and the lyrics you are working on. It was built to be fast and convenient, with a minimalist design to not be in the way of the artists' creative process.",
         ],
         categories: ['mobile', 'web', 'personal'],
         imgUrl: require('../assets/img/fast-rhymes.jpg'),
         appStoreUrl: 'https://apps.apple.com/us/app/fast-rhymes/id1492575811?ls=1',
         playStoreUrl: 'https://play.google.com/store/apps/details?id=rhyme.dictionary.mobileapp',
         webAppUrl: 'https://fastrhymes.com/',
-        links: [
-            {
-                name: 'Landing page',
-                link: 'https://ovitas.no/fast-rhymes/',
-            },
-            {
-                name: 'Datamuse API',
-                link: 'http://www.datamuse.com/api/',
-            },
-        ],
+        links: null,
         technologies: [
             {
                 name: 'React',
@@ -340,6 +332,10 @@ export const projects: ProjectType[] = [
             {
                 name: 'Typescript',
                 link: 'https://www.typescriptlang.org/',
+            },
+            {
+                name: 'Firebase',
+                link: 'https://firebase.google.com/',
             },
         ],
     },
