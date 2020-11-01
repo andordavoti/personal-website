@@ -30,7 +30,7 @@ const App: React.FC = () => {
                 <ErrorBoundary>
                     <Switch>
                         <Route exact path="/" component={HomePage} />
-                        <Route exact path="/:projectId" component={ProjectDetailsPage} />
+                        <Route exact path="/project/:projectId" component={ProjectDetailsPage} />
                         <Route exact path="/privacy/:projectId" component={PrivacyPage} />
                     </Switch>
                 </ErrorBoundary>
