@@ -9,6 +9,8 @@ interface Props {
 const PrivacyPage: React.FC<Props> = ({ match }) => {
     const activeProject = projects.find((project) => project.path === match.params.projectId);
 
+    if (!activeProject.privacy || !activeProject.terms) throw new Error('Page Not Found');
+
     const renderPrivacy = () => {
         if (activeProject.privacy) {
             return (
