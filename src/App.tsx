@@ -11,6 +11,7 @@ import { useMediaQuery, createMuiTheme } from '@material-ui/core';
 import ProjectDetailsPage from './pages/ProjectDetailsPage';
 import ErrorBoundary from './components/ErrorBoundary';
 import { paletteDark, paletteLight } from './lib/colors';
+import PrivacyPage from './pages/PrivacyPage';
 
 const App: React.FC = () => {
     const darkMode = useMediaQuery('(prefers-color-scheme: dark)');
@@ -29,7 +30,8 @@ const App: React.FC = () => {
                 <ErrorBoundary>
                     <Switch>
                         <Route exact path="/" component={HomePage} />
-                        <Route path="/:projectId" component={ProjectDetailsPage} />
+                        <Route exact path="/:projectId" component={ProjectDetailsPage} />
+                        <Route exact path="/privacy/:projectId" component={PrivacyPage} />
                     </Switch>
                 </ErrorBoundary>
             </div>
