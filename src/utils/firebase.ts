@@ -1,6 +1,5 @@
 import firebase from 'firebase/app';
 import 'firebase/firestore';
-import projects from '../lib/data/projects';
 
 const firebaseConfig = {
     apiKey: 'AIzaSyDLAF5MW_ps_6KkaE1AQ12jNsV7ZInDbfE',
@@ -19,18 +18,18 @@ export const firestore = firebase.firestore();
 
 export default firebase;
 
-let called = false;
+// let called = false;
 
-const sendData = async () => {
-    if (called) return;
+// const sendData = async () => {
+//     if (called) return;
 
-    const collectionRef = firestore.collection('projects');
-    const batch = firestore.batch();
-    Object.values(projects).forEach((project) => {
-        const newDocRef = collectionRef.doc();
-        batch.set(newDocRef, project);
-    });
-    await batch.commit();
+//     const collectionRef = firestore.collection('projects');
+//     const batch = firestore.batch();
+//     Object.values(projects).forEach((project) => {
+//         const newDocRef = collectionRef.doc();
+//         batch.set(newDocRef, project);
+//     });
+//     await batch.commit();
 
-    called = true;
-};
+//     called = true;
+// };
