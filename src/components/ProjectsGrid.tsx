@@ -8,8 +8,8 @@ import Button from '@material-ui/core/Button/Button';
 
 import { makeStyles } from '@material-ui/core/styles';
 import { paletteDark } from '../lib/colors';
-import { projects } from '../lib/data';
 import { ProjectCategory } from '../lib/types';
+import projects from '../lib/data/projects';
 
 const useStyles = makeStyles((theme) => ({
     container: {

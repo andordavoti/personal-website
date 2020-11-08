@@ -4,8 +4,8 @@ import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import Link from '@material-ui/core/Link';
 import { makeStyles } from '@material-ui/core/styles';
-import { skills } from '../lib/data';
 import { useMediaQuery } from '@material-ui/core';
+import skills from '../lib/data/skills';
 
 const useStyles = makeStyles((theme) => ({
     container: {

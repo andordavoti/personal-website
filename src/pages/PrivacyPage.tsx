@@ -1,6 +1,6 @@
 import React from 'react';
-import { projects } from '../lib/data';
 import { Box, Typography, Container } from '@material-ui/core';
+import projects from '../lib/data/projects';
 
 interface Props {
     match: any;

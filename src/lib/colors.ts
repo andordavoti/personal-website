@@ -18,7 +18,6 @@ export const paletteDark: PaletteOptions = {
     },
 };
 
-// change these values
 export const paletteLight: PaletteOptions = {
     type: 'light',
     primary: {

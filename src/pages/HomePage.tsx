@@ -5,6 +5,7 @@ import TopIntro from '../components/TopIntro';
 import Skills from '../components/Skills';
 import Projects from '../components/ProjectsGrid';
 import { makeStyles } from '@material-ui/core';
+import Experience from '../components/Experience';
 
 const useStyles = makeStyles({
     container: {
@@ -21,6 +22,7 @@ const HomePage: React.FC = () => {
         <div className={styles.container}>
             <TopIntro />
             <Skills />
+            <Experience />
             <Projects />
         </div>
     );

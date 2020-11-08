@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { Container, Box, Typography, Link } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-import { projects } from '../lib/data';
 import { useLocation } from 'react-router-dom';
+import projects from '../lib/data/projects';
 
 interface Props {
     match: any;
