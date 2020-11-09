@@ -81,7 +81,7 @@ const projects: ProjectType[] = [
     {
         path: 'snitt',
         name: 'Snitt',
-        date: '2020 - Present',
+        date: '2020',
         subtitle: 'A free cross-platform mobile app for Norwegian high school students.',
         description: [
             'A free cross-platform mobile app for Norwegian high school students. The student can add which subjects he/she has completed and which subject he/she will have in the future. This way the student gets an overview of their subjects and their grade performance. Then the app auto calculates their average grade with both the grade estimation for their future subjects and without. This way the student knows how much a single grade will impact their average score. The app also shows them their strongest and weakest subjects, this way they know what to focus on if they want to improve their score.',
@@ -308,7 +308,7 @@ const projects: ProjectType[] = [
     },
     {
         path: 'hunnor',
-        date: '2019 - Present',
+        date: '2019 - 2020',
         name: 'HunNor Dictionary',
         subtitle: 'Took part in developing an iOS and Android app for an open-source Norwegian-Hungarian dictionary.',
         description: [
