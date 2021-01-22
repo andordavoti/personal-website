@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useMemo } from 'react';
 import { Container, Box, Typography, Link } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import { useLocation } from 'react-router-dom';
@@ -37,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
 const ProjectDetailsPage: React.FC<Props> = ({ match }) => {
     const styles = useStyles();
 
-    const activeProject = projects.find((project) => project.path === match.params.projectId);
+    const activeProject = useMemo(() => projects.find((project) => project.path === match.params.projectId), [match]);
 
     const { pathname } = useLocation();
 

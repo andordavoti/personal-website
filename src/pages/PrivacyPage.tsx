@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { Box, Typography, Container } from '@material-ui/core';
 import projects from '../lib/data/projects';
 
@@ -7,7 +7,7 @@ interface Props {
 }
 
 const PrivacyPage: React.FC<Props> = ({ match }) => {
-    const activeProject = projects.find((project) => project.path === match.params.projectId);
+    const activeProject = useMemo(() => projects.find((project) => project.path === match.params.projectId), [match]);
 
     if (!activeProject.privacy || !activeProject.terms) throw new Error('Page Not Found');
 
