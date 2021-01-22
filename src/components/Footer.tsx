@@ -1,6 +1,8 @@
 import React from 'react';
 import { makeStyles, Container, Typography } from '@material-ui/core';
 
+const currentYear = new Date().getFullYear();
+
 const useStyles = makeStyles((theme) => ({
     footer: {
         height: 60,
@@ -25,7 +27,7 @@ const Footer: React.FC = () => {
     return (
         <Container component="footer" className={styles.footer}>
             <Typography className={styles.footerText} color="primary" variant="body1">
-                © 2020 Andor Davoti
+                © {currentYear} Andor Davoti
             </Typography>
         </Container>
     );
