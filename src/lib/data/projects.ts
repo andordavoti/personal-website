@@ -190,7 +190,6 @@ const projects: ProjectType[] = [
         subtitle: 'Took part in developing an iOS and Android app for the largest Norwegian dictionary.',
         description: [
             'Den store bokmålsordboka is the largest Norwegian dictionary, with over 180 000 words. At Ovitas AS I took part in developing the mobile app, managing the external testing and making the landing page.',
-            'The app will become available in august.',
         ],
         categories: ['mobile', 'work'],
         imgUrl: require('../../assets/img/bokmalsordboka.jpg'),
