@@ -233,7 +233,7 @@ const projects: ProjectType[] = [
         path: 'fast_rhymes',
         date: '2019 - Present',
         name: 'Fast Rhymes',
-        subtitle: 'Tri-platform iOS, Android and web rhyme dictionary app.',
+        subtitle: 'Tri-platform iOS, Android and web rhyme lyrics writing app.',
         description: [
             'Tri-platform mobile (iOS, Android and web) lyrics writing app,built using React Native, React Native for Web, Redux, Expo, and Firebase. Find words that rhyme, associations, words with similar meaning, words with similar spelling, definitions, etc. You can sort search results by syllables or sort by the most relevant words.',
             "With an integrated lyrics editor, you can swipe between search and the lyrics you are working on. It was built to be fast and convenient, with a minimalist design to not be in the way of the artists' creative process.",
