@@ -4,8 +4,8 @@ const projects: ProjectType[] = [
     {
         path: 'knowt_mobile',
         name: 'Knowt Mobile App',
-        date: '2020 - Present',
-        subtitle: 'Taking part in developing an iOS and Android app with a focus on a better way to learn.',
+        date: '2020 - 2021',
+        subtitle: 'Took part in developing an iOS and Android app with a focus on a better way to learn.',
         description: [
             'The Knowt mobile app uses artificial intelligence and machine learning to automatically create quizzes and flashcards from your notes. While working at Knowt I am taking part in developing the mobile app.',
         ],
