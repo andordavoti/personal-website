@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import './index.css';
 
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, useLocation } from 'react-router-dom';
 
 import { ThemeProvider } from '@material-ui/core/styles';
 import Header from './components/Header';
@@ -12,12 +12,13 @@ import ProjectDetailsPage from './pages/ProjectDetailsPage';
 import ErrorBoundary from './components/ErrorBoundary';
 import { paletteDark, paletteLight } from './lib/colors';
 import PrivacyPage from './pages/PrivacyPage';
+import { AnimatePresence } from 'framer-motion';
 
 const App: React.FC = () => {
     const darkMode = useMediaQuery('(prefers-color-scheme: dark)');
-
     const theme = useMemo(() => createMuiTheme({ palette: darkMode ? paletteDark : paletteLight }), [darkMode]);
 
+    const location = useLocation();
     return (
         <ThemeProvider theme={theme}>
             <div
@@ -28,11 +29,13 @@ const App: React.FC = () => {
             >
                 <Header />
                 <ErrorBoundary>
-                    <Switch>
-                        <Route exact path="/" component={HomePage} />
-                        <Route exact path="/project/:projectId" component={ProjectDetailsPage} />
-                        <Route exact path="/privacy/:projectId" component={PrivacyPage} />
-                    </Switch>
+                    <AnimatePresence exitBeforeEnter initial={false}>
+                        <Switch location={location} key={location.pathname}>
+                            <Route exact path="/" component={HomePage} />
+                            <Route exact path="/project/:projectId" component={ProjectDetailsPage} />
+                            <Route exact path="/privacy/:projectId" component={PrivacyPage} />
+                        </Switch>
+                    </AnimatePresence>
                 </ErrorBoundary>
             </div>
             <Footer />

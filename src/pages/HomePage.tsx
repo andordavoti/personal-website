@@ -6,6 +6,7 @@ import Skills from '../components/Skills';
 import Projects from '../components/ProjectsGrid';
 import { makeStyles } from '@material-ui/core';
 // import Experience from '../components/Experience';
+import { motion } from 'framer-motion';
 
 const useStyles = makeStyles({
     container: {
@@ -19,12 +20,18 @@ const useStyles = makeStyles({
 const HomePage: React.FC = () => {
     const styles = useStyles();
     return (
-        <div className={styles.container}>
+        <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.2 }}
+            className={styles.container}
+        >
             <TopIntro />
             <Skills />
             {/* <Experience /> */}
             <Projects />
-        </div>
+        </motion.div>
     );
 };
 

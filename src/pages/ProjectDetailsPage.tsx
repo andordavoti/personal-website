@@ -3,6 +3,7 @@ import { Container, Box, Typography, Link } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import { useLocation } from 'react-router-dom';
 import projects from '../lib/data/projects';
+import { motion } from 'framer-motion';
 
 interface Props {
     match: any;
@@ -152,37 +153,44 @@ const ProjectDetailsPage: React.FC<Props> = ({ match }) => {
     };
 
     return (
-        <Box style={{ padding: '2rem' }}>
-            <Typography color="textPrimary" align="center" variant="h3">
-                {activeProject.name}
-            </Typography>
+        <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.2 }}
+        >
+            <Box style={{ padding: '2rem' }}>
+                <Typography color="textPrimary" align="center" variant="h3">
+                    {activeProject.name}
+                </Typography>
 
-            <Box m="0.5rem" />
+                <Box m="0.5rem" />
 
-            <Typography color="textSecondary" align="center" variant="h5">
-                {activeProject.date}
-            </Typography>
+                <Typography color="textSecondary" align="center" variant="h5">
+                    {activeProject.date}
+                </Typography>
 
-            <Box m="1rem" />
+                <Box m="1rem" />
 
-            <img className={styles.img} src={activeProject.imgUrl} alt="tic-tac-toe" />
+                <img className={styles.img} src={activeProject.imgUrl} alt="tic-tac-toe" />
 
-            <Box m="2rem" />
+                <Box m="2rem" />
 
-            <Container maxWidth="md">
-                {activeProject.description.map((paragraph: string) => (
-                    <div key={paragraph}>
-                        <Typography color="textPrimary" variant="body1">
-                            {paragraph}
-                        </Typography>
-                        <Box m="1rem" />
-                    </div>
-                ))}
-                {renderLinks()}
-                {renderTechnologiesUsed()}
-                {renderAppBadges()}
-            </Container>
-        </Box>
+                <Container maxWidth="md">
+                    {activeProject.description.map((paragraph: string) => (
+                        <div key={paragraph}>
+                            <Typography color="textPrimary" variant="body1">
+                                {paragraph}
+                            </Typography>
+                            <Box m="1rem" />
+                        </div>
+                    ))}
+                    {renderLinks()}
+                    {renderTechnologiesUsed()}
+                    {renderAppBadges()}
+                </Container>
+            </Box>
+        </motion.div>
     );
 };
 
