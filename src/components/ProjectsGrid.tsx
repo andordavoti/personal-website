@@ -69,8 +69,9 @@ const Projects: React.FC = () => {
                 color="secondary"
                 aria-label="text primary button group"
             >
-                {categories.map((category) => (
+                {categories.map((category, index) => (
                     <Button
+                        key={index}
                         className={category === activeCategory ? styles.activeCategory : styles.inActiveCategory}
                         onClick={() => setActiveCategory(category)}
                     >
