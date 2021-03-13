@@ -10,6 +10,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import { paletteDark } from '../lib/colors';
 import { ProjectCategory } from '../lib/types';
 import projects from '../lib/data/projects';
+import { AnimateSharedLayout, motion } from 'framer-motion';
 
 const useStyles = makeStyles((theme) => ({
     container: {
@@ -82,9 +83,15 @@ const Projects: React.FC = () => {
 
             <Container maxWidth="lg">
                 <Grid container className={styles.projects}>
-                    {activeProjects.map(({ path, name, subtitle, date, imgUrl }) => {
-                        return <ProjectItem key={name} {...{ path, name, subtitle, date, imgUrl }} />;
-                    })}
+                    <AnimateSharedLayout>
+                        {activeProjects.map(({ path, name, subtitle, date, imgUrl }) => {
+                            return (
+                                <motion.div layout key={name}>
+                                    <ProjectItem {...{ path, name, subtitle, date, imgUrl }} />
+                                </motion.div>
+                            );
+                        })}
+                    </AnimateSharedLayout>
                 </Grid>
             </Container>
         </Box>
