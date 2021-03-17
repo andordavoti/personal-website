@@ -8,6 +8,11 @@ const skills: SkillsType = {
             imgUrl: require('../../assets/icons/skill-icons/react.png'),
         },
         {
+            name: 'Next.js',
+            link: 'https://nextjs.org/',
+            imgUrl: require('../../assets/icons/skill-icons/next-js.png'),
+        },
+        {
             name: 'React Native',
             link: 'https://reactnative.dev/',
             imgUrl: require('../../assets/icons/skill-icons/react.png'),
