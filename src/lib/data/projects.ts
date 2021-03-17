@@ -242,8 +242,13 @@ const projects: ProjectType[] = [
         imgUrl: require('../../assets/img/fast-rhymes.jpg'),
         appStoreUrl: 'https://apps.apple.com/us/app/fast-rhymes/id1492575811?ls=1',
         playStoreUrl: 'https://play.google.com/store/apps/details?id=rhyme.dictionary.mobileapp',
-        webAppUrl: 'https://fastrhymes.com/',
-        links: null,
+        webAppUrl: 'https://app.fastrhymes.com/',
+        links: [
+            {
+                name: 'Landing Page',
+                link: 'https://fastrhymes.com/',
+            },
+        ],
         technologies: [
             {
                 name: 'React',
