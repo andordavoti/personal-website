@@ -255,6 +255,10 @@ const projects: ProjectType[] = [
                 link: 'https://reactjs.org/',
             },
             {
+                name: 'Next.js',
+                link: 'https://nextjs.org/',
+            },
+            {
                 name: 'Redux',
                 link: 'https://redux.js.org/',
             },
