@@ -144,8 +144,7 @@ const projects: ProjectType[] = [
             },
             {
                 name: 'Reddit post 2',
-                link:
-                    'https://www.reddit.com/r/reactnative/comments/hgf317/tri_platform_reactnative_game_with_expo_firestore/',
+                link: 'https://www.reddit.com/r/reactnative/comments/hgf317/tri_platform_reactnative_game_with_expo_firestore/',
             },
         ],
         technologies: [
@@ -187,9 +186,9 @@ const projects: ProjectType[] = [
         path: 'den_store_bokmalsordboka',
         date: '2019 - Present',
         name: 'Den store bokmålsordboka',
-        subtitle: 'Took part in developing an iOS and Android app for the largest Norwegian dictionary.',
+        subtitle: 'iOS and Android app for the largest Norwegian dictionary.',
         description: [
-            'Den store bokmålsordboka is the largest Norwegian dictionary, with over 180 000 words. At Ovitas AS I took part in developing the mobile app, managing the external testing and making the landing page.',
+            'Den store bokmålsordboka is the largest Norwegian dictionary, with over 200 000 words. At Ovitas AS I took part in developing the mobile app, managing the external testing and making the landing page. Later, development of the project was taken over by Davoti Solutions, my own company.',
         ],
         categories: ['mobile', 'work'],
         imgUrl: require('../../assets/img/bokmalsordboka.jpg'),
