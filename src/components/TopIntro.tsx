@@ -49,8 +49,8 @@ const TopIntro: React.FC = () => {
                 <Box m="2rem" />
 
                 <Typography color="textPrimary" variant="subtitle1">
-                    With a passion for DIY I've build a lot of software and hardware projects over the years, which you
-                    can check out bellow.
+                    With a passion for building things, I've built several software and hardware projects over the
+                    years, which you can check out bellow.
                 </Typography>
             </div>
             <img className={styles.profileImg} src={require('../assets/img/profile_img.jpg')} alt="profile" />
