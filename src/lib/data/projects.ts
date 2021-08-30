@@ -315,11 +315,11 @@ const projects: ProjectType[] = [
     },
     {
         path: 'hunnor',
-        date: '2019 - 2020',
+        date: '2019 - Present',
         name: 'HunNor Dictionary',
-        subtitle: 'Took part in developing an iOS and Android app for an open-source Norwegian-Hungarian dictionary.',
+        subtitle: 'iOS and Android app for an open-source Norwegian-Hungarian dictionary.',
         description: [
-            'The HunNor Dictionary is an open-source Norwegian-Hungarian dictionary. At Ovitas AS, I took part in developing the mobile app.',
+            'The HunNor Dictionary is an open-source Norwegian-Hungarian dictionary. At Ovitas AS, I took part in developing the mobile app. Later, development of the project was taken over by Davoti Solutions, my own company.',
         ],
         categories: ['mobile', 'work'],
         imgUrl: require('../../assets/img/hunnor.jpg'),
