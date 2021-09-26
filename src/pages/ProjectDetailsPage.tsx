@@ -1,13 +1,15 @@
 import React, { useEffect, useMemo } from 'react';
 import { Container, Box, Typography, Link } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-import { useLocation } from 'react-router-dom';
+import { RouteComponentProps, useLocation } from 'react-router-dom';
 import projects from '../lib/data/projects';
 import { motion } from 'framer-motion';
 
-interface Props {
-    match: any;
+interface MatchParams {
+    projectId: string;
 }
+
+interface Props extends RouteComponentProps<MatchParams> {}
 
 const useStyles = makeStyles((theme) => ({
     bold: {
