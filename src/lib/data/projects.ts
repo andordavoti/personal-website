@@ -6,7 +6,10 @@ const projects: ProjectType[] = [
         date: '2021 - Present',
         name: 'todoaholic',
         subtitle: 'A minimalist open-source and free todo app for iOS, Android, macOS & web.',
-        description: ["For more info about the project, visit the project's GitHub page."],
+        description: [
+            '“todoaholic” is a free and open-source minimalist todo app for iOS, Android, macOS and web. Designed to feel like your old school todo list on pen and paper.',
+            "For more info about the project, visit the project's GitHub page.",
+        ],
         categories: ['mobile', 'desktop', 'web', 'personal'],
         imgUrl: require('../../assets/img/todoaholic.jpg'),
         appStoreUrl: null, // TODO: add this
