@@ -18,14 +18,29 @@ const skills: SkillsType = {
             imgUrl: require('../../assets/icons/skill-icons/react.png'),
         },
         {
-            name: 'Javascript',
-            link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
-            imgUrl: require('../../assets/icons/skill-icons/JS.jpg'),
+            name: 'Flutter',
+            link: 'https://flutter.dev/',
+            imgUrl: require('../../assets/icons/skill-icons/flutter.png'),
+        },
+        {
+            name: 'Dart',
+            link: 'https://dart.dev/',
+            imgUrl: require('../../assets/icons/skill-icons/dart.png'),
         },
         {
             name: 'Typescript',
             link: 'https://www.typescriptlang.org/',
             imgUrl: require('../../assets/icons/skill-icons/TS.jpg'),
+        },
+        {
+            name: 'Javascript',
+            link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
+            imgUrl: require('../../assets/icons/skill-icons/JS.jpg'),
+        },
+        {
+            name: 'Firebase',
+            link: 'https://firebase.google.com/',
+            imgUrl: require('../../assets/icons/skill-icons/firebase.png'),
         },
         {
             name: 'HTML',
@@ -41,11 +56,6 @@ const skills: SkillsType = {
             name: 'Arduino',
             link: 'https://www.arduino.cc/',
             imgUrl: require('../../assets/icons/skill-icons/arduino.png'),
-        },
-        {
-            name: 'Firebase',
-            link: 'https://firebase.google.com/',
-            imgUrl: require('../../assets/icons/skill-icons/firebase.png'),
         },
     ],
     design: [
