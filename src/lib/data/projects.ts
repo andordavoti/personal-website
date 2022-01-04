@@ -2,12 +2,88 @@ import { ProjectType } from '../types';
 
 const projects: ProjectType[] = [
     {
+        path: 'todoaholic',
+        date: '2021 - Present',
+        name: 'todoaholic',
+        subtitle: 'A minimalist open-source and free todo app for iOS, Android, macOS & web.',
+        description: ["For more info about the project, visit the project's GitHub page."],
+        categories: ['mobile', 'desktop', 'web', 'personal'],
+        imgUrl: require('../../assets/img/todoaholic.jpg'),
+        appStoreUrl: null, // TODO: add this
+        playStoreUrl: null, // TODO: add this
+        webAppUrl: 'https://todoaholic.com/',
+        links: [
+            {
+                name: 'GitHub repo',
+                link: 'https://github.com/andordavoti/todoaholic',
+            },
+        ],
+        technologies: [
+            {
+                name: 'Flutter',
+                link: 'https://flutter.dev/',
+            },
+            {
+                name: 'Typescript',
+                link: 'https://www.typescriptlang.org/',
+            },
+            {
+                name: 'Firebase',
+                link: 'https://firebase.google.com/',
+            },
+            {
+                name: 'GitHub Actions',
+                link: 'https://github.com/features/actions',
+            },
+        ],
+        privacy: [
+            'Anonymous user data is collected for Firebase Analytics, Firebase Crashlytics and Firebase Performance Monitoring.',
+        ],
+        terms: [
+            {
+                title: '',
+                content:
+                    'Please read these terms of service ("terms", "terms of service") carefully before using the Fast Rhymes mobile and web app (the "service") is operated by Andor Davoti (“I”, "me").',
+            },
+            {
+                title: 'Conditions of Use',
+                content:
+                    'I will provide their services to you, which are subject to the conditions stated below in this document. Every time you visit this app, use its services, or make a purchase, you accept the following conditions. This is why I urge you to read them carefully.',
+            },
+            {
+                title: '',
+                content:
+                    'I take no responsibility for the use of this app. The app is provided as-is, and do not guarantee that it will work as expected or that the your data is safe. The app is provided "as is". I do not warrant that the app will be uninterrupted or error-free. You assume all risks associated with the use of this app.',
+            },
+            {
+                title: '',
+                content:
+                    'If the user is inactive for three months, all user data as well as the user account will be deleted.',
+            },
+            {
+                title: 'Communications',
+                content:
+                    'All communication with me is electronic. Every time you send me an email or visit the website or the app, you are going to be communicating with me. You hereby consent to receive communications from me. You also agree that all notices, disclosures, agreements, and other communications we provide to you electronically meet the legal requirements that such communications be in writing.',
+            },
+            {
+                title: 'Applicable Law',
+                content:
+                    'By visiting this website, you agree that the laws of the United States, without regard to principles of conflict laws, will govern these terms of service, or any dispute of any sort that might come between me and you, or business partners and associates.',
+            },
+            {
+                title: 'Disputes',
+                content:
+                    'Any dispute related in any way to your purchases or visit to the web or mobile app shall be arbitrated by state or federal court in the United States and you consent to exclusive jurisdiction and venue of such courts. ',
+            },
+        ],
+    },
+    {
         path: 'knowt_mobile',
         name: 'Knowt Mobile App',
         date: '2020 - 2021',
         subtitle: 'Took part in developing an iOS and Android app with a focus on a better way to learn.',
         description: [
-            'The Knowt mobile app uses artificial intelligence and machine learning to automatically create quizzes and flashcards from your notes. While working at Knowt I am taking part in developing the mobile app.',
+            'The Knowt mobile app uses artificial intelligence and machine learning to automatically create quizzes and flashcards from your notes. While working at Knowt I was taking part in developing the mobile app.',
         ],
         categories: ['mobile', 'work'],
         imgUrl: require('../../assets/img/knowt.jpg'),
@@ -370,7 +446,7 @@ const projects: ProjectType[] = [
         webAppUrl: null,
         links: [
             {
-                name: 'Github repo',
+                name: 'GitHub repo',
                 link: 'https://github.com/andordavoti/ev-calculator-app',
             },
         ],
@@ -408,7 +484,7 @@ const projects: ProjectType[] = [
         webAppUrl: null,
         links: [
             {
-                name: 'Github repo',
+                name: 'GitHub repo',
                 link: 'https://github.com/andordavoti/g-eazy-app',
             },
         ],

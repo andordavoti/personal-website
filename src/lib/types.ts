@@ -17,7 +17,7 @@ export interface SkillsType {
     design: SkillType[];
 }
 
-export type ProjectCategory = 'mobile' | 'web' | 'hardware' | 'personal' | 'work';
+export type ProjectCategory = 'mobile' | 'desktop' | 'web' | 'hardware' | 'personal' | 'work';
 
 interface LinkType {
     name: string;
@@ -25,6 +25,7 @@ interface LinkType {
 }
 
 type URLPath =
+    | 'todoaholic'
     | 'knowt_mobile'
     | 'personal_website'
     | 'snitt'
