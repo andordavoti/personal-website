@@ -10,10 +10,10 @@ const projects: ProjectType[] = [
             '“todoaholic” is a free and open-source minimalist todo app for iOS, Android, macOS and web. Designed to feel like your old school todo list on pen and paper.',
             "For more info about the project, visit the project's GitHub page.",
         ],
-        categories: ['mobile', 'desktop', 'web', 'personal'],
+        categories: ['mobile', 'desktop', 'web', 'full stack', 'personal'],
         imgUrl: require('../../assets/img/todoaholic.jpg'),
-        appStoreUrl: null, // TODO: add this
-        playStoreUrl: null, // TODO: add this
+        appStoreUrl: null, // TODO: add this and the mac app store url
+        playStoreUrl: 'https://play.google.com/store/apps/details?id=com.andordavoti.todoaholic',
         webAppUrl: 'https://todoaholic.com/',
         links: [
             {
@@ -77,6 +77,42 @@ const projects: ProjectType[] = [
                 title: 'Disputes',
                 content:
                     'Any dispute related in any way to your purchases or visit to the web or mobile app shall be arbitrated by state or federal court in the United States and you consent to exclusive jurisdiction and venue of such courts. ',
+            },
+        ],
+    },
+    {
+        path: 'cruiseaholic',
+        name: 'Cruiseaholic',
+        date: '2021',
+        subtitle: 'Booking platform for cruises in .NET & React.',
+        description: ['Web app for booking cruises. Developed with a React frontend and a .NET backend.'],
+        categories: ['web', 'full stack'],
+        imgUrl: require('../../assets/img/cruiseaholic.jpg'),
+        appStoreUrl: null,
+        playStoreUrl: null,
+        webAppUrl: null,
+        links: [
+            {
+                name: 'Github repo',
+                link: 'https://github.com/andordavoti/cruiseaholic',
+            },
+        ],
+        technologies: [
+            {
+                name: 'React',
+                link: 'https://reactjs.org/',
+            },
+            {
+                name: 'Typescript',
+                link: 'https://www.typescriptlang.org/',
+            },
+            {
+                name: 'Material UI',
+                link: 'https://material-ui.com/',
+            },
+            {
+                name: '.NET',
+                link: 'https://dotnet.microsoft.com/en-us/',
             },
         ],
     },
@@ -156,7 +192,6 @@ const projects: ProjectType[] = [
             },
         ],
     },
-
     {
         path: 'snitt',
         name: 'Snitt',
@@ -203,7 +238,7 @@ const projects: ProjectType[] = [
         description: [
             "Open-source, tri-platform mobile (iOS, Android and web) online multiplayer game, built using React Native, React Native for Web,  Redux, Expo, Firestore, and Firebase Cloud functions. Play Tic Tac Toe cross-platform, either online or in-person with your friends. Registration is not needed, instead, anonymous lobby id's are utilized. Therefore only you and the one you're playing with online know who is playing with who.",
         ],
-        categories: ['mobile', 'web', 'personal'],
+        categories: ['mobile', 'web', 'full stack', 'personal'],
         imgUrl: require('../../assets/img/tic-tac-toe.jpg'),
         appStoreUrl: 'https://apps.apple.com/us/app/tic-tac-toe-online/id1513609441?ls=1',
         playStoreUrl: 'https://play.google.com/store/apps/details?id=com.andordavoti.tictactoe.game',
@@ -316,7 +351,7 @@ const projects: ProjectType[] = [
             'Tri-platform mobile (iOS, Android and web) lyrics writing app,built using React Native, React Native for Web, Redux, Expo, and Firebase. Find words that rhyme, associations, words with similar meaning, words with similar spelling, definitions, etc. You can sort search results by syllables or sort by the most relevant words.',
             "With an integrated lyrics editor, you can swipe between search and the lyrics you are working on. It was built to be fast and convenient, with a minimalist design to not be in the way of the artists' creative process.",
         ],
-        categories: ['mobile', 'web', 'personal'],
+        categories: ['mobile', 'web', 'full stack', 'personal'],
         imgUrl: require('../../assets/img/fast-rhymes.jpg'),
         appStoreUrl: 'https://apps.apple.com/us/app/fast-rhymes/id1492575811?ls=1',
         playStoreUrl: 'https://play.google.com/store/apps/details?id=rhyme.dictionary.mobileapp',
