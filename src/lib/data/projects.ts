@@ -12,7 +12,7 @@ const projects: ProjectType[] = [
         ],
         categories: ['mobile', 'desktop', 'web', 'full stack', 'personal'],
         imgUrl: require('../../assets/img/todoaholic.jpg'),
-        appStoreUrl: null, // TODO: add this and the mac app store url
+        appStoreUrl: 'https://apps.apple.com/us/app/todoaholic/id1601535769',
         playStoreUrl: 'https://play.google.com/store/apps/details?id=com.andordavoti.todoaholic',
         webAppUrl: 'https://todoaholic.com/',
         links: [
