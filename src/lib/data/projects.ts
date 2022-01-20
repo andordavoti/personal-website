@@ -395,6 +395,10 @@ const projects: ProjectType[] = [
                 name: 'Firebase',
                 link: 'https://firebase.google.com/',
             },
+            {
+                name: 'GitHub Actions',
+                link: 'https://github.com/features/actions',
+            },
         ],
         privacy: [
             'I collect anonymous user data (IP address, software, and hardware info) when the app crashes to make the user experience better. I also use firebase analytics in the app, which reports anonymous usage of the app.',
