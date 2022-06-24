@@ -43,7 +43,7 @@ const TopIntro: React.FC = () => {
                 <Box m="2rem" />
 
                 <Typography color="textPrimary" variant="h5">
-                    I am a software developer from Oslo, Norway.
+                    I am a full stack developer from Oslo, Norway.
                 </Typography>
 
                 <Box m="2rem" />

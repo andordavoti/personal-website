@@ -2,6 +2,80 @@ import { ProjectType } from '../types';
 
 const projects: ProjectType[] = [
     {
+        path: 'smart-water-control',
+        date: '2022',
+        name: 'Smart Water Control',
+        subtitle: 'A simple water control switch that can be controlled from anywhere.',
+        description: [
+            'Created a simple water control switch that can be controlled from anywhere.',
+            'Read more about it in the medium article linked below.',
+        ],
+        categories: ['personal', 'hardware'],
+        imgUrl: require('../../assets/img/smart-water-control.jpg'),
+        appStoreUrl: null,
+        playStoreUrl: null,
+        webAppUrl: null,
+        links: [
+            {
+                name: 'Medium article',
+                link: 'https://medium.com/@andordavoti/diy-smart-water-control-64f86096e1fe',
+            },
+        ],
+        technologies: [
+            {
+                name: 'Home Assistant',
+                link: 'https://www.home-assistant.io/',
+            },
+            {
+                name: 'ESPHome',
+                link: 'https://esphome.io/',
+            },
+            {
+                name: 'YAML',
+                link: 'https://yaml.org/',
+            },
+        ],
+    },
+    {
+        path: 'frid',
+        date: '2021 - Present',
+        name: 'Frid',
+        subtitle: 'Finance app for iOS and Android.',
+        description: [
+            'Frid is a finance app for iOS and Android. It gives you an overview of all your finances in one place.',
+            "While working for Frid, I have taken the frontend app development from scratch to open beta by myself, and I'm now focusing on learning backend development.",
+        ],
+        categories: ['mobile', 'full stack', 'work'],
+        imgUrl: require('../../assets/img/frid.jpg'),
+        appStoreUrl: 'https://apps.apple.com/us/app/frid/id1574147575',
+        playStoreUrl: 'https://play.google.com/store/apps/details?id=no.visonomic.mobileapp',
+        webAppUrl: null,
+        links: [
+            {
+                name: 'Website',
+                link: 'https://frid.app/',
+            },
+        ],
+        technologies: [
+            {
+                name: 'React Native',
+                link: 'https://reactnative.dev/',
+            },
+            {
+                name: 'Typescript',
+                link: 'https://www.typescriptlang.org/',
+            },
+            {
+                name: 'AWS',
+                link: 'https://aws.amazon.com/',
+            },
+            {
+                name: 'GitHub Actions',
+                link: 'https://github.com/features/actions',
+            },
+        ],
+    },
+    {
         path: 'todoaholic',
         date: '2021 - Present',
         name: 'todoaholic',
@@ -120,7 +194,7 @@ const projects: ProjectType[] = [
         path: 'knowt_mobile',
         name: 'Knowt Mobile App',
         date: '2020 - 2021',
-        subtitle: 'Took part in developing an iOS and Android app with a focus on a better way to learn.',
+        subtitle: 'iOS and Android app with a focus on a better way to learn.',
         description: [
             'The Knowt mobile app uses artificial intelligence and machine learning to automatically create quizzes and flashcards from your notes. While working at Knowt I was taking part in developing the mobile app.',
         ],
@@ -129,7 +203,12 @@ const projects: ProjectType[] = [
         appStoreUrl: 'https://itunes.apple.com/us/app/knowt-quizzes-from-your-notes/id1462368057?mt=8',
         playStoreUrl: 'https://play.google.com/store/apps/details?id=com.getknowt.knowt.android',
         webAppUrl: null,
-        links: null,
+        links: [
+            {
+                name: 'Website',
+                link: 'https://knowt.io/',
+            },
+        ],
         technologies: [
             {
                 name: 'React',

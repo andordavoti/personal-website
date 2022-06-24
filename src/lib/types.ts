@@ -25,6 +25,8 @@ interface LinkType {
 }
 
 type URLPath =
+    | 'smart-water-control'
+    | 'frid'
     | 'todoaholic'
     | 'cruiseaholic'
     | 'knowt_mobile'
