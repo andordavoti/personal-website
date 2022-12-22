@@ -60,6 +60,11 @@ const skills: SkillsType = {
     ],
     design: [
         {
+            name: 'Figma',
+            link: 'https://www.figma.com/',
+            imgUrl: require('../../assets/icons/skill-icons/figma.png'),
+        },
+        {
             name: 'Adobe XD',
             link: 'https://www.adobe.com/products/xd.html',
             imgUrl: require('../../assets/icons/skill-icons/XD.png'),
