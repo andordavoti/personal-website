@@ -120,7 +120,7 @@ const projects: ProjectType[] = [
             {
                 title: '',
                 content:
-                    'Please read these terms of service ("terms", "terms of service") carefully before using the Fast Rhymes mobile and web app (the "service") is operated by Andor Davoti (“I”, "me").',
+                    'Please read these terms of service ("terms", "terms of service") carefully before using the todoaholic mobile and web app (the "service") is operated by Andor Davoti (“I”, "me").',
             },
             {
                 title: 'Conditions of Use',
@@ -191,7 +191,7 @@ const projects: ProjectType[] = [
         ],
     },
     {
-        path: 'knowt_mobile',
+        path: 'knowt-mobile',
         name: 'Knowt Mobile App',
         date: '2020 - 2021',
         subtitle: 'iOS and Android app with a focus on a better way to learn.',
@@ -227,7 +227,7 @@ const projects: ProjectType[] = [
         ],
     },
     {
-        path: 'personal_website',
+        path: 'personal-website',
         name: 'Personal Website',
         date: '2020 - Present',
         subtitle: 'This website.',
@@ -310,7 +310,7 @@ const projects: ProjectType[] = [
     },
 
     {
-        path: 'tic_tac_toe',
+        path: 'tic-tac-toe',
         name: 'Tic Tac Toe – Online',
         date: '2020',
         subtitle: 'Open-source online tri-platform (iOS, Android and web) Tic Tac Toe game.',
@@ -322,14 +322,50 @@ const projects: ProjectType[] = [
         appStoreUrl: 'https://apps.apple.com/us/app/tic-tac-toe-online/id1513609441?ls=1',
         playStoreUrl: 'https://play.google.com/store/apps/details?id=com.andordavoti.tictactoe.game',
         webAppUrl: 'https://tictactoe.no/',
+        privacy: [
+            'Anonymous user data is collected for Firebase Analytics, Firebase Crashlytics and Firebase Performance Monitoring.',
+        ],
+        terms: [
+            {
+                title: '',
+                content:
+                    'Please read these terms of service ("terms", "terms of service") carefully before using the todoaholic mobile and web app (the "service") is operated by Andor Davoti (“I”, "me").',
+            },
+            {
+                title: 'Conditions of Use',
+                content:
+                    'I will provide their services to you, which are subject to the conditions stated below in this document. Every time you visit this app, use its services, or make a purchase, you accept the following conditions. This is why I urge you to read them carefully.',
+            },
+            {
+                title: '',
+                content:
+                    'I take no responsibility for the use of this app. The app is provided as-is, and do not guarantee that it will work as expected or that the your data is safe. The app is provided "as is". I do not warrant that the app will be uninterrupted or error-free. You assume all risks associated with the use of this app.',
+            },
+            {
+                title: '',
+                content:
+                    'If the user is inactive for three months, all user data as well as the user account will be deleted.',
+            },
+            {
+                title: 'Communications',
+                content:
+                    'All communication with me is electronic. Every time you send me an email or visit the website or the app, you are going to be communicating with me. You hereby consent to receive communications from me. You also agree that all notices, disclosures, agreements, and other communications we provide to you electronically meet the legal requirements that such communications be in writing.',
+            },
+            {
+                title: 'Applicable Law',
+                content:
+                    'By visiting this website, you agree that the laws of the United States, without regard to principles of conflict laws, will govern these terms of service, or any dispute of any sort that might come between me and you, or business partners and associates.',
+            },
+            {
+                title: 'Disputes',
+                content:
+                    'Any dispute related in any way to your purchases or visit to the web or mobile app shall be arbitrated by state or federal court in the United States and you consent to exclusive jurisdiction and venue of such courts. ',
+            },
+        ],
         links: [
             {
                 name: 'Github repo',
                 link: 'https://github.com/andordavoti/tic-tac-toe-app',
-            },
-            {
-                name: 'Landing page and privacy policy made with preact',
-                link: 'https://ticktacktoe-7aa6d.web.app/',
             },
             {
                 name: 'Reddit post 1',
@@ -376,7 +412,7 @@ const projects: ProjectType[] = [
         ],
     },
     {
-        path: 'den_store_bokmalsordboka',
+        path: 'den-store-bokmalsordboka',
         date: '2019 - Present',
         name: 'Den store bokmålsordboka',
         subtitle: 'iOS and Android app for the largest Norwegian dictionary.',
@@ -422,7 +458,7 @@ const projects: ProjectType[] = [
         ],
     },
     {
-        path: 'fast_rhymes',
+        path: 'fast-rhymes',
         date: '2019 - Present',
         name: 'Fast Rhymes',
         subtitle: 'Tri-platform iOS, Android and web rhyme lyrics writing app.',
@@ -478,9 +514,6 @@ const projects: ProjectType[] = [
                 name: 'GitHub Actions',
                 link: 'https://github.com/features/actions',
             },
-        ],
-        privacy: [
-            'I collect anonymous user data (IP address, software, and hardware info) when the app crashes to make the user experience better. I also use firebase analytics in the app, which reports anonymous usage of the app.',
         ],
         terms: [
             {
@@ -553,7 +586,7 @@ const projects: ProjectType[] = [
         ],
     },
     {
-        path: 'ev_calculator',
+        path: 'ev-calculator',
         date: '2019',
         name: 'EV Calculator',
         subtitle: 'Open-source iOS and Android app to calculate the speed and range of simple EVs.',
@@ -591,7 +624,7 @@ const projects: ProjectType[] = [
         ],
     },
     {
-        path: 'g_eazy_discography',
+        path: 'g-eazy-discography',
         date: '2019',
         name: 'G-Eazy Discography',
         subtitle: 'Open-source iOS and Android app which shows the discography and tour dates for the artist G-Eazy.',
@@ -625,7 +658,7 @@ const projects: ProjectType[] = [
         ],
     },
     {
-        path: 'electric_longboard',
+        path: 'electric-longboard',
         date: '2017 - Present',
         name: 'Electric Longboard',
         subtitle: 'High power e-board built from scratch.',
@@ -646,7 +679,7 @@ const projects: ProjectType[] = [
         technologies: null,
     },
     {
-        path: 'home_automation',
+        path: 'home-automation',
         date: '2017 - Present',
         name: 'Home Automation',
         subtitle: 'Built custom IOT devices and set up a custom smart home solution with Home Assistant.',
@@ -697,7 +730,7 @@ const projects: ProjectType[] = [
         technologies: null,
     },
     {
-        path: 'esk8_calculator',
+        path: 'esk8-calculator',
         date: '2017',
         name: 'ESK8 Calculator',
         subtitle: 'Native Android app to calculate the speed and range of custom built e-boards.',
@@ -732,7 +765,7 @@ const projects: ProjectType[] = [
         ],
     },
     {
-        path: 'autonomous_robot',
+        path: 'autonomous-robot',
         date: '2017',
         name: 'Autonomous Robot',
         subtitle:
@@ -762,7 +795,7 @@ const projects: ProjectType[] = [
         ],
     },
     {
-        path: 'fpv_racing_drone_v2',
+        path: 'fpv-racing-drone-v2',
         date: '2016',
         name: 'FPV Racing Drone v2',
         subtitle: 'Another high power racing drone built from scratch.',
@@ -778,7 +811,7 @@ const projects: ProjectType[] = [
         technologies: null,
     },
     {
-        path: 'camera_drone',
+        path: 'camera-drone',
         date: '2016',
         name: 'Camera Drone',
         subtitle: 'Large 500mm drone with a gimbal for stable footage.',
@@ -800,7 +833,7 @@ const projects: ProjectType[] = [
         technologies: null,
     },
     {
-        path: 'fpv_racing_drone',
+        path: 'fpv-racing-drone',
         date: '2014 - 2015',
         name: 'FPV Racing Drone',
         subtitle: 'High power racing drone built from scratch.',
