@@ -595,8 +595,8 @@ const projects: ProjectType[] = [
         ],
         categories: ['mobile', 'personal'],
         imgUrl: require('../../assets/img/ev-calculator.jpg'),
-        appStoreUrl: 'https://apps.apple.com/no/app/ev-calculator-speed-range/id1489181082',
-        playStoreUrl: 'https://play.google.com/store/apps/details?id=ev.calculator.mobileapp',
+        appStoreUrl: null,
+        playStoreUrl: null,
         webAppUrl: null,
         links: [
             {
@@ -743,12 +743,7 @@ const projects: ProjectType[] = [
         appStoreUrl: null,
         playStoreUrl: 'https://play.google.com/store/apps/details?id=com.andordavoti.esk8speedandrangecalculator',
         webAppUrl: null,
-        links: [
-            {
-                name: 'EV Calculator',
-                link: 'https://andordavoti.com/ev_calculator',
-            },
-        ],
+        links: null,
         technologies: [
             {
                 name: 'Android Studio',
