@@ -39,7 +39,7 @@ const Skills = () => {
     return (
         <Box className={styles.container}>
             <Typography color="textPrimary" align="center" variant="h3">
-                Skills:
+                Skills
             </Typography>
 
             <Box m="1rem" />

@@ -67,7 +67,7 @@ const Projects: React.FC = () => {
     return (
         <Box className={styles.container}>
             <Typography color="textPrimary" align="center" variant="h3">
-                Projects:
+                Projects
             </Typography>
 
             <Box m="1rem" />
