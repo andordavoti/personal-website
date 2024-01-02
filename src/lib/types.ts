@@ -1,22 +1,5 @@
 export type ThemeType = 'light' | 'dark';
 
-export interface SocialLinkType {
-    email: string;
-    linkedin: string;
-    github: string;
-}
-
-interface SkillType {
-    name: string;
-    link: string;
-    imgUrl: string;
-}
-
-export interface SkillsType {
-    development: SkillType[];
-    design: SkillType[];
-}
-
 export type ProjectCategory = 'native' | 'web' | 'full stack' | 'hardware' | 'personal' | 'work';
 
 interface LinkType {
