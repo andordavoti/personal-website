@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
         display: 'block',
         marginLeft: 'auto',
         marginRight: 'auto',
-        backgroundColor: theme.palette.background.paper,
+        backgroundColor: theme.palette.background.default,
         minWidth: '100%',
         position: 'sticky',
         top: 0,

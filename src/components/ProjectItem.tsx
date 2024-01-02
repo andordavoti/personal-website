@@ -1,7 +1,7 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 
-import { Box, Button, Typography, makeStyles, Card } from '@material-ui/core';
+import { Box, Typography, makeStyles, Card } from '@material-ui/core';
 import { ProjectType } from '../lib/types';
 
 type Props = Pick<ProjectType, 'path' | 'date' | 'name' | 'imgUrl' | 'subtitle'>;
@@ -10,17 +10,20 @@ const useStyles = makeStyles((theme) => ({
     container: {
         width: 250,
         height: 'auto',
-        backgroundColor:
-            theme.palette.type === 'dark' ? theme.palette.background.paper : theme.palette.background.default,
+        backgroundColor: theme.palette.background.paper,
         borderRadius: 25,
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
         flexDirection: 'column',
         padding: '1.5rem',
-        boxShadow: theme.palette.type === 'light' ? '10px 10px 8px #DDDDDD' : '0',
-        elevation: 100,
+        boxShadow: '0',
         margin: '1rem',
+        cursor: 'pointer',
+        transition: 'all 0.2s ease-in-out',
+        '&:hover': {
+            transform: 'scale(1.05)',
+        },
     },
     img: {
         width: 225,
@@ -42,7 +45,7 @@ const ProjectItem: React.FC<Props> = ({ path, name, subtitle, date, imgUrl }) =>
     const history = useHistory();
 
     return (
-        <Card variant="outlined" className={styles.container}>
+        <Card variant="outlined" className={styles.container} onClick={() => history.push(`project/${path}`)}>
             <Typography color="textPrimary" align="center" variant="h6">
                 {name}
             </Typography>
@@ -64,12 +67,6 @@ const ProjectItem: React.FC<Props> = ({ path, name, subtitle, date, imgUrl }) =>
             <Box m="0.5rem" />
 
             <img className={styles.img} src={imgUrl} alt={name} />
-
-            <Box m="0.5rem" />
-
-            <Button color="secondary" variant="outlined" onClick={() => history.push(`project/${path}`)}>
-                Learn more
-            </Button>
         </Card>
     );
 };

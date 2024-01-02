@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
         display: 'block',
         marginLeft: 'auto',
         marginRight: 'auto',
-        border: theme.palette.type === 'light' ? `1px solid ${theme.palette.text.primary}` : 'transparent',
+        border: `1px solid ${theme.palette.text.primary}`,
     },
     storeButtonContainer: {
         display: 'flex',
@@ -34,6 +34,10 @@ const useStyles = makeStyles((theme) => ({
     storeIcon: {
         width: 250,
         margin: 10,
+        transition: 'all 0.2s ease-in-out',
+        '&:hover': {
+            transform: 'scale(1.05)',
+        },
     },
 }));
 
