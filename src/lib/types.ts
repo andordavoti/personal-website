@@ -17,7 +17,7 @@ export interface SkillsType {
     design: SkillType[];
 }
 
-export type ProjectCategory = 'mobile' | 'desktop' | 'web' | 'full stack' | 'hardware' | 'personal' | 'work';
+export type ProjectCategory = 'native' | 'web' | 'full stack' | 'hardware' | 'personal' | 'work';
 
 interface LinkType {
     name: string;

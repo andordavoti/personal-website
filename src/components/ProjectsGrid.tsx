@@ -53,16 +53,7 @@ const Projects: React.FC = () => {
 
     const styles = useStyles();
 
-    const categories: ('all' | ProjectCategory)[] = [
-        'all',
-        'mobile',
-        'desktop',
-        'web',
-        'full stack',
-        'hardware',
-        'personal',
-        'work',
-    ];
+    const categories: ('all' | ProjectCategory)[] = ['all', 'native', 'web', 'full stack', 'hardware'];
 
     return (
         <Box className={styles.container}>
