@@ -1,11 +1,7 @@
 import React from 'react';
-
-// components
 import TopIntro from '../components/TopIntro';
-import Skills from '../components/Skills';
 import Projects from '../components/ProjectsGrid';
 import { makeStyles } from '@material-ui/core';
-// import Experience from '../components/Experience';
 import { motion } from 'framer-motion';
 
 const useStyles = makeStyles({
@@ -28,8 +24,6 @@ const HomePage: React.FC = () => {
             className={styles.container}
         >
             <TopIntro />
-            <Skills />
-            {/* <Experience /> */}
             <Projects />
         </motion.div>
     );
