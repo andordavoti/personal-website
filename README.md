@@ -1,3 +1,7 @@
+# Deprecated!
+
+Rebuilt in Next.js: https://github.com/andordavoti/andordavoti
+
 <img src="public/favicon.ico" width="25" >
 
 # personal-website
