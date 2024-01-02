@@ -85,13 +85,11 @@ const Projects: React.FC = () => {
             <Container maxWidth="lg">
                 <Grid container className={styles.projects}>
                     <AnimateSharedLayout>
-                        {activeProjects.map(({ path, name, subtitle, date, imgUrl }) => {
-                            return (
-                                <motion.div layout key={name}>
-                                    <ProjectItem {...{ path, name, subtitle, date, imgUrl }} />
-                                </motion.div>
-                            );
-                        })}
+                        {activeProjects.map(({ path, name, subtitle, date, imgUrl }) => (
+                            <motion.div layout key={name}>
+                                <ProjectItem {...{ path, name, subtitle, date, imgUrl }} />
+                            </motion.div>
+                        ))}
                     </AnimateSharedLayout>
                 </Grid>
             </Container>
